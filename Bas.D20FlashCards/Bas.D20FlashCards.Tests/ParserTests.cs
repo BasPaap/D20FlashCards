@@ -8,9 +8,7 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public abstract class ParserTests
     {
-        #region CanParse
-        [TestMethod]
-        public void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
+        protected void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
         {
             // Arrange
             // Act          
@@ -19,8 +17,7 @@ namespace Bas.D20FlashCards.Tests
             Assert.AreEqual("uri", exception.ParamName);
         }
 
-        [TestMethod]
-        public void CanParse_UriIsNull_ThrowsArgumentNullException(Parser parser)
+        protected void CanParse_UriIsNull_ThrowsArgumentNullException(Parser parser)
         {
             // Arrange
             // Act          
@@ -28,6 +25,25 @@ namespace Bas.D20FlashCards.Tests
             var exception = Assert.ThrowsException<ArgumentNullException>(() => parser.CanParse(null));
             Assert.AreEqual("uri", exception.ParamName);
         }
-        #endregion
+
+        protected void CanParse_UriHasSameBaseUri_ReturnsTrue(Parser parser, Uri uri)
+        {
+            // Arrange
+            // Act
+            var result = parser.CanParse(uri);
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        protected void CanParse_UriHasDifferentBaseUri_ReturnsFalse(Parser parser, Uri uri)
+        {
+            // Arrange
+            // Act
+            var result = parser.CanParse(uri);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
     }
 }

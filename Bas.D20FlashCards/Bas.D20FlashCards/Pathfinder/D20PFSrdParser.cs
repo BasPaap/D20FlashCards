@@ -6,6 +6,11 @@ namespace Bas.D20FlashCards.Pathfinder
 {
     public sealed class D20PFSrdParser : Parser
     {
+        public D20PFSrdParser(Uri baseUri)
+        {
+            throw new NotImplementedException();
+        }
+
         public override bool CanParse(Uri uri)
         {
             throw new NotImplementedException();
