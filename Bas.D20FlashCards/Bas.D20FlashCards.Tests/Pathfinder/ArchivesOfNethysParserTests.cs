@@ -57,6 +57,12 @@ namespace Bas.D20FlashCards.Tests
         {
             ParserTests.Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException(defaultParser);
         }
+
+        [TestMethod]
+        public void Parse_ResponseIsUnknown_ReturnsNull()
+        {
+            ParserTests.Parse_ResponseIsUnknown_ReturnsNull(defaultParser);
+        }
         #endregion
     }
 }

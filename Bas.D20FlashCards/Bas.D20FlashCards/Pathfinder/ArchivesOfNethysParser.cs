@@ -7,8 +7,7 @@ namespace Bas.D20FlashCards.Pathfinder
     public sealed class ArchivesOfNethysParser : Parser
     {
         public ArchivesOfNethysParser(Uri baseUri)
-        {
-            throw new NotImplementedException();
+        {            
         }
 
         public override bool CanParse(Uri uri)

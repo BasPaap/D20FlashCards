@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace Bas.D20FlashCards.Tests
@@ -56,6 +57,27 @@ namespace Bas.D20FlashCards.Tests
         public void Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException()
         {
             ParserTests.Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException(defaultParser);
+        }
+
+        [TestMethod]
+        public void Parse_ResponseIsUnknown_ReturnsNull()
+        {
+            ParserTests.Parse_ResponseIsUnknown_ReturnsNull(defaultParser);
+        }
+
+        [TestMethod]
+        [DeploymentItem("d20pfsrd_feat_response.xml")]
+        public void Parse_ResponseIsFeat_ReturnsFeat()
+        {
+            // Arrange
+            var response = File.ReadAllText(@"Pathfinder\\d20pfsrd_feat_response.xml");
+
+            // Act
+            var card = defaultParser.Parse(response);
+
+            // Assert          
+            Assert.IsNotNull(card);
+            Assert.AreEqual(CardType.Feat, card.CardType);
         }
         #endregion
     }

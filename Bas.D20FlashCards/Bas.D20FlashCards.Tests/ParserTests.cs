@@ -63,5 +63,17 @@ namespace Bas.D20FlashCards.Tests
             var exception = Assert.ThrowsException<ArgumentException>(() => parser.Parse(string.Empty));
             Assert.AreEqual("response", exception.ParamName);
         }
+
+        public static void Parse_ResponseIsUnknown_ReturnsNull(Parser parser)
+        {
+            // Arrange
+            var response = "MacArthur's Park is melting in the dark, all the sweet green icing flowing down.";
+
+            // Act
+            var card = parser.Parse(response);
+
+            // Assert          
+            Assert.IsNull(card);
+        }
     }
 }
