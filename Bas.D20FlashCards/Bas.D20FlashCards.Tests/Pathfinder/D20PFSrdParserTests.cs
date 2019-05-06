@@ -7,39 +7,56 @@ using System.Text;
 namespace Bas.D20FlashCards.Tests
 {
     [TestClass]
-    public sealed class D20PFSrdParserTests : ParserTests
+    public sealed class D20PFSrdParserTests
     {
         private Uri baseUri = new Uri("http://www.d20.com");
+        private D20PFSrdParser defaultParser;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            this.defaultParser = new D20PFSrdParser(this.baseUri);
+        }
 
         #region CanParse
         [TestMethod]
         public void CanParse_UriIsNull_ThrowsArgumentNullException()
         {
-            var parser = new D20PFSrdParser(this.baseUri);
-            CanParse_UriIsNull_ThrowsArgumentNullException(parser);
+            ParserTests.CanParse_UriIsNull_ThrowsArgumentNullException(defaultParser);
         }
 
         [TestMethod]
         public void CanParse_UriIsRelative_ThrowsArgumentException()
         {
-            var parser = new D20PFSrdParser(this.baseUri);
-            CanParse_UriIsRelative_ThrowsArgumentException(parser);
+            ParserTests.CanParse_UriIsRelative_ThrowsArgumentException(defaultParser);
         }
 
         [TestMethod]
         public void CanParse_UriHasSameBaseUri_ReturnsTrue()
         {
-            var parser = new D20PFSrdParser(this.baseUri);
-            CanParse_UriHasSameBaseUri_ReturnsTrue(parser, new Uri(this.baseUri, "/somefeat"));
+            ParserTests.CanParse_UriHasSameBaseUri_ReturnsTrue(defaultParser, new Uri(this.baseUri, "/somefeat"));
         }
 
         [TestMethod]
         public void CanParse_UriHasDifferentBaseUri_ReturnsFalse()
         {
-            var parser = new D20PFSrdParser(this.baseUri);
-            CanParse_UriHasDifferentBaseUri_ReturnsFalse(parser, new Uri("http://www.callofcthulhu.com/somefeat"));
+            ParserTests.CanParse_UriHasDifferentBaseUri_ReturnsFalse(defaultParser, new Uri("http://www.callofcthulhu.com/somefeat"));
         }
 
+        #endregion
+
+        #region Parse
+        [TestMethod]
+        public void Parse_ResponseArgumentIsNull_ThrowsArgumentNullException()
+        {
+            ParserTests.Parse_ResponseArgumentIsNull_ThrowsArgumentNullException(defaultParser);
+        }
+
+        [TestMethod]
+        public void Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException()
+        {
+            ParserTests.Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException(defaultParser);
+        }
         #endregion
     }
 }

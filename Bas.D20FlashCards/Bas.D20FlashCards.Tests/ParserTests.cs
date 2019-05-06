@@ -6,9 +6,9 @@ using System.Text;
 namespace Bas.D20FlashCards.Tests
 {
     [TestClass]
-    public abstract class ParserTests
+    public static class ParserTests
     {
-        protected void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
+        public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
         {
             // Arrange
             // Act          
@@ -17,7 +17,7 @@ namespace Bas.D20FlashCards.Tests
             Assert.AreEqual("uri", exception.ParamName);
         }
 
-        protected void CanParse_UriIsNull_ThrowsArgumentNullException(Parser parser)
+        public static void CanParse_UriIsNull_ThrowsArgumentNullException(Parser parser)
         {
             // Arrange
             // Act          
@@ -26,7 +26,7 @@ namespace Bas.D20FlashCards.Tests
             Assert.AreEqual("uri", exception.ParamName);
         }
 
-        protected void CanParse_UriHasSameBaseUri_ReturnsTrue(Parser parser, Uri uri)
+        public static void CanParse_UriHasSameBaseUri_ReturnsTrue(Parser parser, Uri uri)
         {
             // Arrange
             // Act
@@ -36,7 +36,7 @@ namespace Bas.D20FlashCards.Tests
             Assert.IsTrue(result);
         }
 
-        protected void CanParse_UriHasDifferentBaseUri_ReturnsFalse(Parser parser, Uri uri)
+        public static void CanParse_UriHasDifferentBaseUri_ReturnsFalse(Parser parser, Uri uri)
         {
             // Arrange
             // Act
@@ -44,6 +44,24 @@ namespace Bas.D20FlashCards.Tests
 
             // Assert
             Assert.IsFalse(result);
+        }
+
+        public static void Parse_ResponseArgumentIsNull_ThrowsArgumentNullException(Parser parser)
+        {
+            // Arrange
+            // Act
+            // Assert          
+            var exception = Assert.ThrowsException<ArgumentNullException>(() => parser.Parse(null));
+            Assert.AreEqual("response", exception.ParamName);
+        }
+
+        public static void Parse_ResponseArgumentIsEmptyOrWhitespace_ThrowsArgumentException(Parser parser)
+        {
+            // Arrange
+            // Act          
+            // Assert          
+            var exception = Assert.ThrowsException<ArgumentException>(() => parser.Parse(string.Empty));
+            Assert.AreEqual("response", exception.ParamName);
         }
     }
 }
