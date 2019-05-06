@@ -24,7 +24,7 @@ namespace Bas.D20FlashCards.Tests
 
         #region ToString()
         [TestMethod]
-        public void ToString_WithEmptyTitle_ReturnsSkill()
+        public void ToString_WithEmptyName_ReturnsSkill()
         {
             // Arrange
             var skill = new Skill();
@@ -37,16 +37,16 @@ namespace Bas.D20FlashCards.Tests
         }
 
         [TestMethod]
-        public void ToString_WithTitle_ReturnsSkillAndTitle()
+        public void ToString_WithName_ReturnsSkillAndName()
         {
             // Arrange
-            var skill = new Skill { Title = "Title" };
+            var skill = new Skill { Name = "Name" };
 
             // Act
             var value = skill.ToString();
 
             // Assert          
-            Assert.AreEqual("Skill \"Title\"", value);
+            Assert.AreEqual("Skill \"Name\"", value);
         }
         #endregion
     }

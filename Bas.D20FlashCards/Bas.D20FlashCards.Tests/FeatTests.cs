@@ -23,7 +23,7 @@ namespace Bas.D20FlashCards.Tests
 
         #region ToString()
         [TestMethod]
-        public void ToString_WithoutTitle_ReturnsFeat()
+        public void ToString_WithoutName_ReturnsFeat()
         {
             // Arrange
             var feat = new Feat();
@@ -36,16 +36,16 @@ namespace Bas.D20FlashCards.Tests
         }
         
         [TestMethod]
-        public void ToString_WithTitle_ReturnsFeatAndTitle()
+        public void ToString_WithName_ReturnsFeatAndName()
         {
             // Arrange
-            var feat = new Feat { Title = "Title" };
+            var feat = new Feat { Name = "Name" };
 
             // Act
             var value = feat.ToString();
 
             // Assert          
-            Assert.AreEqual("Feat \"Title\"", value);
+            Assert.AreEqual("Feat \"Name\"", value);
         }
         #endregion
     }
