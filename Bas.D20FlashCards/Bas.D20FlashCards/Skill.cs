@@ -2,5 +2,6 @@
 {
     public sealed class Skill : Card
     {
+        public string Description { get; set; }
     }
 }
