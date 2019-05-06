@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bas.D20FlashCards", "Bas.D20FlashCards\Bas.D20FlashCards.csproj", "{8B7840A0-2283-4A6C-A987-317FBB00E5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bas.D20FlashCards.Tests", "Bas.D20FlashCards.Tests\Bas.D20FlashCards.Tests.csproj", "{9EAB6171-0D00-43AA-B3B2-2F7C19E33FE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B7840A0-2283-4A6C-A987-317FBB00E5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7840A0-2283-4A6C-A987-317FBB00E5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7840A0-2283-4A6C-A987-317FBB00E5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7840A0-2283-4A6C-A987-317FBB00E5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAB6171-0D00-43AA-B3B2-2F7C19E33FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAB6171-0D00-43AA-B3B2-2F7C19E33FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAB6171-0D00-43AA-B3B2-2F7C19E33FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAB6171-0D00-43AA-B3B2-2F7C19E33FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D662577-2219-4C8F-BF9E-88BDDFF093AC}
+	EndGlobalSection
+EndGlobal
