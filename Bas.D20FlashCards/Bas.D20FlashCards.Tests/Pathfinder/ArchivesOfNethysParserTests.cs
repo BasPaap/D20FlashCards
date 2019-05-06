@@ -8,5 +8,6 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class ArchivesOfNethysParserTests
     {
+        private const string baseUri = "d20pfsrd.com";
     }
 }
