@@ -3,7 +3,7 @@
     public abstract class Card
     {
         public string Title { get; set; }
-        public CardType CardType { get; set; }
+        public CardType CardType { get; protected set; }
 
         public override string ToString() => $"{CardType}: {Title}";
     }
