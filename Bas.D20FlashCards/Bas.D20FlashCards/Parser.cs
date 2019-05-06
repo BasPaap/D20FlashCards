@@ -11,6 +11,7 @@ namespace Bas.D20FlashCards
             throw new NotImplementedException();
         }
 
+        public abstract bool CanParse(Uri uri);
         protected abstract CardType GetCardType(string response);
         protected abstract Feat GetFeat(string response);
         protected abstract Skill GetSkill(string response);

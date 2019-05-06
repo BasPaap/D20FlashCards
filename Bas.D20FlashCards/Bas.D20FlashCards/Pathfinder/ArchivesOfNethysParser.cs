@@ -6,6 +6,11 @@ namespace Bas.D20FlashCards.Pathfinder
 {
     public sealed class ArchivesOfNethysParser : Parser
     {
+        public override bool CanParse(Uri uri)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override CardType GetCardType(string response)
         {
             throw new NotImplementedException();
@@ -19,11 +24,6 @@ namespace Bas.D20FlashCards.Pathfinder
         protected override Skill GetSkill(string response)
         {
             throw new NotImplementedException();
-        }
-
-        public static void CanParse(Uri uri, Uri baseUri)
-        {
-            throw new NotImplementedException();
-        }
+        }        
     }
 }
