@@ -8,7 +8,19 @@ namespace Bas.D20FlashCards
     {
         public Card Parse(string response)
         {
-            throw new NotImplementedException();
+            switch (GetCardType(response).Name)
+            {
+                case nameof(Skill):
+                    GetSkill(response);
+                    break;
+                case nameof(Feat):
+                    GetFeat(response);
+                    break;
+                default:
+                    break;
+            }
+
+            return null;
         }
 
         public abstract bool CanParse(Uri uri);

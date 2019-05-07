@@ -17,16 +17,33 @@ namespace Bas.D20FlashCards.Tests
         public void Parse_GetCardTypeReturnsCardType_CallsGetFunctionForCardType(Type cardType, bool isGetFeatCalled, bool isGetSkillCalled)
         {
             // Arrange
-            var parserMock = new ParserMock(cardType);
+            var parser = new ParserMock(cardType);
 
             // Act
-            parserMock.Parse(string.Empty);
+            parser.Parse(string.Empty);
 
             // Assert          
-            Assert.AreEqual(isGetFeatCalled, parserMock.IsGetFeatCalled);
-            Assert.AreEqual(isGetSkillCalled, parserMock.IsGetSkillCalled);
+            Assert.AreEqual(isGetFeatCalled, parser.IsGetFeatCalled);
+            Assert.AreEqual(isGetSkillCalled, parser.IsGetSkillCalled);
         }
 
+
+        [TestMethod]
+        [DataRow(typeof(Feat), "Feat Response", "Feat Response", null)]
+        [DataRow(typeof(Skill), "Skill Response", null, "Skill Response")]
+        public void Parse_ValidResponseIsPassedToParse_GetCardTypeAndGetFunctionForCardTypeAreCalledWithSameResponse(Type cardType, string response, string featResponse, string skillResponse)
+        {
+            // Arrange
+            var parser = new ParserMock(cardType);
+
+            // Act
+            parser.Parse(response);
+
+            // Assert          
+            Assert.AreEqual(featResponse, parser.ResponsePassedToGetFeat);
+            Assert.AreEqual(skillResponse, parser.ResponsePassedToGetSkill);
+            Assert.AreEqual(response, parser.ResponsePassedToGetCardType);
+        }
         #endregion
 
         public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)

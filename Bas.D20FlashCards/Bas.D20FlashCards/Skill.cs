@@ -9,6 +9,6 @@
         public string Special { get; set; }
         public string Untrained { get; set; }
 
-        public override string ToString() => $"{nameof(Skill)}{(string.IsNullOrWhiteSpace(Name) ? string.Empty : $"\"{Name}\"")}";
+        public override string ToString() => $"{nameof(Skill)}{(string.IsNullOrWhiteSpace(Name) ? string.Empty : $" \"{Name}\"")}";
     }
 }
