@@ -12,6 +12,8 @@ namespace Bas.D20FlashCards.Pathfinder
 
         public override bool CanParse(Uri uri)
         {
+            TestUriValidity(uri);
+
             throw new NotImplementedException();
         }
 

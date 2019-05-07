@@ -23,6 +23,14 @@ namespace Bas.D20FlashCards
             return null;
         }
 
+        protected void TestUriValidity(Uri uri)
+        {
+            if (uri == null)
+            {
+                throw new ArgumentNullException(nameof(uri));
+            }
+        }
+
         public abstract bool CanParse(Uri uri);
         protected abstract Type GetCardType(string response);
         protected abstract Feat GetFeat(string response);
