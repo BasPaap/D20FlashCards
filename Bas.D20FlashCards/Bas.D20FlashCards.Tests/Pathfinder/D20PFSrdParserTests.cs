@@ -10,6 +10,8 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class D20PFSrdParserTests
     {
+        private const string featResponseFileName = "d20pfsrd_feat_response.xml";
+        private const string skillResponseFileName = "d20pfsrd_skill_response.xml";
         private Uri baseUri = new Uri("http://www.d20.com");
         private D20PFSrdParser defaultParser;
 
@@ -66,18 +68,87 @@ namespace Bas.D20FlashCards.Tests
         }
 
         [TestMethod]
-        [DeploymentItem("d20pfsrd_feat_response.xml")]
-        public void Parse_ResponseIsFeat_ReturnsFeat()
+        [DeploymentItem(featResponseFileName)]
+        [DataRow(featResponseFileName, typeof(Feat), CardType.Feat, 
+            "Armor Proficiency, Medium (Combat)", 
+            "You are skilled at wearing medium armor.", 
+            "<a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Light Armor Proficiency</a>.", 
+            "See <a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Armor Proficiency, Light</a>.", 
+            "See <a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Armor Proficiency, Light</a>.", 
+            "<a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian\">Barbarians</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric\">clerics</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/druid\">druids</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighters</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/paladin\">paladins</a>, and <a href=\"https://www.d20pfsrd.com/classes/core-classes/ranger\">rangers</a> automatically have Medium Armor Proficiency as a bonus feat. They need not select it.")]
+        public void Parse_ResponseIsFeat_ReturnsFeat(string fileName,
+                                                     Type instanceType,
+                                                     CardType cardType,
+                                                     string name,
+                                                     string description,
+                                                     string prerequisite,
+                                                     string benefit,
+                                                     string normal,
+                                                     string special)
         {
             // Arrange
-            var response = File.ReadAllText(@"Pathfinder\\d20pfsrd_feat_response.xml");
+            var response = File.ReadAllText($"Pathfinder\\{fileName}");
+            
+            // Act
+            var card = defaultParser.Parse(response);
+
+            // Assert          
+            Assert.IsNotNull(card);
+            Assert.IsInstanceOfType(card, instanceType);
+            Assert.AreEqual(cardType, card.CardType);
+            Assert.AreEqual(name, card.Name);
+
+            var feat = card as Feat;
+            Assert.AreEqual(description, feat.Description);
+            Assert.AreEqual(prerequisite, feat.Prerequisite);
+            Assert.AreEqual(benefit, feat.Benefit);
+            Assert.AreEqual(normal, feat.Normal);
+            Assert.AreEqual(special, feat.Special);
+        }
+
+        [TestMethod]
+        [DeploymentItem(skillResponseFileName)]
+        [DataRow(skillResponseFileName, typeof(Skill), CardType.Skill, 
+            "Profession (Wis, Trained only)", 
+            "You are skilled at a specific job. Like <a href=\"https://www.d20pfsrd.com/skills/craft\">Craft</a>, <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>, and <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a>, Profession is actually a number of separate skills. You could have several Profession skills, each with its own ranks. While a Craft skill represents ability in creating an item, a Profession skill represents an aptitude in a vocation requiring a broader range of less specific knowledge. The most common Profession skills are architect, baker, barrister, brewer, butcher, clerk, cook, courtesan, driver, engineer, farmer, fisherman, gambler, gardener, herbalist, innkeeper, librarian, merchant, midwife, miller, miner, porter, sailor, scribe, shepherd, stable master, soldier, tanner, trapper, and woodcutter.", 
+            null,
+            "Not applicable. A single check generally represents a week of work.",
+            "Varies. An attempt to use a Profession skill to earn income cannot be retried. You are stuck with whatever weekly wage your check result brought you. Another check may be made after a week to determine a new income for the next period of time. An attempt to accomplish some specific task can usually be retried.",
+            null,
+            null,
+            "Untrained laborers and assistants (that is, characters without any ranks in Profession) earn an average of 1 silver piece per day.")]
+        public void Parse_ResponseIsSkill_ReturnsSkill(string fileName,
+                                                     Type instanceType,
+                                                     CardType cardType,
+                                                     string name,
+                                                     string description,
+                                                     string check,
+                                                     string action,
+                                                     string tryAgain,
+                                                     string special,
+                                                     string restriction,
+                                                     string untrained)
+        {
+            // Arrange
+            var response = File.ReadAllText($"Pathfinder\\{fileName}");
 
             // Act
             var card = defaultParser.Parse(response);
 
             // Assert          
             Assert.IsNotNull(card);
-            Assert.AreEqual(CardType.Feat, card.CardType);
+            Assert.IsInstanceOfType(card, instanceType);
+            Assert.AreEqual(cardType, card.CardType);
+            Assert.AreEqual(name, card.Name);
+
+            var skill = card as Skill;
+            Assert.AreEqual(description, skill.Description);
+            Assert.AreEqual(check, skill.Check);
+            Assert.AreEqual(action, skill.Action);
+            Assert.AreEqual(tryAgain, skill.TryAgain);
+            Assert.AreEqual(special, skill.Special);
+            Assert.AreEqual(restriction, skill.Restriction);
+            Assert.AreEqual(untrained, skill.Untrained);
         }
         #endregion
     }
