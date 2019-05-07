@@ -25,11 +25,9 @@ namespace Bas.D20FlashCards
                 switch (cardType.Name)
                 {
                     case nameof(Skill):
-                        GetSkill(response);
-                        break;
+                        return GetSkill(response);
                     case nameof(Feat):
-                        GetFeat(response);
-                        break;
+                        return GetFeat(response);
                     default:
                         break;
                 }

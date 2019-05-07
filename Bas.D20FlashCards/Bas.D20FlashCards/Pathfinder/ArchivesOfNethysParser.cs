@@ -27,12 +27,12 @@ namespace Bas.D20FlashCards.Pathfinder
 
         protected override Feat GetFeat(string response)
         {
-            throw new NotImplementedException();
+            return new Feat();
         }
 
         protected override Skill GetSkill(string response)
         {
-            throw new NotImplementedException();
+            return new Skill();
         }        
     }
 }

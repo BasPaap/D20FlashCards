@@ -12,13 +12,15 @@ namespace Bas.D20FlashCards.Tests
     {
         private const string featResponseFileName = "d20pfsrd_feat_response.txt";
         private const string skillResponseFileName = "d20pfsrd_skill_response.txt";
-        private readonly Uri baseUri = new Uri("http://www.d20.com");
+        private readonly Uri baseUri = new Uri("https://www.d20.com");
+        private readonly Uri featsUri = new Uri("/feats", UriKind.Relative);
+        private readonly Uri skillsUri = new Uri("/skills", UriKind.Relative);
         private D20PFSrdParser defaultParser;
 
         [TestInitialize]
         public void Initialize()
         {
-            this.defaultParser = new D20PFSrdParser(this.baseUri);
+            this.defaultParser = new D20PFSrdParser(this.baseUri, this.featsUri, this.skillsUri);
         }
 
         #region CanParse
