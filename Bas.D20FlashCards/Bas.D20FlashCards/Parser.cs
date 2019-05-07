@@ -32,7 +32,7 @@ namespace Bas.D20FlashCards
 
             if (!uri.IsAbsoluteUri)
             {
-                throw new ArgumentException(nameof(uri));
+                throw new ArgumentException("Uri is not absolute.", nameof(uri));
             }
         }
 
