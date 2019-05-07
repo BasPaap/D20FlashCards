@@ -19,7 +19,7 @@ namespace Bas.D20FlashCards.Tests
             var value = feat.ToString();
 
             // Assert          
-            Assert.AreEqual("Feat \"\"", value);
+            Assert.AreEqual("Feat", value);
         }
         
         [TestMethod]

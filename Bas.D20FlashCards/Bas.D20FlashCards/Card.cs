@@ -3,7 +3,5 @@
     public abstract class Card
     {
         public string Name { get; set; }
-        
-        public override string ToString() => $": {Name}";
     }
 }

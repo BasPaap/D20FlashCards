@@ -7,5 +7,7 @@
         public string Prerequisite { get; set; }
         public string Normal { get; set; }
         public string Special { get; set; }
+
+        public override string ToString() => $"{nameof(Feat)}{(string.IsNullOrWhiteSpace(Name) ? string.Empty : $"\"{Name}\"")}";
     }
 }

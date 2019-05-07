@@ -20,7 +20,7 @@ namespace Bas.D20FlashCards.Tests
             var value = skill.ToString();
 
             // Assert          
-            Assert.AreEqual("Skill \"\"", value);
+            Assert.AreEqual("Skill", value);
         }
 
         [TestMethod]

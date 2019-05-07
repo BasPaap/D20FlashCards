@@ -8,5 +8,7 @@
         public string TryAgain { get; set; }
         public string Special { get; set; }
         public string Untrained { get; set; }
+
+        public override string ToString() => $"{nameof(Skill)}{(string.IsNullOrWhiteSpace(Name) ? string.Empty : $"\"{Name}\"")}";
     }
 }
