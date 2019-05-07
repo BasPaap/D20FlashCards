@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
+using Bas.D20FlashCards.Extensions;
 
 namespace Bas.D20FlashCards.Pathfinder
 {
@@ -43,24 +44,9 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private bool ResponseContainsTitle(string response, string title)
         {
-            const string titleElementStartTag = "<title>";
-            const string titleElementEndTag = "</title>";
+            var pageTitle = response.Substring("<title>", "</title>");
             
-            var titleElementPosition = response.IndexOf(titleElementStartTag);
-            var titleElementEndTagPosition = response.IndexOf(titleElementEndTag);
-
-            if (titleElementPosition < 0 || titleElementEndTagPosition == 0 || titleElementPosition > titleElementEndTagPosition)
-            {
-                return false;
-            }
-
-            var pageTitlePosition = titleElementPosition + titleElementStartTag.Length;
-            var pageTitleLength = titleElementEndTagPosition - pageTitlePosition;
-
-            var pageTitle = response.Substring(pageTitlePosition, pageTitleLength);
-            Debug.Assert(pageTitle.Length == pageTitleLength);
-
-            if (!pageTitle.Contains($"{title}{this.titleSuffix}"))
+            if (pageTitle == null || !pageTitle.Contains($"{title}{this.titleSuffix}"))
             {
                 return false;
             }

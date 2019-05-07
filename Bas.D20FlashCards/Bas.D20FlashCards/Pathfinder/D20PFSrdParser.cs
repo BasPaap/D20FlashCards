@@ -1,6 +1,10 @@
-﻿using System;
+﻿using Bas.D20FlashCards.Extensions;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace Bas.D20FlashCards.Pathfinder
 {
@@ -61,12 +65,83 @@ namespace Bas.D20FlashCards.Pathfinder
 
         protected override Feat GetFeat(string response)
         {
-            return new Feat();
+            var (articleTitle, articleContentElement) = GetArticleTitleAndContentElement(response);
+
+            if (articleTitle == null || articleContentElement == null)
+            {
+                return null;
+            }
+
+            var feat = new Feat()
+            {
+                Name = articleTitle,
+                Description = ((string)articleContentElement.Elements("p").FirstOrDefault())?.Trim(),
+                Prerequisite = GetArticleProperty("Prerequisite", articleContentElement),
+                Benefit = GetArticleProperty("Benefit", articleContentElement),
+                Normal = GetArticleProperty("Normal", articleContentElement),
+                Special = GetArticleProperty("Special", articleContentElement)
+            };
+
+            return feat;
         }
 
         protected override Skill GetSkill(string response)
         {
-            return new Skill();
-        }        
+            var (articleTitle, articleContentElement) = GetArticleTitleAndContentElement(response);
+
+            if (articleTitle == null || articleContentElement == null)
+            {
+                return null;
+            }
+
+            var skill = new Skill()
+            {
+                Name = articleTitle,
+                Description = ((string)articleContentElement.Elements("p").FirstOrDefault())?.Trim(),
+                Action = "",
+                Check = "",
+                Special = "",
+                TryAgain = "",
+                Untrained = ""
+            };
+
+            return skill;
+        }
+
+        private static (string, XElement) GetArticleTitleAndContentElement(string response)
+        {
+            const string articleStartTag = "<article ";
+            const string articleEndTag = "</article>";
+
+            var articleContents = response.Substring(articleStartTag, articleEndTag);
+            if (string.IsNullOrWhiteSpace(articleContents))
+            {
+                return (null, null);
+            }
+
+            try
+            {
+                const string nbspEntityName = "&nbsp;";
+                const string nbspEntityNumber = "&#160;";
+                var articleElement = XElement.Parse($"{articleStartTag}{articleContents}{articleEndTag}".Replace(nbspEntityName, nbspEntityNumber));
+                var articleContentElement = articleElement.Descendants("div").FirstOrDefault(d => ((string)d.Attribute("class"))?.Contains("article-content") == true);
+
+                return ((string)articleElement.Element("h1"), articleContentElement);
+            }
+            catch (XmlException)
+            {
+                return (null, null);
+            }
+        }
+
+        private static string GetArticleProperty(string propertyName, XElement articleContentElement)
+        {
+            var propertyXml = articleContentElement.Elements("p").FirstOrDefault(p => (string)p.Elements("b").FirstOrDefault() == propertyName)?.ToString();
+            var propertyValue = propertyXml.Substring("<p>", "</p>");
+
+            return propertyValue?.Replace($"<b>{propertyName}</b>: ", string.Empty).Replace(Environment.NewLine, string.Empty).Trim();
+        }
+
+        
     }
 }
