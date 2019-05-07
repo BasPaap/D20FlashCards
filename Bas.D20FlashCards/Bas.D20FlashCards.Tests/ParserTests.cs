@@ -46,6 +46,14 @@ namespace Bas.D20FlashCards.Tests
         }
         #endregion
 
+        public static void CanParse_UriIsMalFormed_ThrowsUriFormatException(Parser parser)
+        {
+            // Arrange
+            // Act          
+            // Assert          
+            var exception = Assert.ThrowsException<UriFormatException>(() => parser.CanParse(new Uri(string.Empty)));            
+        }
+
         public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
         {
             // Arrange

@@ -27,6 +27,12 @@ namespace Bas.D20FlashCards.Tests
         }
 
         [TestMethod]
+        public void CanParse_UriIsMalFormed_ThrowsUriFormatException()
+        {
+            ParserTests.CanParse_UriIsMalFormed_ThrowsUriFormatException(default);
+        }
+
+        [TestMethod]
         public void CanParse_UriIsRelative_ThrowsArgumentException()
         {
             ParserTests.CanParse_UriIsRelative_ThrowsArgumentException(defaultParser);

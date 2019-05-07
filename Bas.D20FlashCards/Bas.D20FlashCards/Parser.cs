@@ -29,6 +29,11 @@ namespace Bas.D20FlashCards
             {
                 throw new ArgumentNullException(nameof(uri));
             }
+
+            if (!uri.IsAbsoluteUri)
+            {
+                throw new ArgumentException(nameof(uri));
+            }
         }
 
         public abstract bool CanParse(Uri uri);
