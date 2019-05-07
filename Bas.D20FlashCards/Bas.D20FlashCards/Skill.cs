@@ -7,7 +7,6 @@
         public string Action { get; set; }
         public string TryAgain { get; set; }
         public string Special { get; set; }
-        public string Restriction { get; set; }
         public string Untrained { get; set; }
     }
 }
