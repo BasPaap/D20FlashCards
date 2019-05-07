@@ -13,6 +13,11 @@ namespace Bas.D20FlashCards
                 throw new ArgumentNullException(nameof(response));
             }
 
+            if (string.IsNullOrWhiteSpace(response))
+            {
+                throw new ArgumentException($"{nameof(response)} is empty or whitespace.", nameof(response));
+            }
+
             switch (GetCardType(response).Name)
             {
                 case nameof(Skill):
