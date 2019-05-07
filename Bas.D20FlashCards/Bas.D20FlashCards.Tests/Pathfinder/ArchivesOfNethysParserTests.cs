@@ -162,6 +162,23 @@ namespace Bas.D20FlashCards.Tests
             // Assert          
             Assert.IsNull(card);
         }
+
+        [TestMethod]
+        [DeploymentItem(skillResponseFileName)]
+        [DeploymentItem(featResponseFileName)]
+        [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(featResponseFileName, typeof(Feat))]
+        public void GetCardType_ResponseIsKnownCardType_ReturnsCorrectCardType(string fileName, Type cardType)
+        {
+            // Arrange
+            var response = File.ReadAllText($"Pathfinder\\{fileName}");
+
+            // Act
+            var card = defaultParser.Parse(response);
+
+            // Assert          
+            Assert.IsInstanceOfType(card, cardType);
+        }
         #endregion
     }
 }
