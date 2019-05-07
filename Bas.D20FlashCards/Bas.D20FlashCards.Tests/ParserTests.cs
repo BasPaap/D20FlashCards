@@ -54,12 +54,12 @@ namespace Bas.D20FlashCards.Tests
             var exception = Assert.ThrowsException<UriFormatException>(() => parser.CanParse(new Uri(string.Empty)));            
         }
 
-        public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser, Uri relativeUri)
+        public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
         {
             // Arrange
             // Act          
             // Assert          
-            var exception = Assert.ThrowsException<ArgumentException>(() => parser.CanParse(relativeUri));
+            var exception = Assert.ThrowsException<ArgumentException>(() => parser.CanParse(new Uri("/something")));
             Assert.AreEqual("uri", exception.ParamName);
         }
 

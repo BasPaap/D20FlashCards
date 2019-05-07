@@ -35,7 +35,7 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         public void CanParse_UriIsRelative_ThrowsArgumentException()
         {
-            ParserTests.CanParse_UriIsRelative_ThrowsArgumentException(defaultParser, new Uri(this.baseUri, "/somefeat"));
+            ParserTests.CanParse_UriIsRelative_ThrowsArgumentException(defaultParser);
         }
 
         [TestMethod]
