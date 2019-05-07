@@ -8,6 +8,11 @@ namespace Bas.D20FlashCards
     {
         public Card Parse(string response)
         {
+            if (response == null)
+            {
+                throw new ArgumentNullException(nameof(response));
+            }
+
             switch (GetCardType(response).Name)
             {
                 case nameof(Skill):
