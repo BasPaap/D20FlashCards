@@ -150,5 +150,18 @@ namespace Bas.D20FlashCards.Tests
             Assert.AreEqual(untrained, skill.Untrained);
         }
         #endregion
+
+        #region GetCardType
+        [TestMethod]
+        public void GetCardType_ResponseIsUnknownCardType_ReturnsNull()
+        {
+            // Arrange
+            // Act
+            var card = defaultParser.Parse("Unknown card type response.");
+
+            // Assert          
+            Assert.IsNull(card);
+        }
+        #endregion
     }
 }

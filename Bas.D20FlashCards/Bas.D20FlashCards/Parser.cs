@@ -18,16 +18,21 @@ namespace Bas.D20FlashCards
                 throw new ArgumentException($"{nameof(response)} is empty or whitespace.", nameof(response));
             }
 
-            switch (GetCardType(response).Name)
+            var cardType = GetCardType(response);
+
+            if (cardType != null)
             {
-                case nameof(Skill):
-                    GetSkill(response);
-                    break;
-                case nameof(Feat):
-                    GetFeat(response);
-                    break;
-                default:
-                    break;
+                switch (cardType.Name)
+                {
+                    case nameof(Skill):
+                        GetSkill(response);
+                        break;
+                    case nameof(Feat):
+                        GetFeat(response);
+                        break;
+                    default:
+                        break;
+                }
             }
 
             return null;

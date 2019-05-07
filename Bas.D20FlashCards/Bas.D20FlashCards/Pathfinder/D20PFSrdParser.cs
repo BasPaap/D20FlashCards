@@ -22,7 +22,7 @@ namespace Bas.D20FlashCards.Pathfinder
 
         protected override Type GetCardType(string response)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         protected override Feat GetFeat(string response)
