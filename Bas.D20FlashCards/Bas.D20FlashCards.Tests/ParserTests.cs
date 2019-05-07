@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Bas.D20FlashCards.Tests.Mocks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -6,8 +7,28 @@ using System.Text;
 namespace Bas.D20FlashCards.Tests
 {
     [TestClass]
-    public static class ParserTests
+    public class ParserTests
     {
+        #region Parse
+
+        [TestMethod]
+        [DataRow(typeof(Feat), true, false)]
+        [DataRow(typeof(Skill), false, true)]
+        public void Parse_GetCardTypeReturnsCardType_CallsGetFunctionForCardType(Type cardType, bool isGetFeatCalled, bool isGetSkillCalled)
+        {
+            // Arrange
+            var parserMock = new ParserMock(cardType);
+
+            // Act
+            parserMock.Parse(string.Empty);
+
+            // Assert          
+            Assert.AreEqual(isGetFeatCalled, parserMock.IsGetFeatCalled);
+            Assert.AreEqual(isGetSkillCalled, parserMock.IsGetSkillCalled);
+        }
+
+        #endregion
+
         public static void CanParse_UriIsRelative_ThrowsArgumentException(Parser parser)
         {
             // Arrange
