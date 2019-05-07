@@ -15,7 +15,7 @@ namespace Bas.D20FlashCards.Pathfinder
             throw new NotImplementedException();
         }
 
-        protected override CardType GetCardType(string response)
+        protected override Type GetCardType(string response)
         {
             throw new NotImplementedException();
         }

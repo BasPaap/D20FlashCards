@@ -10,9 +10,9 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class D20PFSrdParserTests
     {
-        private const string featResponseFileName = "d20pfsrd_feat_response.xml";
-        private const string skillResponseFileName = "d20pfsrd_skill_response.xml";
-        private Uri baseUri = new Uri("http://www.d20.com");
+        private const string featResponseFileName = "d20pfsrd_feat_response.txt";
+        private const string skillResponseFileName = "d20pfsrd_skill_response.txt";
+        private readonly Uri baseUri = new Uri("http://www.d20.com");
         private D20PFSrdParser defaultParser;
 
         [TestInitialize]
@@ -69,7 +69,8 @@ namespace Bas.D20FlashCards.Tests
 
         [TestMethod]
         [DeploymentItem(featResponseFileName)]
-        [DataRow(featResponseFileName, typeof(Feat), CardType.Feat, 
+        [DataRow(featResponseFileName, 
+            typeof(Feat),
             "Armor Proficiency, Medium (Combat)", 
             "You are skilled at wearing medium armor.", 
             "<a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Light Armor Proficiency</a>.", 
@@ -78,7 +79,6 @@ namespace Bas.D20FlashCards.Tests
             "<a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian\">Barbarians</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric\">clerics</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/druid\">druids</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighters</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/paladin\">paladins</a>, and <a href=\"https://www.d20pfsrd.com/classes/core-classes/ranger\">rangers</a> automatically have Medium Armor Proficiency as a bonus feat. They need not select it.")]
         public void Parse_ResponseIsFeat_ReturnsFeat(string fileName,
                                                      Type instanceType,
-                                                     CardType cardType,
                                                      string name,
                                                      string description,
                                                      string prerequisite,
@@ -95,7 +95,6 @@ namespace Bas.D20FlashCards.Tests
             // Assert          
             Assert.IsNotNull(card);
             Assert.IsInstanceOfType(card, instanceType);
-            Assert.AreEqual(cardType, card.CardType);
             Assert.AreEqual(name, card.Name);
 
             var feat = card as Feat;
@@ -108,7 +107,8 @@ namespace Bas.D20FlashCards.Tests
 
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
-        [DataRow(skillResponseFileName, typeof(Skill), CardType.Skill, 
+        [DataRow(skillResponseFileName, 
+            typeof(Skill),
             "Profession (Wis, Trained only)", 
             "You are skilled at a specific job. Like <a href=\"https://www.d20pfsrd.com/skills/craft\">Craft</a>, <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>, and <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a>, Profession is actually a number of separate skills. You could have several Profession skills, each with its own ranks. While a Craft skill represents ability in creating an item, a Profession skill represents an aptitude in a vocation requiring a broader range of less specific knowledge. The most common Profession skills are architect, baker, barrister, brewer, butcher, clerk, cook, courtesan, driver, engineer, farmer, fisherman, gambler, gardener, herbalist, innkeeper, librarian, merchant, midwife, miller, miner, porter, sailor, scribe, shepherd, stable master, soldier, tanner, trapper, and woodcutter.",
             "You can earn half your Profession check result in gold pieces per week of dedicated work. You know how to use the tools of your trade, how to perform the profession&#8217;s daily tasks, how to supervise helpers, and how to handle common problems. You can also answer questions about your Profession. Basic questions are DC 10, while more complex questions are DC 15 or higher.",
@@ -118,7 +118,6 @@ namespace Bas.D20FlashCards.Tests
             "Untrained laborers and assistants (that is, characters without any ranks in Profession) earn an average of 1 silver piece per day.")]
         public void Parse_ResponseIsSkill_ReturnsSkill(string fileName,
                                                      Type instanceType,
-                                                     CardType cardType,
                                                      string name,
                                                      string description,
                                                      string check,
@@ -136,7 +135,6 @@ namespace Bas.D20FlashCards.Tests
             // Assert          
             Assert.IsNotNull(card);
             Assert.IsInstanceOfType(card, instanceType);
-            Assert.AreEqual(cardType, card.CardType);
             Assert.AreEqual(name, card.Name);
 
             var skill = card as Skill;

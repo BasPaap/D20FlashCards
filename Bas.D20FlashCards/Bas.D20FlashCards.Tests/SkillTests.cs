@@ -9,19 +9,6 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class SkillTests
     {
-        #region Default constructor
-        [TestMethod]
-        public void Constructor_IsCalled_CardTypeIsSkill()
-        {
-            // Arrange
-            // Act
-            var skill = new Skill();
-
-            // Assert          
-            Assert.AreEqual(CardType.Skill, skill.CardType);
-        }
-        #endregion
-
         #region ToString()
         [TestMethod]
         public void ToString_WithEmptyName_ReturnsSkill()

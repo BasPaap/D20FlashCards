@@ -8,19 +8,6 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class FeatTests
     {
-        #region Default constructor
-        [TestMethod]
-        public void Constructor_IsCalled_CardTypeIsFeat()
-        {
-            // Arrange
-            // Act
-            var feat = new Feat();
-
-            // Assert          
-            Assert.AreEqual(CardType.Feat, feat.CardType);
-        }
-        #endregion
-
         #region ToString()
         [TestMethod]
         public void ToString_WithoutName_ReturnsFeat()
