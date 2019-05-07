@@ -8,10 +8,14 @@
 
   <ItemGroup>
     <None Remove="Pathfinder\d20pfsrd_feat_response.xml" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response.xml" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Pathfinder\d20pfsrd_feat_response.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
