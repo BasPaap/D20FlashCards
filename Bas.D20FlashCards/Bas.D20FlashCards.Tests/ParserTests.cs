@@ -20,7 +20,7 @@ namespace Bas.D20FlashCards.Tests
             var parser = new ParserMock(cardType);
 
             // Act
-            parser.Parse(string.Empty);
+            parser.Parse("Valid response");
 
             // Assert          
             Assert.AreEqual(isGetFeatCalled, parser.IsGetFeatCalled);
