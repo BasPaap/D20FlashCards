@@ -11,12 +11,13 @@ namespace Bas.D20FlashCards.Tests
         private const string featResponseFileName = "aon_feat_response.txt";
         private const string skillResponseFileName = "aon_skill_response.txt";
         private readonly Uri baseUri = new Uri("http://www.aon.com");
+        private readonly string titleSuffix = " - Archives of Nethys: Pathfinder RPG Database";
         private ArchivesOfNethysParser defaultParser;
 
         [TestInitialize]
         public void Initialize()
         {
-            this.defaultParser = new ArchivesOfNethysParser(baseUri);
+            this.defaultParser = new ArchivesOfNethysParser(baseUri, titleSuffix);
         }
 
         #region CanParse
