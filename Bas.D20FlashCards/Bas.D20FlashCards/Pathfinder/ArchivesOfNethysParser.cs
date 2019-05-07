@@ -6,15 +6,18 @@ namespace Bas.D20FlashCards.Pathfinder
 {
     public sealed class ArchivesOfNethysParser : Parser
     {
+        private readonly Uri baseUri;
+
         public ArchivesOfNethysParser(Uri baseUri)
-        {            
+        {
+            this.baseUri = baseUri;
         }
 
         public override bool CanParse(Uri uri)
         {
             TestUriValidity(uri);
 
-            throw new NotImplementedException();
+            return baseUri.Authority == uri.Authority;
         }
 
         protected override Type GetCardType(string response)
