@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
 using Bas.D20FlashCards.Extensions;
 
 namespace Bas.D20FlashCards.Pathfinder
@@ -56,7 +59,61 @@ namespace Bas.D20FlashCards.Pathfinder
 
         protected override Feat GetFeat(string response)
         {
-            return new Feat();
+            const string tableStartTag = "<table ";
+            const string tableEndTag = "</table>";
+
+            var tableContents = response.Substring(tableStartTag, tableEndTag);
+            if (string.IsNullOrWhiteSpace(tableContents))
+            {
+                return null;
+            }
+
+            var tableElement = GetTableElement($"{tableStartTag}{tableContents}{tableEndTag}");
+            var propertyNodes = from n in tableElement.Descendants("span").FirstOrDefault()?.Nodes()
+                                where !(n is XElement) || 
+                                    (((XElement)n).Name != "a" && ((XElement)n).Name != "h1" &&((XElement)n).Name != "br")
+                                select n;
+
+            var feat = new Feat()
+            {
+                Name = ((string)tableElement.Descendants("h1").FirstOrDefault())?.Trim(),
+                Description = (propertyNodes.Skip(1).Take(1).Single() as XText).Value,
+                Benefit = GetFeatPropertyValue("Benefit", propertyNodes),
+                Normal = GetFeatPropertyValue("Normal", propertyNodes),
+                Prerequisite = GetFeatPropertyValue("Prerequisites", propertyNodes),
+                Special = GetFeatPropertyValue("Special", propertyNodes)
+            };
+
+            return feat;
+        }
+
+        private static string GetFeatPropertyValue(string propertyName, IEnumerable<XNode> propertyNodes)
+        {
+            foreach (var propertyNode in propertyNodes)
+            {
+                if (propertyNode.NodeType == XmlNodeType.Element && (propertyNode as XElement).Value == propertyName)
+                {
+                    return (propertyNode.NextNode as XText).Value.Substring(1).Trim();
+                }
+            }
+
+            return null;
+        }
+
+        private static XElement GetTableElement(string tableContents)
+        {
+            try
+            {
+                const string imageElementStart = "<img src=";
+                const string imageElementEnd = ">";
+                var imageHtml = $"{imageElementStart}{tableContents.Substring(imageElementStart, imageElementEnd)}{imageElementEnd}";
+                
+                return XElement.Parse(tableContents.Replace(imageHtml, string.Empty));
+            }
+            catch (XmlException)
+            {
+                return null;
+            }
         }
 
         protected override Skill GetSkill(string response)

@@ -10,7 +10,7 @@ namespace Bas.D20FlashCards.Extensions
         public static string Substring(this string fullString, string startString, string endString)
         {            
             var startIndex = fullString.IndexOf(startString);
-            var endIndex = fullString.IndexOf(endString);
+            var endIndex = fullString.Substring(startIndex).IndexOf(endString) + startIndex; // Make sure we take the -next- index of endString, after startString, and not just the first instance in the full string.
 
             if (startIndex < 0 || endIndex == 0 || startIndex > endIndex)
             {
