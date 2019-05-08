@@ -59,35 +59,63 @@ namespace Bas.D20FlashCards.Pathfinder
 
         protected override Feat GetFeat(string response)
         {
+            var (name, description, propertyNodes) = GetNameDescriptionAndPropertyNodes(response);
+
+            var feat = new Feat()
+            {
+                Name = name,
+                Description = description,
+                Benefit = GetPropertyValue("Benefit", propertyNodes),
+                Normal = GetPropertyValue("Normal", propertyNodes),
+                Prerequisites = GetPropertyValue("Prerequisites", propertyNodes),
+                Special = GetPropertyValue("Special", propertyNodes)
+            };
+
+            return feat;
+        }
+
+        protected override Skill GetSkill(string response)
+        {
+            var (name, description, propertyNodes) = GetNameDescriptionAndPropertyNodes(response);
+
+            var skill = new Skill()
+            {
+                Name = name,
+                Description = description,
+                Action = GetPropertyValue("Action", propertyNodes),
+                Check = GetPropertyValue("Check", propertyNodes),
+                Special = GetPropertyValue("Special", propertyNodes),
+                TryAgain = GetPropertyValue("Try Again", propertyNodes),
+                Untrained = GetPropertyValue("Untrained", propertyNodes)
+            };
+
+            return skill;
+        }
+
+        private static (string, string, IEnumerable<XNode>) GetNameDescriptionAndPropertyNodes(string response)
+        {
             const string tableStartTag = "<table ";
             const string tableEndTag = "</table>";
 
             var tableContents = response.Substring(tableStartTag, tableEndTag);
             if (string.IsNullOrWhiteSpace(tableContents))
             {
-                return null;
+                return (null, null, null);
             }
 
             var tableElement = GetTableElement($"{tableStartTag}{tableContents}{tableEndTag}");
             var propertyNodes = from n in tableElement.Descendants("span").FirstOrDefault()?.Nodes()
-                                where !(n is XElement) || 
-                                    (((XElement)n).Name != "a" && ((XElement)n).Name != "h1" &&((XElement)n).Name != "br")
+                                where !(n is XElement) ||
+                                    (((XElement)n).Name != "a" && ((XElement)n).Name != "h1" && ((XElement)n).Name != "br")
                                 select n;
 
-            var feat = new Feat()
-            {
-                Name = ((string)tableElement.Descendants("h1").FirstOrDefault())?.Trim(),
-                Description = (propertyNodes.Skip(1).Take(1).Single() as XText).Value,
-                Benefit = GetFeatPropertyValue("Benefit", propertyNodes),
-                Normal = GetFeatPropertyValue("Normal", propertyNodes),
-                Prerequisites = GetFeatPropertyValue("Prerequisites", propertyNodes),
-                Special = GetFeatPropertyValue("Special", propertyNodes)
-            };
+            var name = ((string)tableElement.Descendants("h1").FirstOrDefault())?.Trim();
+            var description = (propertyNodes.Skip(1).Take(1).Single() as XText).Value;
 
-            return feat;
+            return (name, description, propertyNodes);
         }
 
-        private static string GetFeatPropertyValue(string propertyName, IEnumerable<XNode> propertyNodes)
+        private static string GetPropertyValue(string propertyName, IEnumerable<XNode> propertyNodes)
         {
             foreach (var propertyNode in propertyNodes)
             {
@@ -115,10 +143,5 @@ namespace Bas.D20FlashCards.Pathfinder
                 return null;
             }
         }
-
-        protected override Skill GetSkill(string response)
-        {
-            return new Skill();
-        }        
     }
 }
