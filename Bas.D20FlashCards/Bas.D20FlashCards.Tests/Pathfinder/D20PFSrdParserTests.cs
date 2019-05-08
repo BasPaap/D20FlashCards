@@ -82,10 +82,10 @@ namespace Bas.D20FlashCards.Tests
             typeof(Feat),
             "Armor Proficiency, Medium (Combat)", 
             "You are skilled at wearing medium armor.", 
-            "<a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Light Armor Proficiency</a>.", 
-            "See <a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Armor Proficiency, Light</a>.", 
-            "See <a href=\"https://www.d20pfsrd.com/feats/combat-feats/armor-proficiency-light\">Armor Proficiency, Light</a>.", 
-            "<a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian\">Barbarians</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric\">clerics</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/druid\">druids</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighters</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/paladin\">paladins</a>, and <a href=\"https://www.d20pfsrd.com/classes/core-classes/ranger\">rangers</a> automatically have Medium Armor Proficiency as a bonus feat. They need not select it.")]
+            "Light Armor Proficiency.", 
+            "See Armor Proficiency, Light.", 
+            "See Armor Proficiency, Light.", 
+            "Barbarians, clerics, druids, fighters, paladins, and rangers automatically have Medium Armor Proficiency as a bonus feat. They need not select it.")]
         public void Parse_ResponseIsFeat_ReturnsFeat(string fileName,
                                                      Type instanceType,
                                                      string name,
@@ -119,11 +119,11 @@ namespace Bas.D20FlashCards.Tests
         [DataRow(skillResponseFileName, 
             typeof(Skill),
             "Profession (Wis, Trained only)", 
-            "You are skilled at a specific job. Like <a href=\"https://www.d20pfsrd.com/skills/craft\">Craft</a>, <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a>, and <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a>, Profession is actually a number of separate skills. You could have several Profession skills, each with its own ranks. While a Craft skill represents ability in creating an item, a Profession skill represents an aptitude in a vocation requiring a broader range of less specific knowledge. The most common Profession skills are architect, baker, barrister, brewer, butcher, clerk, cook, courtesan, driver, engineer, farmer, fisherman, gambler, gardener, herbalist, innkeeper, librarian, merchant, midwife, miller, miner, porter, sailor, scribe, shepherd, stable master, soldier, tanner, trapper, and woodcutter.",
+            "You are skilled at a specific job. Like Craft, Knowledge, and Perform, Profession is actually a number of separate skills. You could have several Profession skills, each with its own ranks. While a Craft skill represents ability in creating an item, a Profession skill represents an aptitude in a vocation requiring a broader range of less specific knowledge. The most common Profession skills are architect, baker, barrister, brewer, butcher, clerk, cook, courtesan, driver, engineer, farmer, fisherman, gambler, gardener, herbalist, innkeeper, librarian, merchant, midwife, miller, miner, porter, sailor, scribe, shepherd, stable master, soldier, tanner, trapper, and woodcutter.",
             "You can earn half your Profession check result in gold pieces per week of dedicated work. You know how to use the tools of your trade, how to perform the profession&#8217;s daily tasks, how to supervise helpers, and how to handle common problems. You can also answer questions about your Profession. Basic questions are DC 10, while more complex questions are DC 15 or higher.",
             "Not applicable. A single check generally represents a week of work.",
             "Varies. An attempt to use a Profession skill to earn income cannot be retried. You are stuck with whatever weekly wage your check result brought you. Another check may be made after a week to determine a new income for the next period of time. An attempt to accomplish some specific task can usually be retried.",
-            "<ul>  <li>    <b>Race</b> A <a href=\"https://www.d20pfsrd.com/races/core-races/gnome\">gnome</a> gets a +2 bonus on a <a href=\"https://www.d20pfsrd.com/skills/craft\">Craft</a> or Profession skill of her choice.                          </li></ul>",
+            "A gnome gets a +2 bonus on a Craft or Profession skill of her choice.",
             "Untrained laborers and assistants (that is, characters without any ranks in Profession) earn an average of 1 silver piece per day.")]
         public void Parse_ResponseIsSkill_ReturnsSkill(string fileName,
                                                      Type instanceType,
