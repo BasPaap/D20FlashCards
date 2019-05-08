@@ -80,7 +80,7 @@ namespace Bas.D20FlashCards.Pathfinder
                 Description = (propertyNodes.Skip(1).Take(1).Single() as XText).Value,
                 Benefit = GetFeatPropertyValue("Benefit", propertyNodes),
                 Normal = GetFeatPropertyValue("Normal", propertyNodes),
-                Prerequisite = GetFeatPropertyValue("Prerequisites", propertyNodes),
+                Prerequisites = GetFeatPropertyValue("Prerequisites", propertyNodes),
                 Special = GetFeatPropertyValue("Special", propertyNodes)
             };
 

@@ -4,7 +4,7 @@
     {
         public string Description { get; set; }
         public string Benefit { get; set; }
-        public string Prerequisite { get; set; }
+        public string Prerequisites { get; set; }
         public string Normal { get; set; }
         public string Special { get; set; }
 

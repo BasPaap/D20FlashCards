@@ -76,7 +76,7 @@ namespace Bas.D20FlashCards.Pathfinder
             {
                 Name = articleTitle,
                 Description = ((string)articleContentElement.Elements("p").FirstOrDefault())?.Trim(),
-                Prerequisite = GetFeatProperty("Prerequisite", articleContentElement),
+                Prerequisites = GetFeatProperty("Prerequisite", articleContentElement),
                 Benefit = GetFeatProperty("Benefit", articleContentElement),
                 Normal = GetFeatProperty("Normal", articleContentElement),
                 Special = GetFeatProperty("Special", articleContentElement)

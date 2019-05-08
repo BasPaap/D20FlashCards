@@ -108,7 +108,7 @@ namespace Bas.D20FlashCards.Tests
 
             var feat = card as Feat;
             Assert.AreEqual(description, feat.Description);
-            Assert.AreEqual(prerequisite, feat.Prerequisite);
+            Assert.AreEqual(prerequisite, feat.Prerequisites);
             Assert.AreEqual(benefit, feat.Benefit);
             Assert.AreEqual(normal, feat.Normal);
             Assert.AreEqual(special, feat.Special);
