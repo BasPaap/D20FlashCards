@@ -97,9 +97,9 @@ namespace Bas.D20FlashCards.Pathfinder
             var skill = new Skill()
             {
                 Name = articleTitle,
-                Description = articleContentElement.Elements("p").FirstOrDefault()?.ToString().Substring("<p>", "</p>").Trim(),
+                Description = articleContentElement.Elements("p").FirstOrDefault()?.Value.Trim(),
                 Action = GetSkillProperty("Action", articleContentElement),
-                Check = GetSkillProperty("Check", articleContentElement),
+                Check = GetCheckSkillProperty(articleContentElement),
                 Special = GetSpecialSkillProperty(articleContentElement),
                 TryAgain = GetRetryProperty(articleContentElement),
                 Untrained = GetSkillProperty("Untrained", articleContentElement)
@@ -136,15 +136,44 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private static string GetFeatProperty(string propertyName, XElement articleContentElement)
         {
-            var propertyXml = articleContentElement.Elements("p").FirstOrDefault(p => (string)p.Elements("b").FirstOrDefault() == propertyName)?.ToString();
-            var propertyValue = propertyXml?.Substring("<p>", "</p>");
-
-            return propertyValue?.Replace($"<b>{propertyName}</b>: ", string.Empty).Replace(Environment.NewLine, string.Empty).Trim();
+            var propertyValue = articleContentElement.Elements("p").FirstOrDefault(p => (string)p.Elements("b").FirstOrDefault() == propertyName).Value.Replace($"{propertyName}: ", string.Empty).Trim();
+            return propertyValue;
         }
 
         private static string GetSpecialSkillProperty(XElement articleContentElement)
         {
-            return articleContentElement.Elements("h3").FirstOrDefault(h => h?.Value.Trim() == "Modifiers")?.ElementsAfterSelf()?.FirstOrDefault()?.ToString().Replace(Environment.NewLine, string.Empty).Trim();            
+            var specialDescriptionElements = articleContentElement.Elements("h3").FirstOrDefault(h => h?.Value.Trim() == "Modifiers")?.ElementsAfterSelf()?.Descendants("li");
+            
+            var specialDescriptionBuilder = new StringBuilder();
+            foreach (var specialDescriptionElement in specialDescriptionElements)
+            {
+
+                specialDescriptionElement.Elements("b").Remove();
+                specialDescriptionBuilder.Append(specialDescriptionElement.Value?.Trim());
+            }
+
+            return specialDescriptionBuilder.ToString();
+        }
+
+        private static string GetCheckSkillProperty(XElement articleContentElement)
+        {
+            var elementsContainingCheckDescriptions = articleContentElement.Elements("h3").FirstOrDefault()?.ElementsAfterSelf();
+
+            var checkDescriptionBuilder = new StringBuilder();
+
+            foreach (var element in elementsContainingCheckDescriptions)
+            {
+                if (element.Name == "p")
+                {
+                    checkDescriptionBuilder.Append(element.Value?.Trim());
+                }
+                else if (element.Name == "h3")
+                {
+                    break;
+                }
+            }
+
+            return checkDescriptionBuilder.ToString();
         }
 
         private static string GetRetryProperty(XElement articleContentElement)
@@ -159,8 +188,8 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private static string GetSkillProperty(string propertyName, XElement articleContentElement)
         {
-            var propertyXml = articleContentElement.Elements("h3").FirstOrDefault(h => h?.Value.Trim() == propertyName)?.NextNode?.ToString();
-            return propertyXml?.Substring($"<p>", $"</p>")?.Trim();
+            var propertyValue = articleContentElement.Elements("h3").FirstOrDefault(h => h?.Value.Trim() == propertyName)?.ElementsAfterSelf()?.FirstOrDefault()?.Value.Trim();
+            return propertyValue;
         }
     }
 }
