@@ -1,6 +1,13 @@
 ﻿@page "/"
+<div class="form-group">
+    <label for="uriTextArea">Paste URLS here</label>
+    <textarea class="form-control" id="uriTextArea" rows="10" oninput="@OnUriTextAreaInput"></textarea>
+</div>
 
-<h1>Hello, world!</h1>
+@functions
+{
+    private void OnUriTextAreaInput()
+    {
 
-Welcome to your new app.
-
+    }
+}
