@@ -16,28 +16,29 @@ namespace Bas.D20FlashCards.Client.Services
             this.parsers.AddRange(parsers);
         }
 
-        public async Task GetCardsAsync(string uriText)
+        public async Task<ICollection<Card>> GetCardsAsync(string uriText)
         {
-            var httpClient = new HttpClient();
-            var lines = uriText.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            var uris = from l in lines
-                       where Uri.IsWellFormedUriString(l, UriKind.Absolute)
-                       select new Uri(l);
+            //var httpClient = new HttpClient();
+            //var lines = uriText.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+            //var uris = from l in lines
+            //           where Uri.IsWellFormedUriString(l, UriKind.Absolute)
+            //           select new Uri(l);
 
-            foreach (var uri in uris)
-            {
-                foreach (var parser in parsers)
-                {
-                    if (parser.CanParse(uri))
-                    {
-                        var response = await httpClient.GetStringAsync(uri);
-                        var card = parser.Parse(response);
-                        Status += card?.Name;
-                        break;
-                    }
-                }
-            }
+            //foreach (var uri in uris)
+            //{
+            //    foreach (var parser in parsers)
+            //    {
+            //        if (parser.CanParse(uri))
+            //        {
+            //            var response = await httpClient.GetStringAsync(uri);
+            //            var card = parser.Parse(response);
+            //            Status += card?.Name;
+            //            break;
+            //        }
+            //    }
+            //}
 
+            throw new NotImplementedException();
         }
 
         public string Status { get; set; }
