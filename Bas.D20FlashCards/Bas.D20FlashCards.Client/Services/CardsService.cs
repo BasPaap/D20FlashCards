@@ -28,15 +28,14 @@ namespace Bas.D20FlashCards.Client.Services
             var uris = from l in lines
                        where Uri.IsWellFormedUriString(l, UriKind.Absolute)
                        select new Uri(l);
-
-            var httpClient = new HttpClient();
+                        
             foreach (var uri in uris)
             {
                 foreach (var parser in parsers)
                 {
                     if (parser.CanParse(uri))
                     {
-                        var response = await httpClient.GetStringAsync(uri);
+                        var response = await this.httpClient.GetStringAsync(uri);
                         var card = parser.Parse(response);
 
                         Status += card?.Name;

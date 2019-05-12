@@ -56,7 +56,7 @@ namespace Bas.D20FlashCards.Client.Tests
         [DataRow("https://aon.com/feat", "https://aon.com/skill", null, "Armor Proficiency, Medium (Combat)", "Profession (Wis; Trained Only)", null, aonFeatResponseFileName, aonSkillResponseFileName, null)]
         [DataRow("https://www.d20.com/feats/feat", "May the force be with you", "https://www.d20.com/skills/skill", "Armor Proficiency, Medium (Combat)", null, "Profession (Wis, Trained only)", d20pfsrdFeatResponseFileName, null, d20pfsrdSkillResponseFileName)]
         [DataRow("https://www.d20.com/feats/feat", "https://aon.com/skill", "https://www.d20.com/skills/skill", "Armor Proficiency, Medium (Combat)", "Profession (Wis; Trained Only)", "Profession (Wis, Trained only)", d20pfsrdFeatResponseFileName, aonSkillResponseFileName, d20pfsrdSkillResponseFileName)]
-        [DataRow("You", "smell", "a wumpus", null, null, null)]
+        [DataRow("You", "smell", "a wumpus", null, null, null, null, null, null)]
         public async Task GetCardsAsync_UriTextContainsUris_ReturnsCardsForUrisAndIgnoresRest(string firstUriText,
             string secondUriText,
             string thirdUriText,
