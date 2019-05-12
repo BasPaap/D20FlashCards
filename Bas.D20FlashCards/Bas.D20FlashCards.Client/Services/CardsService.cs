@@ -9,11 +9,12 @@ namespace Bas.D20FlashCards.Client.Services
 {
     public class CardsService
     {
-        private List<Parser> parsers = new List<Parser>()
+        private readonly List<Parser> parsers = new List<Parser>();
+
+        public CardsService(IEnumerable<Parser> parsers)
         {
-            new ArchivesOfNethysParser(new Uri("https://aonprd.com/"), " - Archives of Nethys: Pathfinder RPG Database"),
-            new D20PFSrdParser(new Uri("https://www.d20pfsrd.com"), new Uri("/feats"), new Uri("/skills"))
-        };
+            this.parsers.AddRange(parsers);
+        }
 
         public async Task GetCardsAsync(string uriText)
         {
