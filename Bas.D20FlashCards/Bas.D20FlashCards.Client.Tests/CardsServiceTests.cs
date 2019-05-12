@@ -29,7 +29,7 @@ namespace Bas.D20FlashCards.Client.Tests
         [TestInitialize]
         public void Initialize()
         {
-            this.cardsService = new CardsService(this.parsers);
+            this.cardsService = new CardsService(this.parsers, null, false);
         }
 
         #region GetCardsAsync
@@ -99,7 +99,7 @@ namespace Bas.D20FlashCards.Client.Tests
                 numUris++;
             }
 
-            var testCardsService = new CardsService(this.parsers, testMessageHandler);
+            var testCardsService = new CardsService(this.parsers, testMessageHandler, false);
 
             // Act
             var cards = await testCardsService.GetCardsAsync(uriText);

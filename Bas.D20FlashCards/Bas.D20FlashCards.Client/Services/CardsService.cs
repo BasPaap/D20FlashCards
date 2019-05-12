@@ -12,11 +12,14 @@ namespace Bas.D20FlashCards.Client.Services
     {
         private readonly List<Parser> parsers = new List<Parser>();
         private readonly HttpClient httpClient;
+        private readonly bool bypassCors;
 
-        public CardsService(IEnumerable<Parser> parsers, HttpMessageHandler httpMessageHandler = null)
+        public CardsService(IEnumerable<Parser> parsers, HttpMessageHandler httpMessageHandler = null, bool bypassCors = true)
         {
             this.httpClient = httpMessageHandler == null ? new HttpClient() : new HttpClient(httpMessageHandler);
+            this.httpClient.DefaultRequestHeaders.Add("X-Requested-With", "XMLHttpRequest");
             this.parsers.AddRange(parsers);
+            this.bypassCors = bypassCors;
         }
 
         public async Task<ICollection<Card>> GetCardsAsync(string uriText)
@@ -35,10 +38,10 @@ namespace Bas.D20FlashCards.Client.Services
                 {
                     if (parser.CanParse(uri))
                     {
-                        var response = await this.httpClient.GetStringAsync(uri);
+                        var requestUri = this.bypassCors ? new Uri($"https://cors-anywhere.herokuapp.com/{uri.ToString()}") : uri;
+                        var response = await this.httpClient.GetStringAsync(requestUri);
                         var card = parser.Parse(response);
 
-                        Status += card?.Name;
                         if (card != null)
                         {
                             cards.Add(card);
@@ -50,7 +53,5 @@ namespace Bas.D20FlashCards.Client.Services
 
             return cards;
         }
-
-        public string Status { get; set; }
     }
 }

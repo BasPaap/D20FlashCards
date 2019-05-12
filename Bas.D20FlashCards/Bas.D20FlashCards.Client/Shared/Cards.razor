@@ -1,12 +1,35 @@
 ﻿@inject CardsService  CardsService;
 
-<i>@CardsService.Status</i>
+<ul>
+    @foreach (var card in this.cards)
+    {
+    <li>
+        <h2>@card.Name</h2>
+        @switch (card)
+        {
+            case Feat feat:
+                <i>@feat.Description</i>
+                <p>@feat.Benefit</p>
+                break;
+            case Skill skill:
+                <i>@skill.Description</i>
+                <p>@skill.Check</p>
+                break;
+            default:
+                break;
+        }
+    </li>
+    }
+</ul>
 
 @functions
 {
     private string uriText;
 
-    [Parameter] string UriText
+    private List<Card> cards = new List<Card>();
+
+    [Parameter]
+    string UriText
     {
         get { return this.uriText; }
         set
@@ -18,7 +41,7 @@
 
     async void GetCardsAsync()
     {
-        await CardsService.GetCardsAsync(UriText);
+        this.cards = new List<Card>(await CardsService.GetCardsAsync(UriText));
     }
 
 }
