@@ -37,15 +37,15 @@ namespace Bas.D20FlashCards.Client.Tests
         [TestMethod]
         [DataRow(null)]
         [DataRow("")]
-        [DataRow("May the force\n\rbe with you.")]
-        public async Task GetCardsAsync_UriTextDoesNotContainUris_ReturnsNull(string uriText)
+        [DataRow("May the force\r\nbe with you.")]
+        public async Task GetCardsAsync_UriTextDoesNotContainUris_ReturnsEmptyCollection(string uriText)
         {
             // Arrange
             // Act
             var result = await this.cardsService.GetCardsAsync(uriText);
 
             // Assert          
-            Assert.IsNull(result);
+            Assert.AreEqual(0, result.Count);
         }
 
         [TestMethod]
@@ -74,7 +74,7 @@ namespace Bas.D20FlashCards.Client.Tests
             int numUris = 0;
             if (Uri.TryCreate(firstUriText, UriKind.Absolute, out Uri firstUri))
             {
-                testMessageHandler.AddResponseMessageToReturnForUri(firstUri, new HttpResponseMessage()
+                testMessageHandler.AddResponseMessageToReturnForUri(firstUri, new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent(File.ReadAllText(firstFileName))
                 });
@@ -83,7 +83,7 @@ namespace Bas.D20FlashCards.Client.Tests
 
             if (Uri.TryCreate(secondUriText, UriKind.Absolute, out Uri secondUri))
             {
-                testMessageHandler.AddResponseMessageToReturnForUri(secondUri, new HttpResponseMessage()
+                testMessageHandler.AddResponseMessageToReturnForUri(secondUri, new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent(File.ReadAllText(secondFileName))
                 });
@@ -92,7 +92,7 @@ namespace Bas.D20FlashCards.Client.Tests
 
             if (Uri.TryCreate(thirdUriText, UriKind.Absolute, out Uri thirdUri))
             {
-                testMessageHandler.AddResponseMessageToReturnForUri(thirdUri, new HttpResponseMessage()
+                testMessageHandler.AddResponseMessageToReturnForUri(thirdUri, new HttpResponseMessage(HttpStatusCode.OK)
                 {
                     Content = new StringContent(File.ReadAllText(thirdFileName))
                 });

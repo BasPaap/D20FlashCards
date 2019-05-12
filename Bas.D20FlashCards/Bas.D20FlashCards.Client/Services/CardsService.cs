@@ -1,6 +1,7 @@
 ﻿using Bas.D20FlashCards.Pathfinder;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -20,27 +21,35 @@ namespace Bas.D20FlashCards.Client.Services
 
         public async Task<ICollection<Card>> GetCardsAsync(string uriText)
         {
-            //var httpClient = new HttpClient();
-            //var lines = uriText.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
-            //var uris = from l in lines
-            //           where Uri.IsWellFormedUriString(l, UriKind.Absolute)
-            //           select new Uri(l);
+            var cards = new Collection<Card>();
 
-            //foreach (var uri in uris)
-            //{
-            //    foreach (var parser in parsers)
-            //    {
-            //        if (parser.CanParse(uri))
-            //        {
-            //            var response = await httpClient.GetStringAsync(uri);
-            //            var card = parser.Parse(response);
-            //            Status += card?.Name;
-            //            break;
-            //        }
-            //    }
-            //}
+            var lines = uriText?.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries) ?? new string[0];
+                        
+            var uris = from l in lines
+                       where Uri.IsWellFormedUriString(l, UriKind.Absolute)
+                       select new Uri(l);
 
-            throw new NotImplementedException();
+            var httpClient = new HttpClient();
+            foreach (var uri in uris)
+            {
+                foreach (var parser in parsers)
+                {
+                    if (parser.CanParse(uri))
+                    {
+                        var response = await httpClient.GetStringAsync(uri);
+                        var card = parser.Parse(response);
+
+                        Status += card?.Name;
+                        if (card != null)
+                        {
+                            cards.Add(card);
+                            break;
+                        }                        
+                    }
+                }
+            }
+
+            return cards;
         }
 
         public string Status { get; set; }
