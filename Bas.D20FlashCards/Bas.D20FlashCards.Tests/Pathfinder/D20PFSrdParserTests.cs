@@ -16,11 +16,15 @@ namespace Bas.D20FlashCards.Tests
         private readonly Uri featsUri = new Uri("/feats", UriKind.Relative);
         private readonly Uri skillsUri = new Uri("/skills", UriKind.Relative);
         private D20PFSrdParser defaultParser;
+        private D20PFSrdParser upperCaseUriParser;
 
         [TestInitialize]
         public void Initialize()
         {
             this.defaultParser = new D20PFSrdParser(this.baseUri, this.featsUri, this.skillsUri);
+            this.upperCaseUriParser = new D20PFSrdParser(this.baseUri, 
+                new Uri(this.featsUri.ToString().ToUpper(), UriKind.Relative), 
+                new Uri(this.skillsUri.ToString().ToUpper(), UriKind.Relative));
         }
 
         #region CanParse
@@ -166,6 +170,24 @@ namespace Bas.D20FlashCards.Tests
 
             // Assert          
             Assert.IsNull(card);
+        }
+
+        [TestMethod]
+        [DeploymentItem(skillResponseFileName)]
+        [DeploymentItem(featResponseFileName)]
+        [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(featResponseFileName, typeof(Feat))]
+
+        public void GetCardType_UriDiffersInCase_ReturnsCorrectCardType(string fileName, Type cardType)
+        {
+            // Arrange
+            var response = File.ReadAllText($"Pathfinder\\{fileName}");
+            
+            // Act
+            var card = upperCaseUriParser.Parse(response);
+
+            // Assert          
+            Assert.IsInstanceOfType(card, cardType);
         }
 
         [TestMethod]
