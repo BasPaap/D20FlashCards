@@ -1,26 +1,34 @@
 ﻿@inject CardsService  CardsService;
 
-<ul>
+<div class="row">
     @foreach (var card in this.cards)
     {
-    <li>
-        <h2>@card.Name</h2>
-        @switch (card)
-        {
-            case Feat feat:
-                <i>@feat.Description</i>
-                <p>@feat.Benefit</p>
-                break;
-            case Skill skill:
-                <i>@skill.Description</i>
-                <p>@skill.Check</p>
-                break;
-            default:
-                break;
-        }
-    </li>
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">@card.Name</h2>
+                </div>
+                <div class="card-body">
+                    @switch (card)
+                    {
+                        case Feat feat:
+                            <i>@feat.Description</i>
+                            <p>@feat.Benefit</p>
+                            <footer class="card-footer text-muted">FEAT</footer>
+                            break;
+                        case Skill skill:
+                            <i>@skill.Description</i>
+                            <p>@skill.Check</p>
+                            <footer class="card-footer text-muted">SKILL</footer>
+                            break;
+                        default:
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
     }
-</ul>
+</div>
 
 @functions
 {
