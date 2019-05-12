@@ -10,9 +10,11 @@ namespace Bas.D20FlashCards.Client.Services
     public class CardsService
     {
         private readonly List<Parser> parsers = new List<Parser>();
+        private readonly HttpClient httpClient;
 
-        public CardsService(IEnumerable<Parser> parsers)
+        public CardsService(IEnumerable<Parser> parsers, HttpMessageHandler httpMessageHandler = null)
         {
+            this.httpClient = httpMessageHandler == null ? new HttpClient() : new HttpClient(httpMessageHandler);
             this.parsers.AddRange(parsers);
         }
 
