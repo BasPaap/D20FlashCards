@@ -1,4 +1,4 @@
-﻿
+﻿@inject CardsService  CardsService;
 
 <i>@UriText</i>
 
@@ -18,7 +18,7 @@
 
     async void GetCardsAsync()
     {
-        
+        await CardsService.GetCardsAsync(UriText);
     }
 
 }

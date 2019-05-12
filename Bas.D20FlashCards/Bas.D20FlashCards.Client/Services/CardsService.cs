@@ -11,8 +11,8 @@ namespace Bas.D20FlashCards.Client.Services
     {
         private List<Parser> parsers = new List<Parser>()
         {
-            new ArchivesOfNethysParser(new Uri(""), ""),
-            new D20PFSrdParser(new Uri(""), new Uri(""), new Uri(""))
+            new ArchivesOfNethysParser(new Uri("https://aonprd.com/"), " - Archives of Nethys: Pathfinder RPG Database"),
+            new D20PFSrdParser(new Uri("https://www.d20pfsrd.com"), new Uri("/feats"), new Uri("/skills"))
         };
 
         public async Task GetCardsAsync(string uriText)
