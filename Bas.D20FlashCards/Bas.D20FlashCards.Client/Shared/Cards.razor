@@ -1,0 +1,24 @@
+﻿
+
+<i>@UriText</i>
+
+@functions
+{
+    private string uriText;
+
+    [Parameter] string UriText
+    {
+        get { return this.uriText; }
+        set
+        {
+            this.uriText = value;
+            GetCardsAsync();
+        }
+    }
+
+    async void GetCardsAsync()
+    {
+        
+    }
+
+}
