@@ -1,0 +1,55 @@
+﻿@inject CardsService  CardsService;
+
+<div class="row">
+    @foreach (var card in this.cards)
+    {
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">@card.Name</h2>
+                </div>
+                <div class="card-body">
+                    @switch (card)
+                    {
+                        case Feat feat:
+                            <i>@feat.Description</i>
+                            <p>@feat.Benefit</p>
+                            <footer class="card-footer text-muted">FEAT</footer>
+                            break;
+                        case Skill skill:
+                            <i>@skill.Description</i>
+                            <p>@skill.Check</p>
+                            <footer class="card-footer text-muted">SKILL</footer>
+                            break;
+                        default:
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@functions
+{
+    private string uriText;
+
+    private List<Card> cards = new List<Card>();
+
+    [Parameter]
+    string UriText
+    {
+        get { return this.uriText; }
+        set
+        {
+            this.uriText = value;
+            GetCardsAsync();
+        }
+    }
+
+    async void GetCardsAsync()
+    {
+        this.cards = new List<Card>(await CardsService.GetCardsAsync(UriText));
+    }
+
+}

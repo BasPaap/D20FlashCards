@@ -45,7 +45,7 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private bool ResponseContainsBaseUri(string response, Uri relativeUri)
         {
-            var baseUriPosition = response.IndexOf(new Uri(baseUri, relativeUri).ToString());
+            var baseUriPosition = response.IndexOf(new Uri(baseUri, relativeUri).ToString(), StringComparison.OrdinalIgnoreCase);
 
             if (baseUriPosition < 0)
             {

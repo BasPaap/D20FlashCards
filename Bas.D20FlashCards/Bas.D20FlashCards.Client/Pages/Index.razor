@@ -1,0 +1,12 @@
+﻿@page "/"
+<div class="form-group">
+    <label for="uriTextArea">Paste URLS here</label>
+    <textarea class="form-control" id="uriTextArea" rows="10" bind-value-oninput="@UriText"></textarea>
+
+    <Cards UriText="@UriText" />
+</div>
+
+@functions
+{
+    [Parameter] string UriText { get; set; }
+}
