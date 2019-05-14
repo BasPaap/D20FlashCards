@@ -130,7 +130,7 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private static string GetFeatProperty(string propertyName, XElement articleContentElement)
         {
-            var propertyValue = articleContentElement.Elements("p").FirstOrDefault(p => (string)p.Elements("b").FirstOrDefault() == propertyName).Value.Replace($"{propertyName}: ", string.Empty).Trim();
+            var propertyValue = articleContentElement.Elements("p").FirstOrDefault(p => (string)p.Elements("b").FirstOrDefault() == propertyName)?.Value.Replace($"{propertyName}: ", string.Empty).Trim();
             return propertyValue;
         }
 
