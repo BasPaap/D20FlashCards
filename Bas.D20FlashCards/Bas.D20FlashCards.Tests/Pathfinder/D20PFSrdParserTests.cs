@@ -11,6 +11,11 @@ namespace Bas.D20FlashCards.Tests
     public sealed class D20PFSrdParserTests
     {
         private const string weaponFinesseFeatResponseFileName = "d20_pfsrd_feat_response_weaponfinesse.txt";
+        private const string acrobaticsSkillResponseFileName = "d20_pfsrd_skill_response_acrobatics.txt";
+        private const string appraiseSkillResponseFileName = "d20_pfsrd_skill_response_appraise.txt";
+        private const string climbSkillResponseFileName = "d20_pfsrd_skill_response_climb.txt";
+        private const string craftSkillResponseFileName = "d20_pfsrd_skill_response_craft.txt";
+        private const string disableDeviceSkillResponseFileName = "d20_pfsrd_skill_response_disabledevice.txt";
         private const string featResponseFileName = "d20pfsrd_feat_response.txt";
         private const string skillResponseFileName = "d20pfsrd_skill_response.txt";
         private readonly Uri baseUri = new Uri("https://www.d20.com");
@@ -130,6 +135,11 @@ namespace Bas.D20FlashCards.Tests
 
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
+        [DeploymentItem(acrobaticsSkillResponseFileName)]
+        [DeploymentItem(appraiseSkillResponseFileName)]
+        [DeploymentItem(climbSkillResponseFileName)]
+        [DeploymentItem(craftSkillResponseFileName)]
+        [DeploymentItem(disableDeviceSkillResponseFileName)]
         [DataRow(skillResponseFileName, 
             typeof(Skill),
             "Profession (Wis, Trained only)", 
@@ -139,6 +149,51 @@ namespace Bas.D20FlashCards.Tests
             "Varies. An attempt to use a Profession skill to earn income cannot be retried. You are stuck with whatever weekly wage your check result brought you. Another check may be made after a week to determine a new income for the next period of time. An attempt to accomplish some specific task can usually be retried.",
             "A gnome gets a +2 bonus on a Craft or Profession skill of her choice.",
             "Untrained laborers and assistants (that is, characters without any ranks in Profession) earn an average of 1 silver piece per day.")]
+        [DataRow(acrobaticsSkillResponseFileName,
+            typeof(Skill),
+            "Acrobatics",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null)]
+        [DataRow(appraiseSkillResponseFileName,
+            typeof(Skill),
+            "Appraise",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null)]
+        [DataRow(climbSkillResponseFileName,
+            typeof(Skill),
+            "Climb",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null)]
+        [DataRow(craftSkillResponseFileName,
+            typeof(Skill),
+            "Craft",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null)]
+        [DataRow(disableDeviceSkillResponseFileName,
+            typeof(Skill),
+            "Disable Device",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null)]
         public void Parse_ResponseIsSkill_ReturnsSkill(string fileName,
                                                      Type instanceType,
                                                      string name,
@@ -185,8 +240,18 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(acrobaticsSkillResponseFileName)]
+        [DeploymentItem(appraiseSkillResponseFileName)]
+        [DeploymentItem(climbSkillResponseFileName)]
+        [DeploymentItem(craftSkillResponseFileName)]
+        [DeploymentItem(disableDeviceSkillResponseFileName)]
         [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(acrobaticsSkillResponseFileName, typeof(Skill))]
+        [DataRow(appraiseSkillResponseFileName, typeof(Skill))]
+        [DataRow(climbSkillResponseFileName, typeof(Skill))]
+        [DataRow(craftSkillResponseFileName, typeof(Skill))]
+        [DataRow(disableDeviceSkillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
         [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_UriDiffersInCase_ReturnsCorrectCardType(string fileName, Type cardType)
@@ -204,8 +269,18 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(acrobaticsSkillResponseFileName)]
+        [DeploymentItem(appraiseSkillResponseFileName)]
+        [DeploymentItem(climbSkillResponseFileName)]
+        [DeploymentItem(craftSkillResponseFileName)]
+        [DeploymentItem(disableDeviceSkillResponseFileName)]
         [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(acrobaticsSkillResponseFileName, typeof(Skill))]
+        [DataRow(appraiseSkillResponseFileName, typeof(Skill))]
+        [DataRow(climbSkillResponseFileName, typeof(Skill))]
+        [DataRow(craftSkillResponseFileName, typeof(Skill))]
+        [DataRow(disableDeviceSkillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
         [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_ResponseIsKnownCardType_ReturnsCorrectCardType(string fileName, Type cardType)
@@ -223,8 +298,18 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(acrobaticsSkillResponseFileName)]
+        [DeploymentItem(appraiseSkillResponseFileName)]
+        [DeploymentItem(climbSkillResponseFileName)]
+        [DeploymentItem(craftSkillResponseFileName)]
+        [DeploymentItem(disableDeviceSkillResponseFileName)]
         [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(acrobaticsSkillResponseFileName, typeof(Skill))]
+        [DataRow(appraiseSkillResponseFileName, typeof(Skill))]
+        [DataRow(climbSkillResponseFileName, typeof(Skill))]
+        [DataRow(craftSkillResponseFileName, typeof(Skill))]
+        [DataRow(disableDeviceSkillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
         [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_SchemeIsDifferentButValid_ReturnsCorrectCardType(string fileName, Type cardType)

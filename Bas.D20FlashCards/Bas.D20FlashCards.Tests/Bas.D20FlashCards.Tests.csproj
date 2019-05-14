@@ -11,6 +11,11 @@
     <None Remove="Pathfinder\aon_skill_response.txt" />
     <None Remove="Pathfinder\d20pfsrd_feat_response.txt" />
     <None Remove="Pathfinder\d20pfsrd_skill_response.txt" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response_acrobatics.txt" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response_appraise.txt" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response_climb.txt" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response_craft.txt" />
+    <None Remove="Pathfinder\d20pfsrd_skill_response_disabledevice.txt" />
     <None Remove="Pathfinder\d20_pfsrd_feat_response_weaponfinesse.txt" />
   </ItemGroup>
 
@@ -25,6 +30,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pathfinder\d20pfsrd_skill_response.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response_acrobatics.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response_appraise.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response_climb.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response_craft.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20pfsrd_skill_response_disabledevice.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pathfinder\d20_pfsrd_feat_response_weaponfinesse.txt">

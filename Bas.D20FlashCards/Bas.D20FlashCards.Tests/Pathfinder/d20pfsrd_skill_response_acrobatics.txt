@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <base href="https://www.d20.com/skills/Acrobatics/">
+          <!-- link rel="search" type="application/opensearchdescription+xml" title="d20PFSRD" href="https://www.d20pfsrd.com/wp-content/themes/srdtheme/opensearch.php" /-->
+    <title>Acrobatics (Dex; Armor Check Penalty) &#8211; d20PFSRD</title>
+<link rel='dns-prefetch' href='//www.d20pfsrd.com' />
+<link rel='dns-prefetch' href='//account.opengamingnetwork.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Feed" href="https://www.d20pfsrd.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Comments Feed" href="https://www.d20pfsrd.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.d20pfsrd.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=741751694b0c23cb369738b3058aae5a"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ogncustom-css-css'  href='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/css/ogncustom.css?ver=1551434665' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/style.css?ver=741751694b0c23cb369738b3058aae5a' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/style.css?ver=1.5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-bootstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='child-dynamic-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/sites/12.css?ver=1546817288' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-fontawesome-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/font-awesome/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/srdtheme/js/srdtheme.js?ver=1547330625'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/quickstrap/js/bootstrap.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='//account.opengamingnetwork.com/js/ognbar.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+<link rel='https://api.w.org/' href='https://www.d20pfsrd.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.d20pfsrd.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.d20pfsrd.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="https://www.d20pfsrd.com/skills/acrobatics/" />
+<link rel='shortlink' href='https://www.d20pfsrd.com/?p=110853' />
+<link rel="alternate" type="application/json+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Facrobatics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Facrobatics%2F&#038;format=xml" />
+                <script src="https://s.nitropay.com/ads-99.js"></script>
+                <script language="JavaScript">
+                   ognNitroPay = true;
+                </script>
+            <style type="text/css">div#toc_container {width: 200px;}</style><link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+<meta name="msapplication-TileImage" content="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+		<style type="text/css" id="wp-custom-css">
+			/*
+Custom CSS has moved to 
+OGN SRD Theme > Additional CSS
+*/
+
+		</style>
+	  </head>
+
+<body class="page-template-default page page-id-110853 page-child parent-pageid-110850">
+      
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/" aria-expanded="false">OGN<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="ogn-sites-dropdown">
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">d20PFSRD</a>
+                </li>
+            </ul>  
+                      <ul class="nav navbar-nav navbar-right">
+            <li id="ogn-login"></li>
+            <li> 
+                <form class="search navbar-form navbar-right" action="https://cse.google.com/cse" method="get"role="search">
+                    <input type="hidden" value="006680642033474972217:6zo0hx_wle8" name="cx" id="cx">
+                <div class="input-group">
+                <input class="form-control" name="q" type="search" required class="searchField" placeholder="Google Site Search" maxlength="50"/> 
+                <span class="input-group-btn"> <button type="submit" class="search-button btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button> </span> 
+                </div> 
+                </form>
+            </li>            
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div class="container-fluid">
+<div class="ognannouncement-container passive">
+<div class="ognannouncement passive"></div>
+</div>
+<div class="header row-fluid">
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+	<div class="col-sm-10 col-md-10 col-xs-12">
+		<div class="logo">
+		<a href="/">
+                    <img class="header-logo img-responsive" src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2017/01/customLogo_gif.png" height="139" width="756" alt="" />
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+    <div class="clearfix"></div>
+    <header class="header" role="banner">
+         <nav class="navbar" role="navigation">
+
+<!-- Header Menu -->
+ 
+
+	<!--  Direct links / Right nav  
+	<ul class="nav navbar-nav">
+            <li class=""><a href=""></a></li>
+        </ul>
+
+	<ul class="nav navbar-nav navbar-right">
+  	 <li class=""><a href=""></a></li>
+        </ul>
+ 	-->
+    <div class="menuclear"></div>
+    </nav>    </header>      
+</div>
+<div class="clearfix"></div>
+<div class="content row-fluid">
+  
+<div class="col-12">
+    <div class="row-fluid">
+       
+            <!-- Left Sidebar -->
+<aside class="sidebar-left" role="complementary">
+    
+    <div id="menu-expander" class="menu-expander hidden-sm hidden-md hidden-lg">
+    <button type="button" class="btn btn-default" aria-label="Expand Menu">
+        <span id="expand-button" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+    <script type="text/javascript">
+        jQuery('div#menu-expander').click(function() {
+            jQuery('.sidebar-contents').toggleClass('expand-menu');
+            jQuery('main').toggleClass('expand-menu');
+            jQuery('span#expand-button').toggleClass('glyphicon-chevron-right').toggleClass('glyphicon-chevron-left');
+        });
+    </script>
+    </div>
+     
+    <div class="sidebar-contents">
+              <div class="sidebar-widget">
+               <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div style="text-align:center">
+<a href="http://www.opengamingstore.com/" target="_blank" title="Support Open Gaming, Shop the Open Gaming Store!">
+<img src="/wp-content/themes/srdtheme/images/open-gaming-160wide.png">
+</a>
+</div></div></div><div class="widget widget_ognajaxnav widget_srdpagelist"><ul id="ognajaxnav1" class="ognajaxnav" parent="" depth="0" currentpage="110853"><li class="page_item new parent" post_id="52278"><a href="https://www.d20pfsrd.com/">Home</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109106"><a href="https://www.d20pfsrd.com/basics-ability-scores/">Basics &amp; Ability Scores</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="70407"><a href="https://www.d20pfsrd.com/alignment-description/">Alignment &amp; Description</a></li><li class="page_item new parent page_item_has_children" post_id="90602"><a href="https://www.d20pfsrd.com/races/">Races</a><ul class="children"><li class="page_item new parent" post_id="126650"><a href="https://www.d20pfsrd.com/races/aquatic-adventurers/">Aquatic Adventurers</a></li><li class="page_item new parent page_item_has_children" post_id="90769"><a href="https://www.d20pfsrd.com/races/core-races/">Core Races</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="90798"><a href="https://www.d20pfsrd.com/races/core-races/half-elf/">Half-elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90770"><a href="https://www.d20pfsrd.com/races/core-races/dwarf/">Dwarves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90780"><a href="https://www.d20pfsrd.com/races/core-races/elf/">Elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90790"><a href="https://www.d20pfsrd.com/races/core-races/gnome/">Gnomes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90810"><a href="https://www.d20pfsrd.com/races/core-races/half-orc/">Half-orcs</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90820"><a href="https://www.d20pfsrd.com/races/core-races/halfling/">Halflings</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90828"><a href="https://www.d20pfsrd.com/races/core-races/human/">Humans</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90838"><a href="https://www.d20pfsrd.com/races/other-races/">Other Races</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90603"><a href="https://www.d20pfsrd.com/races/3rd-party-races/">3rd Party Races</a></li></ul></li><li class="page_item new parent page_item_has_children" post_id="81812"><a href="https://www.d20pfsrd.com/classes/">Classes</a><ul class="children"><li class="page_item new parent" post_id="84814"><a href="https://www.d20pfsrd.com/classes/character-advancement/">Character Advancement</a></li><li class="page_item new parent" post_id="84816"><a href="https://www.d20pfsrd.com/classes/class-archetypes/">Class Archetypes</a></li><li class="page_item new parent page_item_has_children" post_id="84838"><a href="https://www.d20pfsrd.com/classes/core-classes/">Core Classes</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="85555"><a href="https://www.d20pfsrd.com/classes/core-classes/cleric/">Cleric</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="85337"><a href="https://www.d20pfsrd.com/classes/core-classes/bard/">Bard</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84839"><a href="https://www.d20pfsrd.com/classes/core-classes/barbarian/">Barbarian</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86505"><a href="https://www.d20pfsrd.com/classes/core-classes/fighter/">Fighter</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86263"><a href="https://www.d20pfsrd.com/classes/core-classes/druid/">Druid</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87124"><a href="https://www.d20pfsrd.com/classes/core-classes/rogue/">Rogue</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86676"><a href="https://www.d20pfsrd.com/classes/core-classes/monk/">Monk</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86818"><a href="https://www.d20pfsrd.com/classes/core-classes/paladin/">Paladin</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86966"><a href="https://www.d20pfsrd.com/classes/core-classes/ranger/">Ranger</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87852"><a href="https://www.d20pfsrd.com/classes/core-classes/sorcerer/">Sorcerer</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88188"><a href="https://www.d20pfsrd.com/classes/core-classes/wizard/">Wizard</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="83159"><a href="https://www.d20pfsrd.com/classes/base-classes/">Base Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82837"><a href="https://www.d20pfsrd.com/classes/alternate-classes/">Alternate Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88465"><a href="https://www.d20pfsrd.com/classes/hybrid-classes/">Hybrid Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89543"><a href="https://www.d20pfsrd.com/classes/unchained-classes/">Unchained Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89328"><a href="https://www.d20pfsrd.com/classes/prestige-classes/">Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89224"><a href="https://www.d20pfsrd.com/classes/npc-classes/">NPC Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89218"><a href="https://www.d20pfsrd.com/classes/monster-classes/">Monster Classes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="81813"><a href="https://www.d20pfsrd.com/classes/3rd-party-classes/">3rd Party Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84817"><a href="https://www.d20pfsrd.com/classes/arcane-archetypes-rogue-genius-games/">Arcane Archetypes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82714"><a href="https://www.d20pfsrd.com/classes/3rd-party-prestige-classes/">3rd Party Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82708"><a href="https://www.d20pfsrd.com/classes/3rd-party-npc-classes/">3rd Party NPC Classes</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="91199"><a href="https://www.d20pfsrd.com/feats/">Feats</a></li><li class="page_item new parent" post_id="110850"><a href="https://www.d20pfsrd.com/skills/">Skills</a></li><li class="page_item new parent" post_id="110918"><a href="https://www.d20pfsrd.com/traits/">Traits</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109161"><a href="https://www.d20pfsrd.com/equipment/">Equipment</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="102432"><a href="https://www.d20pfsrd.com/magic-items/">Magic Items</a></li><li class="page_item new parent page_item_has_children" post_id="71179"><a href="https://www.d20pfsrd.com/magic/">Magic</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="74736"><a href="https://www.d20pfsrd.com/magic/all-spells/">Spells (Paizo, Inc.)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79570"><a href="https://www.d20pfsrd.com/magic/spells-by-class-3rd-party/">Spells by Class‎ (3rd Party)</a></li><li class="page_item new parent" post_id="79511"><a href="https://www.d20pfsrd.com/magic/building-and-modifying-constructs/">Building and Modifying Constructs</a></li><li class="page_item new parent" post_id="79568"><a href="https://www.d20pfsrd.com/magic/spellbooks/">Preconstructed Spellbooks</a></li><li class="page_item new parent" post_id="79514"><a href="https://www.d20pfsrd.com/magic/rare-cantrips/">Rare Cantrips</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="71180"><a href="https://www.d20pfsrd.com/magic/3rd-party-spells/">Spells (3rd Party)</a></li><li class="page_item new parent page_item_has_children" post_id="79516"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/">Spells by Class</a><ul class="children"><li class="page_item new parent" post_id="79527"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/formulae-lists-alchemist/">Alchemist/Investigator Formulae</a></li><li class="page_item new parent" post_id="79517"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/antipaladin-spell-list/">Antipaladin</a></li><li class="page_item new parent" post_id="79544"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-bard/">Bard</a></li><li class="page_item new parent" post_id="79519"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/bloodrager/">Bloodrager</a></li><li class="page_item new parent" post_id="79546"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric/">Cleric/Oracle</a></li><li class="page_item new parent" post_id="79548"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-druid/">Druid</a></li><li class="page_item new parent" post_id="79550"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-inquisitor/">Inquisitor</a></li><li class="page_item new parent" post_id="79530"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/magus-spell-list/">Magus</a></li><li class="page_item new parent" post_id="79532"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/medium/">Medium</a></li><li class="page_item new parent" post_id="79534"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/mesmerist/">Mesmerist</a></li><li class="page_item new parent" post_id="79536"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/occultist/">Occultist</a></li><li class="page_item new parent" post_id="79552"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-paladin/">Paladin</a></li><li class="page_item new parent" post_id="79538"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/psychic/">Psychic</a></li><li class="page_item new parent" post_id="79554"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-ranger/">Ranger</a></li><li class="page_item new parent" post_id="79540"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/shaman/">Shaman</a></li><li class="page_item new parent" post_id="79556"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-sorcerer-and-wizard/">Sorcerer/Wizard</a></li><li class="page_item new parent" post_id="79560"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spiritualist/">Spiritualist</a></li><li class="page_item new parent" post_id="79558"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-summoner/">Summoner</a></li><li class="page_item new parent" post_id="79542"><a href="https://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-list-witch/">Witch</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79620"><a href="https://www.d20pfsrd.com/magic/tools/">Tools</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79660"><a href="https://www.d20pfsrd.com/magic/variant-magic-rules/">Variant Magic Rules</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="52986"><a href="https://www.d20pfsrd.com/gamemastering/">Gamemastering</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="57186"><a href="https://www.d20pfsrd.com/bestiary/">Bestiary</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="157240"><a href="https://www.d20pfsrd.com/alternative-rule-systems/">Alternative Rule Systems</a></li></ul></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-left-upper-0" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-left-upper-0","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p><a href="http://www.5esrd.com" title="Click here to visit the 5e/5th Edition SRD!"><br />
+<img border="0" src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/5esrd-logo-160wide.png" style="border-style:none;text-decoration:none"><br />
+</a></p>
+</div></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-left-lower-1" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-left-lower-1","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div>                <div id="left-sidebar-filler" class="filler"></div>
+                <div class="widget">
+		<h2>OGN Sites</h2>
+		<ul class="children">
+                            <li><a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a></li>
+                                <li><a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a></li>
+                                <li><a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a></li>
+                                <li><a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a></li>
+                                <li><a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a></li>
+                                <li><a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a></li>
+                                <li><a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a></li>
+                                <li><a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a></li>
+                                <li><a href="http://www.35srd.com" target="_blank">3.5e SRD</a></li>
+                                <li><a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a></li>
+                                <li><a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a></li>
+                                <li><a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a></li>
+                                <li><a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a></li>
+                                <li><a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a></li>
+                                <li><a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a></li>
+                                <li><a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a></li>
+                                <li><a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a></li>
+                                <li><a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a></li>
+                		</ul>
+	   </div>
+              
+	  </div> 
+	    </div>
+
+</aside>
+
+<!-- /end sidebar -->            <!-- Content -->
+            <main role="main" class="pre-nextgen">
+		<section>
+
+
+		                                        <article id="post-110853" class="skills acrobaticsdex;armorcheckpenalty post-110853 page type-page status-publish hentry">
+                        <a class="bread-parent" parentid="52278" href="https://www.d20pfsrd.com/" title="Home">Home</a>&nbsp;&gt;<a class="bread-parent" parentid="110850" href="https://www.d20pfsrd.com/skills/" title="Skills">Skills</a>&nbsp;&gt;                        <h1>Acrobatics (Dex; Armor Check Penalty)</h1>	
+                                                                     
+                       
+                                            <div class="page-widget top-post">
+                       <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-top" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-top","horiz");
+</script></div></div>                        </div>
+                        
+                        <div class="col-sm-9 col-md-9 col-lg-10 col-xs-12 article-text">
+                           <div class="page-center">
+                                  <div class="article-content">                                                      
+                                      <div class="product-right">
+          <div id="shopify-buybutton-9552819401" class="shopify-buybutton" shopify-id="9552819401">
+        </div> 
+</div> 
+<p>You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll, avoiding attacks and confusing your opponents.</p> 
+<p><a name="acrobatics-modifiers"></a></p> 
+<p>The following modifiers apply to all Acrobatics skill checks. The modifiers stack with one another, but only the most severe modifier for any given condition applies.</p> 
+<p><a name="table-acrobatics-modifiers"></a></p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Misc. Acrobatics Modifiers 
+  </caption> 
+  <thead> 
+   <tr> 
+    <th class="text">Acrobatics Modifiers</th> 
+    <th class="text">DC Modifier</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="text">Lightly Obstructed (gravel, sand)</td> 
+    <td class="number">+2</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Severely Obstructed (cavern, rubble)</td> 
+    <td class="number">+5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Slightly Slippery (wet)</td> 
+    <td class="number">+2</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Severely Slippery (icy)</td> 
+    <td class="number">+5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Slightly Sloped (&lt;45°)</td> 
+    <td class="number">+2</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Severely Sloped (&gt;45°)</td> 
+    <td class="number">+5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Slightly Unsteady (boat in rough water)</td> 
+    <td class="number">+2</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Mildly Unsteady (boat in a storm)</td> 
+    <td class="number">+5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Severely Unsteady (earthquake)</td> 
+    <td class="number">+10</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Move at full speed on narrow or uneven surfaces</td> 
+    <td class="number">+5<sup>1</sup></td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <p class="source"><sup>1</sup> This does not apply to checks made to jump.</p> 
+</div> 
+<h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+<p>The Acrobatics skill has three distinct uses:</p> 
+<ol> 
+ <li><a href="#cross-narrow-surface">Cross Narrow Surfaces/Uneven Ground</a></li> 
+ <li><a href="#move-through-threatened-area">Move Through Threatened Squares</a></li> 
+ <li><a href="#jumping-and-falling">Jumping and Falling</a></li> 
+</ol> 
+<p><a name="cross-narrow-surface"></a></p> 
+<h4><a name="TOC-Cross-Narrow-Surfaces-Uneven-Ground"></a>Cross Narrow Surfaces/Uneven Ground</h4> 
+<p>First, you can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows you to move at half speed across such surfaces—only one check is needed per round. Use the following table to determine the base DC, which is then modified by the Acrobatics skill modifiers noted below. While you are using Acrobatics in this way, you are considered <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Flat-Footed"> flat-footed</a> and lose your <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-" rel="nofollow">Dexterity</a> bonus to your AC (if any). If you take damage while using Acrobatics, you must immediately make another Acrobatics check at the same DC to avoid falling or being knocked prone.</p> 
+<p><a name="table-cross-narrow-surface"></a></p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Acrobatics DC&#8217;s to Cross Narrow Surfaces 
+  </caption> 
+  <thead> 
+   <tr> 
+    <th class="text">Surface Width</th> 
+    <th class="text">Base Acrobatics DC</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="text">Greater than 3 feet wide</td> 
+    <td class="number">0<sup>1</sup></td> 
+   </tr> 
+   <tr> 
+    <td class="text">1–3 feet wide</td> 
+    <td class="number">5<sup>1</sup></td> 
+   </tr> 
+   <tr> 
+    <td class="text">7–11 inches wide</td> 
+    <td class="number">10</td> 
+   </tr> 
+   <tr> 
+    <td class="text">2–6 inches wide</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Less than 2 inches wide</td> 
+    <td class="number">20</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <p class="source"><sup>1</sup> No <a href="https://www.d20pfsrd.com/skills/acrobatics">Acrobatics</a> check is needed to move across these surfaces unless the modifiers increase the DC to 10 or higher.</p> 
+</div> 
+<p style="border-bottom: solid thin;font-weight: bold">Cross Narrow Surface DC Modifiers</p> 
+<ul> 
+ <li><b>Balancing Pole</b>: Using a balancing pole while traversing a narrow surface grants a +1 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> to the Acrobatics check.</li> 
+</ul> 
+<p><a name="move-through-threatened-area"></a></p> 
+<h4><a name="TOC-Move-Through-Threatened-Squares"></a>Move Through Threatened Squares</h4> 
+<p>In addition, you can move through a threatened square without provoking an <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity" rel="nofollow">attack of opportunity</a> from an enemy by using Acrobatics. When moving in this way, you move at half speed. You can move at full speed by increasing the DC of the check by 10. You cannot use Acrobatics to move past foes if your speed is reduced due to carrying a medium or heavy load or wearing medium or heavy armor. If an ability allows you to move at full speed under such conditions, you can use Acrobatics to move past foes. You can use Acrobatics in this way while prone, but doing so requires a full-round action to move 5 feet, and the DC is increased by 5. If you attempt to move through an enemy’s space and fail the check, you lose the move action and provoke an attack of opportunity.</p> 
+<p><a name="table-move-through-threatened-area"></a></p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Acrobatics DC&#8217;s to Move Through Threatened Areas 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">Situation</th> 
+    <th class="text">Base Acrobatics DC<sup>1</sup></th> 
+   </tr> 
+   <tr> 
+    <td class="text">Move through a threatened area</td> 
+    <td class="text">Opponent’s <a href="https://www.d20pfsrd.com/gamemastering/combat#35TOC-Combat-Maneuver-Defense" rel="nofollow">Combat Maneuver Defense</a></td> 
+   </tr> 
+   <tr> 
+    <td class="text">Move through an enemy’s space</td> 
+    <td class="text">5 + Opponent’s <a href="https://www.d20pfsrd.com/gamemastering/combat#35TOC-Combat-Maneuver-Defense" rel="nofollow">Combat Maneuver Defense</a></td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <p class="source"><sup>1</sup> This DC is used to avoid an attack of opportunity due to movement. This penalty increases by +2 for each additional opponent avoided in one round.</p> 
+</div> 
+<p><a name="jumping-and-falling"></a></p> 
+<h4><a name="TOC-Jumping-and-Falling"></a>Jumping and Falling</h4> 
+<p>Finally, you can use the Acrobatics skill to make jumps or to soften a fall. The base DC to make a jump is equal to the distance to be crossed (if horizontal) or four times the height to be reached (if vertical). These DCs double if you do not have at least 10 feet of space to get a running start. The only Acrobatics modifiers that apply are those concerning the surface you are jumping from. If you fail this check by 4 or less, you can attempt a DC 20 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex" rel="nofollow">Reflex</a> save to grab hold of the other side after having missed the jump. If you fail by 5 or more, you fail to make the jump and fall (or land prone, in the case of a vertical jump).</p> 
+<p><a name="table-jumping-and-falling-long"></a></p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Acrobatics DC&#8217;s for Long Jumps 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">Long Jump</th> 
+    <th class="text">Acrobatics DC</th> 
+   </tr> 
+   <tr> 
+    <td class="text">5 feet</td> 
+    <td class="number">5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">10 feet</td> 
+    <td class="number">10</td> 
+   </tr> 
+   <tr> 
+    <td class="text">15 feet</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text">20 feet</td> 
+    <td class="number">20</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Greater than 20 feet</td> 
+    <td class="text">+5 per 5 feet</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</div> 
+<p><a name="table-jumping-and-falling-high"></a></p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Acrobatics DC&#8217;s for High Jumps 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">High Jump</th> 
+    <th class="text">Acrobatics DC</th> 
+   </tr> 
+   <tr> 
+    <td class="text">1 foot</td> 
+    <td class="number">4</td> 
+   </tr> 
+   <tr> 
+    <td class="text">2 feet</td> 
+    <td class="number">8</td> 
+   </tr> 
+   <tr> 
+    <td class="text">3 feet</td> 
+    <td class="number">12</td> 
+   </tr> 
+   <tr> 
+    <td class="text">4 feet</td> 
+    <td class="number">16</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Greater than 4 feet</td> 
+    <td class="text">+4 per foot</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</div> 
+<p style="border-bottom: solid thin;font-weight: bold">Jump DC Modifiers</p> 
+<p><a name="modifiers-faster-movement"></a></p> 
+<ul> 
+ <li><b>Faster Base Movement</b>: Creatures with a base land speed above 30 feet receive a +4 racial bonus on Acrobatics checks made to jump for every 10 feet of their speed above 30 feet. Creatures with a base land speed below 30 feet receive a –4 racial bonus on Acrobatics checks made to jump for every 10 feet of their speed below 30 feet. No jump can allow you to exceed your maximum movement for the round.</li> 
+ <li><b>Running Jump</b>: For a running jump, the result of your Acrobatics check indicates the distance traveled in the jump (and if the check fails, the distance at which you actually land and fall prone). Halve this result for a standing long jump to determine where you land. Also, see Pole.</li> 
+ <li><b>Pole</b>: If you use a pole as part of a running jump, you gain a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on your Acrobatics check (but must let go of the pole in the process).</li> 
+ <li><b>Falling</b>: When you deliberately fall any distance, even as a result of a missed jump, a DC 15 Acrobatics skill check allows you to ignore the first 10 feet fallen, although you still end up prone if you take damage from a fall. See <a href="https://www.d20pfsrd.com/gamemastering/environment/environmental-rules#TOC-Falling">Falling Damage</a> for more details.)</li> 
+</ul> 
+<p style="font-weight: bold;border-bottom: solid thin">Special Situation: Diving or Jumping into Water</p> 
+<p class="source"><b>Source</b> <a href="http://www.opengamingstore.com/products/cerulean-seas-campaign-setting-and-undersea-sourcebook" target="_blank" rel="noopener">Cerulean Seas © 2010 Alluria Publishing. All rights reserved</a>.</p> 
+<p>The rules presented here for diving or jumping into water are from a Pathfinder 3rd Party Publisher and are not part of this game rules created by Paizo. Consult your GM to see if these rules are allowed or in use in his or her campaign.</p> 
+<p>Characters who jump or dive into water take no damage on a successful DC 15 Acrobatics skill check, so long as the water is at least 10 feet deep for every 30 feet fallen. Water 30 feet deep is sufficient for a dive from any height. However, the DC of the check increases by 5 for every 50 feet of the dive. <b>Table: Diving</b> summarizes these rules.</p> 
+<p>If the water is not deep enough for a safe dive, add 5 to the DC and treat your dive or fall as 30 feet higher than its actual height on the <b>Table: Diving</b>.</p> 
+<div style="font-size: 14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Diving 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">Dive<br>Height</th> 
+    <th class="text">Minimum<br>Safe Depth</th> 
+    <th class="text">Acrobatics<br>DC</th> 
+    <th class="text">Damage for <br>Failed Dive</th> 
+   </tr> 
+   <tr> 
+    <td class="distance text">10 ft.</td> 
+    <td class="distance text">10 ft.</td> 
+    <td class="number">15</td> 
+    <td class="text">None</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">20 ft.</td> 
+    <td class="distance text">10 ft.</td> 
+    <td class="number">15</td> 
+    <td class="text">None</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">30 ft.</td> 
+    <td class="distance text">10 ft.</td> 
+    <td class="number">15</td> 
+    <td class="text">1d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a></td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">40 ft.</td> 
+    <td class="distance text">20 ft.</td> 
+    <td class="number">15</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a></td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">50 ft.</td> 
+    <td class="distance text">20 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> +1d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">60 ft.</td> 
+    <td class="distance text">20 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 2d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">70 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 3d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">80 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 4d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">90 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 5d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">100 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">20</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 6d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">110 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">25</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 7d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">120 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">25</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 8d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">160 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">30</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 12d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">210 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">35</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 17d6</td> 
+   </tr> 
+   <tr> 
+    <td class="distance text">240 ft.</td> 
+    <td class="distance text">30 ft.</td> 
+    <td class="number">35</td> 
+    <td class="text">2d3 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 20d6*</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</div> 
+<p class="source">*Maximum falling damage.</p> 
+<p><b>Action</b>: None. An Acrobatics check is made as part of another action or as a reaction to a situation.</p> 
+<h3><a name="TOC-Modifiers"></a>Modifiers</h3> 
+<ul> 
+ <li><b>Skills</b> If you have 3 or more ranks in Acrobatics, you gain a +3 dodge bonus to AC when fighting defensively instead of the usual +2, and a +6 dodge bonus to AC when taking the total defense action instead of the usual +4.</li> 
+ <li><b>Feats</b> If you have the Acrobatic feat, you get a +2 bonus on all Acrobatics checks. If you have 10 or more ranks in Acrobatics, the bonus increases to +4.</li> 
+</ul> 
+<h4><a name="TOC-Acrobatics-Unchained"></a>Acrobatics Unchained</h4> 
+<p class="source"><b>Source</b> <a title="Pathfinder Unchained" href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" rel="noopener">PFU</a></p> 
+<p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+<p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="https://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+<p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="https://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+<p>With sufficient ranks in Acrobatics, you earn the following.<a name="Unchained-Skill-Unlock"></a></p> 
+<div style="margin-left: 20px"> 
+ <p><b>5 Ranks</b>: You can move at normal speed through a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Threatened-Squares">threatened</a> square without provoking an <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attack of opportunity</a> by increasing the DC of the check by 5 (instead of by 10). You aren&#8217;t denied your <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus when attempting Acrobatics checks with DCs of 20 or lower.</p> 
+ <p><b>10 Ranks</b>: You can attempt an Acrobatics check at a –10 penalty and use the result as your <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense">CMD</a> against <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Trip">trip</a> maneuvers. You can also attempt an Acrobatics check at a –10 penalty in place of a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save to avoid falling. You must choose to use this ability before the <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Trip">trip</a> attempt or <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save is rolled. With a successful DC 20 Acrobatics check, you treat an unintentional fall as 10 feet shorter plus 10 feet for every 10 by which you exceed the DC, and treat an intentional fall as 10 feet shorter for every 10 by which you exceed the DC.</p> 
+ <p><b>15 Ranks</b>: You do not provoke <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attacks of opportunity</a> when standing up from <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Prone">prone</a>.</p> 
+ <p><b>20 Ranks</b>: You double the result of any Acrobatics check when jumping and never fall <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Prone">prone</a> at the end of a fall as long as you remain conscious.</p> 
+</div> 
+<div> 
+ <p> Time Machine! 
+ </div> 
+ <div style="padding: 10px"> 
+  <p>The Pathfinder Roleplaying Game merged the Balance and Jump skills from its predecessor into the Acrobatics skill. While this has been mostly good, in the transition some information seems to have been left behind.</p> 
+  <p><b>Note</b>: The information below is <b>NOT</b> official. However, you may find it helpful in some situations to consider how the rules were previously written. Use at your GMs discretion.</p> 
+  <h4><a name="TOC-Long-Jump"></a>Long Jump</h4> 
+  <p>A long jump is a horizontal jump, made across a gap like a chasm or stream. At the midpoint of the jump, you attain a vertical height equal to one-quarter of the horizontal distance.</p> 
+  <p>If your check succeeds, you land on your feet at the far end. If you fail the check by less than 5, you don’t clear the distance, but you can make a DC 15 Reflex save to grab the far edge of the gap. You end your movement grasping the far edge. If that leaves you dangling over a chasm or gap, getting up requires a move action and a DC 15 Climb check.</p> 
+  <h4><a name="TOC-High-Jump"></a>High Jump</h4> 
+  <div style="font-size: 14px"> 
+   <table border="1" cellpadding="5"> 
+    <tbody> 
+     <tr> 
+      <th class="text">Creature Size</th> 
+      <th class="text">Vertical Reach</th> 
+     </tr> 
+     <tr> 
+      <td class="text">Colossal</td> 
+      <td class="distance text">128 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Gargantuan</td> 
+      <td class="distance text">64 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Huge</td> 
+      <td class="distance text">32 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Large</td> 
+      <td class="distance text">16 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Medium</td> 
+      <td class="distance text">8 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Small</td> 
+      <td class="distance text">4 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Tiny</td> 
+      <td class="distance text">2 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Diminutive</td> 
+      <td class="distance text">1 ft.</td> 
+     </tr> 
+     <tr> 
+      <td class="text">Fine</td> 
+      <td class="text">½ ft.</td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div> 
+  <p>A high jump is a vertical leap made to reach a ledge high above or to grasp something overhead.</p> 
+  <p>If you jumped up to grab something, a successful check indicates that you reached the desired height. If you wish to pull yourself up, you can do so with a move action and a DC 15 Climb check. If you fail the Acrobatics check to jump, you do not reach the height, and you land on your feet in the same spot from which you jumped. As with a long jump, the DC is doubled if you do not get a running start of at least 20 feet.</p> 
+  <p>Obviously, the difficulty of reaching a given height varies according to the size of the character or creature. The maximum vertical reach (height the creature can reach without jumping) for an average creature of a given size is shown on the table below. (As a Medium creature, a typical human can reach 8 feet without jumping.)</p> 
+  <p>Quadrupedal creatures don’t have the same vertical reach as a bipedal creature; treat them as being one size category smaller.</p> 
+  <h4><a name="TOC-Hop-Up"></a>Hop Up</h4> 
+  <p>You can jump up onto an object as tall as your waist, such as a table or small boulder, with a DC 10 Acrobatics (jump) check. Doing so counts as 10 feet of movement, so if your speed is 30 feet, you could move 20 feet, then hop up onto a counter. You do not need to get a running start to hop up, so the DC is not doubled if you do not get a running start.</p> 
+ </div> 
+</div> 
+<div class="section15"> 
+<div>Section 15: Copyright Notice</div>
+ <div> 
+  <p><a href="http://www.amazon.com/gp/product/1601251505/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601251505&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20" target="_blank" rel="noopener">Pathfinder RPG Core Rulebook</a>. Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p> 
+ </div> 
+</div>                                      <div id="comments" class="comments">
+    
+
+
+</div>
+
+<hr />
+
+                                  <!--div style="clear:both"></div-->
+                                                                        </div>
+                           </div>
+                           <div class="article-edit-link">
+                                                         </div>
+                        </div>
+                         <div class="col-sm-3 col-md-3 col-lg-2 col-xs-12 right-sidebar">
+        <div class="page-widget right-sidebar-widgets">
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-right-upper-2" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-right-upper-2","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div>             
+
+            <div class="product-listing" style="background-color:#FFF">
+                        <div id="shopify-buybutton-134380075" class="shopify-buybutton" shopify-id="134380075">
+        </div>                           
+            </div>
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-right-lower-3" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-right-lower-3","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p>
+<a href="https://www.d20pfsrd.com/new-pages">New Pages</a><br />
+<a href="https://www.d20pfsrd.com/recent-changes">Recent Changes</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations">Fan Labs</a><br />
+<a href="https://www.d20pfsrd.com/extras/character-sheets">Character Sheets</a><br />
+<a href="https://www.d20pfsrd.com/extras/downloads">Downloads</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations/hero-lab">Hero Lab Community Repository</a><br />
+<a href="https://www.d20pfsrd.com/extras/pathfinder-faq">FAQ<br />
+</a><a href="https://www.d20pfsrd.com/extras/pirates-arrr-us">Pirates ARRR Us!</a></p>
+</div></div><div class="widget widget_black_studio_tinymce"><h4 class="widget-title">Extras</h4><div class="textwidget"><p><a href="http://shop.d20pfsrd.com/" target="_blank">Shop our Store!</a><br />
+ <a href="https://www.d20pfsrd.com/join-store">Sell in the Store!</a><br />
+ <a href="https://www.patreon.com/d20pfsrd?ref=d20pfsrd.com" target="_blank">Back my Patreon!</a><br />
+ <a href="https://www.d20pfsrd.com/get-published">Get Published</a><br />
+ <a href="http://opengamingnetwork.com/report-problem/">Report a Problem</a><br />
+ <a href="https://www.d20pfsrd.com/extras/legal/">Legal Information/Open Game License</a></p>
+</div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="http://articles.opengamingnetwork.com/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="http://articles.opengamingnetwork.com/">OGN Blog</a></h4><ul><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/the-magic-shoppe-snake-inspired-items/'>The Magic Shoppe: Snake Inspired Items</a> <span class="rss-date">April 26, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/rpg-kickstarter-you-should-back-press-release-the-dungeon/'>RPG Kickstarter You Should Back: (Press Release) The Dungeon</a> <span class="rss-date">April 13, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/were-on-holiday/'>WE’RE ON HOLIDAY!</a> <span class="rss-date">March 17, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-library-items/'>The Magic Shoppe: Library Items</a> <span class="rss-date">March 15, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-wun-android-captain/'>Creative Characters (Starfinder): Wun, Android Captain</a> <span class="rss-date">March 14, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creature-feature-starfinder-urban-prowler/'>Creature Feature (Starfinder): Urban Prowler</a> <span class="rss-date">March 10, 2019</span> <cite>nwright</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/saturday-potpourri-cleric-of-the-forgotten-gods-archetype-domain/'>Saturday Potpourri – Cleric of the Forgotten Gods (Archetype/Domain)</a> <span class="rss-date">March 9, 2019</span> <cite>mmiller</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-undead-items/'>The Magic Shoppe: Undead Items</a> <span class="rss-date">March 8, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-jelilah-hartennen-special-liaison/'>Creative Characters (Starfinder): Jelilah Hartennen, Special Liaison</a> <span class="rss-date">March 7, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-yhua-lneth-the-kraken-caller/'>Creative Characters – Y’hua-lneth the Kraken Caller</a> <span class="rss-date">March 6, 2019</span> <cite>markt</cite></li></ul></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><div style="text-align: center;">
+<div style="display: inline-block; overflow: hidden;">
+<div style="width: 150px;" title="Check out the Pathfinder NPC generator!"><a style="text-decoration: none;" href="http://www.dinglesgames.com/tools/NPCGenerator/pathfinder/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/Dingles-Games-Patreon.png" width="120" height="90" border="0" /></a></div>
+<br />
+<div style="width: 150px;" title="Scroll and Codex: Dice Tower and Rolling Tray"><a style="text-decoration: none;" href="https://www.elderwoodacademy.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/scroll-codex-small.jpg" width="120" height="90" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="https://www.kickstarter.com/projects/celticrefuge/unique-character-books-for-your-character-in-pathf?ref=project_build#" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/12/CRPpatreonlogo.png" width="120" height="120" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="http://bit.ly/FWPLAUNCH" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2019/02/FWP-Ad.gif" width="120" height="90" border="0" /></a></div>
+</div>
+</div></div></div>                              
+            <div id="right-sidebar-filler" class="filler"></div>
+        </div>              
+
+    </div>
+                    </article>
+				
+                    <a class="scroll-to-top" href="#"><img src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/Up1Blue.png" /></a>
+            
+                                        <div class="sidebar-bottom">
+                            <div class="page-widget">
+                            <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-bottom" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-bottom","horiz");
+</script></div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="https://www.opengamingstore.com/collections/pathfinder/all.atom"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="https://www.opengamingstore.com/collections/all">Latest Pathfinder products in the Open Gaming Store</a></h4><ul><li><a class='rsswidget' href='https://www.opengamingstore.com/products/fat-goblin-games-megabundle-2018-edition'>Fat Goblin Games Megabundle 2018 Edition!</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/weekly-wonders-archetypes-of-the-afterlife-volume-iii'>Weekly Wonders - Archetypes of the Afterlife Volume III</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/extras-elven-elite-pathfinder-compatible'>Extras! Elven Elite (Pathfinder® Compatible)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/extras-formidable-fiends-pathfinder-compatible'>Extras! Formidable Fiends (Pathfinder® Compatible)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/shadows-over-vathak-inaoth-echo-of-plagues'>Shadows over Vathak: Ina&#039;oth - Echo of Plagues</a></li></ul></div>                            </div> 
+                    </div>
+                    
+		</section>
+            </main>
+        </div>
+    </div> <!-- end row-fluid --->
+</div> <!-- /end content -->
+        <div class="span2">
+        </div>
+        <div class="clearfix"></div>
+    </div> <!-- /end row -->
+
+</div> <!-- /end container -->
+<!-- Footer Nav -->
+<aside class="footer-nav" role="complementary">
+
+<div class="container-fluid">
+<div class="row">
+    
+    <div class="col-md-12">   
+       
+          <div class="footer-widget">
+           <div class="widget widget_black_studio_tinymce"><div class="textwidget"><table style="clear: both; width: 100%; font-size: 18px; background-color:rgb(255,255,255);" cellpadding="5">
+<tbody>
+<tr style="vertical-align: middle; background-color: #cfe2f3;">
+<td style="width: 20%; text-align: center;" title="Become an Editor!">
+<a class="sites-navigation-link topLevel" href="http://account.opengamingnetwork.com/manage/editrequest" target="_blank" rel="noopener">Become an Editor!</a></td>
+<td style="width: 20%; text-align: center;" title="Support open gaming and this site, shop the Open Gaming Store!"><a href="http://www.opengamingstore.com/" target="_blank">Support<br />
+Open Gaming</a></td>
+<td style="width: 20%; text-align: center;" title="Subscribe to our newsletter and get updates on all the new stuff on d20pfsrd.com!"><a href="http://eepurl.com/bNgnPH" target="_blank">Subscribe to Our<br />
+Newsletter</a></td>
+<td style="width: 20%; text-align: center;" title="If you are a publisher of Pathfinder or other gaming products, you really should get added to our store!"><a href="http://www.opengamingstore.com/pages/publisher-information" target="_blank">Sell in the<br />Open Gaming Store</a></td>
+<td style="width: 20%; text-align: center;" title="If you've seen an issue or problem with this site please let us know!"><a href="http://opengamingnetwork.com/report-problem/" target="_blank">Report a<br />
+Bug or Issue</a></td>
+</tr>
+</tbody>
+</table>
+</div></p></div>          </div>
+ 	</div>            
+    </div>
+
+        
+</div>
+<div class="row">
+ 
+ 	<div class="col-md-4">
+	 	</div>
+  
+	<div class="col-md-4">
+	 	</div>
+
+	<div class="col-md-4">
+	 	</div>
+
+</div> <!-- /row Footer Nav -->
+</div> <!-- /container Footer Nav -->
+</aside>
+
+<footer class="container-fluid main-footer">
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-12">
+        <div class="footer" role="contentinfo">
+            <div class="credits-widget">
+                <p>Check out our other SRD sites!
+                            <a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a> 
+                 |                 <a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a> 
+                 |                 <a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a> 
+                 |                 <a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a> 
+                 |                 <a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a> 
+                 |                 <a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a> 
+                 |                 <a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a> 
+                 |                 <a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a> 
+                 |                 <a href="http://www.35srd.com" target="_blank">3.5e SRD</a> 
+                 |                 <a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a> 
+                 |                 <a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a> 
+                 |                 <a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a> 
+                 |                 <a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a> 
+                 |                 <a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a> 
+                 |                 <a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a> 
+                 |                 <a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a> 
+                 |                 <a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a> 
+                 |                 <a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a> 
+                                    
+                </p>                
+                                <p class="text-center footer-disclaimer">
+                    This site may earn <a href="//www.d20pfsrd.com/legal#affiliate-links">affiliate commissions</a> from the links on this page.
+                </p>
+                <p class="text-center">
+                    OGN SRD v1.5.2 using <a href="http://getbootstrap.com/">Bootstrap</a>
+                </p>
+                <p class="text-center">
+                    <a href="/new-pages">New Pages</a> | <a href="/recent-changes">Recent Changes</a> | <a href="//opengamingnetwork.com/privacy-policy">Privacy Policy</a>
+                </p>                
+            </div>       
+        </div>
+    </div>
+    <div class="col-md-1"></div>    
+</div> <!-- /end row -->
+</footer> <!-- /end container-fluid -->
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-54881920-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->        
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ogn_params = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-shopify.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-nav.js?ver=1551434665'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","visibility_hide_by_default":"1","width":"200px"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/wp-embed.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.736 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-05-14 06:28:05 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <base href="https://www.d20.com/SKILLS/disable-device/">
+          <!-- link rel="search" type="application/opensearchdescription+xml" title="d20PFSRD" href="http://www.d20pfsrd.com/wp-content/themes/srdtheme/opensearch.php" /-->
+    <title>Disable Device (Dex; Armor Check Penalty; Trained Only) &#8211; d20PFSRD</title>
+<link rel='dns-prefetch' href='//www.d20pfsrd.com' />
+<link rel='dns-prefetch' href='//account.opengamingnetwork.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Feed" href="http://www.d20pfsrd.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Comments Feed" href="http://www.d20pfsrd.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.d20pfsrd.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=741751694b0c23cb369738b3058aae5a"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ogncustom-css-css'  href='http://www.d20pfsrd.com/wp-content/plugins/ogncustom/css/ogncustom.css?ver=1551434665' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='http://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-css'  href='http://www.d20pfsrd.com/wp-content/themes/quickstrap/style.css?ver=741751694b0c23cb369738b3058aae5a' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='http://www.d20pfsrd.com/wp-content/themes/srdtheme/css/style.css?ver=1.5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-bootstrap-css'  href='http://www.d20pfsrd.com/wp-content/themes/quickstrap/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='child-dynamic-css'  href='http://www.d20pfsrd.com/wp-content/themes/srdtheme/css/sites/12.css?ver=1546817288' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-fontawesome-css'  href='http://www.d20pfsrd.com/wp-content/themes/quickstrap/font-awesome/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/themes/srdtheme/js/srdtheme.js?ver=1547330625'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/themes/quickstrap/js/bootstrap.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='//account.opengamingnetwork.com/js/ognbar.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+<link rel='https://api.w.org/' href='http://www.d20pfsrd.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.d20pfsrd.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.d20pfsrd.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="http://www.d20pfsrd.com/skills/disable-device/" />
+<link rel='shortlink' href='http://www.d20pfsrd.com/?p=110875' />
+<link rel="alternate" type="application/json+oembed" href="http://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fdisable-device%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fdisable-device%2F&#038;format=xml" />
+                <script src="https://s.nitropay.com/ads-99.js"></script>
+                <script language="JavaScript">
+                   ognNitroPay = true;
+                </script>
+            <style type="text/css">div#toc_container {width: 200px;}</style><link rel="icon" href="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256-150x150.png" sizes="32x32" />
+<link rel="icon" href="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+<meta name="msapplication-TileImage" content="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+		<style type="text/css" id="wp-custom-css">
+			/*
+Custom CSS has moved to 
+OGN SRD Theme > Additional CSS
+*/
+
+		</style>
+	  </head>
+
+<body class="page-template-default page page-id-110875 page-child parent-pageid-110850">
+      
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/" aria-expanded="false">OGN<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="ogn-sites-dropdown">
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">d20PFSRD</a>
+                </li>
+            </ul>  
+                      <ul class="nav navbar-nav navbar-right">
+            <li id="ogn-login"></li>
+            <li> 
+                <form class="search navbar-form navbar-right" action="https://cse.google.com/cse" method="get"role="search">
+                    <input type="hidden" value="006680642033474972217:6zo0hx_wle8" name="cx" id="cx">
+                <div class="input-group">
+                <input class="form-control" name="q" type="search" required class="searchField" placeholder="Google Site Search" maxlength="50"/> 
+                <span class="input-group-btn"> <button type="submit" class="search-button btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button> </span> 
+                </div> 
+                </form>
+            </li>            
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div class="container-fluid">
+<div class="ognannouncement-container passive">
+<div class="ognannouncement passive"></div>
+</div>
+<div class="header row-fluid">
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+	<div class="col-sm-10 col-md-10 col-xs-12">
+		<div class="logo">
+		<a href="/">
+                    <img class="header-logo img-responsive" src="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2017/01/customLogo_gif.png" height="139" width="756" alt="" />
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+    <div class="clearfix"></div>
+    <header class="header" role="banner">
+         <nav class="navbar" role="navigation">
+
+<!-- Header Menu -->
+ 
+
+	<!--  Direct links / Right nav  
+	<ul class="nav navbar-nav">
+            <li class=""><a href=""></a></li>
+        </ul>
+
+	<ul class="nav navbar-nav navbar-right">
+  	 <li class=""><a href=""></a></li>
+        </ul>
+ 	-->
+    <div class="menuclear"></div>
+    </nav>    </header>      
+</div>
+<div class="clearfix"></div>
+<div class="content row-fluid">
+  
+<div class="col-12">
+    <div class="row-fluid">
+       
+            <!-- Left Sidebar -->
+<aside class="sidebar-left" role="complementary">
+    
+    <div id="menu-expander" class="menu-expander hidden-sm hidden-md hidden-lg">
+    <button type="button" class="btn btn-default" aria-label="Expand Menu">
+        <span id="expand-button" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+    <script type="text/javascript">
+        jQuery('div#menu-expander').click(function() {
+            jQuery('.sidebar-contents').toggleClass('expand-menu');
+            jQuery('main').toggleClass('expand-menu');
+            jQuery('span#expand-button').toggleClass('glyphicon-chevron-right').toggleClass('glyphicon-chevron-left');
+        });
+    </script>
+    </div>
+     
+    <div class="sidebar-contents">
+              <div class="sidebar-widget">
+               <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div style="text-align:center">
+<a href="http://www.opengamingstore.com/" target="_blank" title="Support Open Gaming, Shop the Open Gaming Store!">
+<img src="/wp-content/themes/srdtheme/images/open-gaming-160wide.png">
+</a>
+</div></div></div><div class="widget widget_ognajaxnav widget_srdpagelist"><ul id="ognajaxnav1" class="ognajaxnav" parent="" depth="0" currentpage="110875"><li class="page_item new parent" post_id="52278"><a href="http://www.d20pfsrd.com/">Home</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109106"><a href="http://www.d20pfsrd.com/basics-ability-scores/">Basics &amp; Ability Scores</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="70407"><a href="http://www.d20pfsrd.com/alignment-description/">Alignment &amp; Description</a></li><li class="page_item new parent page_item_has_children" post_id="90602"><a href="http://www.d20pfsrd.com/races/">Races</a><ul class="children"><li class="page_item new parent" post_id="126650"><a href="http://www.d20pfsrd.com/races/aquatic-adventurers/">Aquatic Adventurers</a></li><li class="page_item new parent page_item_has_children" post_id="90769"><a href="http://www.d20pfsrd.com/races/core-races/">Core Races</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="90798"><a href="http://www.d20pfsrd.com/races/core-races/half-elf/">Half-elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90770"><a href="http://www.d20pfsrd.com/races/core-races/dwarf/">Dwarves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90780"><a href="http://www.d20pfsrd.com/races/core-races/elf/">Elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90790"><a href="http://www.d20pfsrd.com/races/core-races/gnome/">Gnomes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90810"><a href="http://www.d20pfsrd.com/races/core-races/half-orc/">Half-orcs</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90820"><a href="http://www.d20pfsrd.com/races/core-races/halfling/">Halflings</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90828"><a href="http://www.d20pfsrd.com/races/core-races/human/">Humans</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90838"><a href="http://www.d20pfsrd.com/races/other-races/">Other Races</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90603"><a href="http://www.d20pfsrd.com/races/3rd-party-races/">3rd Party Races</a></li></ul></li><li class="page_item new parent page_item_has_children" post_id="81812"><a href="http://www.d20pfsrd.com/classes/">Classes</a><ul class="children"><li class="page_item new parent" post_id="84814"><a href="http://www.d20pfsrd.com/classes/character-advancement/">Character Advancement</a></li><li class="page_item new parent" post_id="84816"><a href="http://www.d20pfsrd.com/classes/class-archetypes/">Class Archetypes</a></li><li class="page_item new parent page_item_has_children" post_id="84838"><a href="http://www.d20pfsrd.com/classes/core-classes/">Core Classes</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="85555"><a href="http://www.d20pfsrd.com/classes/core-classes/cleric/">Cleric</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="85337"><a href="http://www.d20pfsrd.com/classes/core-classes/bard/">Bard</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84839"><a href="http://www.d20pfsrd.com/classes/core-classes/barbarian/">Barbarian</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86505"><a href="http://www.d20pfsrd.com/classes/core-classes/fighter/">Fighter</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86263"><a href="http://www.d20pfsrd.com/classes/core-classes/druid/">Druid</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87124"><a href="http://www.d20pfsrd.com/classes/core-classes/rogue/">Rogue</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86676"><a href="http://www.d20pfsrd.com/classes/core-classes/monk/">Monk</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86818"><a href="http://www.d20pfsrd.com/classes/core-classes/paladin/">Paladin</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86966"><a href="http://www.d20pfsrd.com/classes/core-classes/ranger/">Ranger</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87852"><a href="http://www.d20pfsrd.com/classes/core-classes/sorcerer/">Sorcerer</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88188"><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/">Wizard</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="83159"><a href="http://www.d20pfsrd.com/classes/base-classes/">Base Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82837"><a href="http://www.d20pfsrd.com/classes/alternate-classes/">Alternate Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88465"><a href="http://www.d20pfsrd.com/classes/hybrid-classes/">Hybrid Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89543"><a href="http://www.d20pfsrd.com/classes/unchained-classes/">Unchained Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89328"><a href="http://www.d20pfsrd.com/classes/prestige-classes/">Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89224"><a href="http://www.d20pfsrd.com/classes/npc-classes/">NPC Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89218"><a href="http://www.d20pfsrd.com/classes/monster-classes/">Monster Classes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="81813"><a href="http://www.d20pfsrd.com/classes/3rd-party-classes/">3rd Party Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84817"><a href="http://www.d20pfsrd.com/classes/arcane-archetypes-rogue-genius-games/">Arcane Archetypes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82714"><a href="http://www.d20pfsrd.com/classes/3rd-party-prestige-classes/">3rd Party Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82708"><a href="http://www.d20pfsrd.com/classes/3rd-party-npc-classes/">3rd Party NPC Classes</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="91199"><a href="http://www.d20pfsrd.com/feats/">Feats</a></li><li class="page_item new parent" post_id="110850"><a href="http://www.d20pfsrd.com/skills/">Skills</a></li><li class="page_item new parent" post_id="110918"><a href="http://www.d20pfsrd.com/traits/">Traits</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109161"><a href="http://www.d20pfsrd.com/equipment/">Equipment</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="102432"><a href="http://www.d20pfsrd.com/magic-items/">Magic Items</a></li><li class="page_item new parent page_item_has_children" post_id="71179"><a href="http://www.d20pfsrd.com/magic/">Magic</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="74736"><a href="http://www.d20pfsrd.com/magic/all-spells/">Spells (Paizo, Inc.)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79570"><a href="http://www.d20pfsrd.com/magic/spells-by-class-3rd-party/">Spells by Class‎ (3rd Party)</a></li><li class="page_item new parent" post_id="79511"><a href="http://www.d20pfsrd.com/magic/building-and-modifying-constructs/">Building and Modifying Constructs</a></li><li class="page_item new parent" post_id="79568"><a href="http://www.d20pfsrd.com/magic/spellbooks/">Preconstructed Spellbooks</a></li><li class="page_item new parent" post_id="79514"><a href="http://www.d20pfsrd.com/magic/rare-cantrips/">Rare Cantrips</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="71180"><a href="http://www.d20pfsrd.com/magic/3rd-party-spells/">Spells (3rd Party)</a></li><li class="page_item new parent page_item_has_children" post_id="79516"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/">Spells by Class</a><ul class="children"><li class="page_item new parent" post_id="79527"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/formulae-lists-alchemist/">Alchemist/Investigator Formulae</a></li><li class="page_item new parent" post_id="79517"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/antipaladin-spell-list/">Antipaladin</a></li><li class="page_item new parent" post_id="79544"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-bard/">Bard</a></li><li class="page_item new parent" post_id="79519"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/bloodrager/">Bloodrager</a></li><li class="page_item new parent" post_id="79546"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric/">Cleric/Oracle</a></li><li class="page_item new parent" post_id="79548"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-druid/">Druid</a></li><li class="page_item new parent" post_id="79550"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-inquisitor/">Inquisitor</a></li><li class="page_item new parent" post_id="79530"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/magus-spell-list/">Magus</a></li><li class="page_item new parent" post_id="79532"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/medium/">Medium</a></li><li class="page_item new parent" post_id="79534"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/mesmerist/">Mesmerist</a></li><li class="page_item new parent" post_id="79536"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/occultist/">Occultist</a></li><li class="page_item new parent" post_id="79552"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-paladin/">Paladin</a></li><li class="page_item new parent" post_id="79538"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/psychic/">Psychic</a></li><li class="page_item new parent" post_id="79554"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-ranger/">Ranger</a></li><li class="page_item new parent" post_id="79540"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/shaman/">Shaman</a></li><li class="page_item new parent" post_id="79556"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-sorcerer-and-wizard/">Sorcerer/Wizard</a></li><li class="page_item new parent" post_id="79560"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spiritualist/">Spiritualist</a></li><li class="page_item new parent" post_id="79558"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-summoner/">Summoner</a></li><li class="page_item new parent" post_id="79542"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-list-witch/">Witch</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79620"><a href="http://www.d20pfsrd.com/magic/tools/">Tools</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79660"><a href="http://www.d20pfsrd.com/magic/variant-magic-rules/">Variant Magic Rules</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="52986"><a href="http://www.d20pfsrd.com/gamemastering/">Gamemastering</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="57186"><a href="http://www.d20pfsrd.com/bestiary/">Bestiary</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="157240"><a href="http://www.d20pfsrd.com/alternative-rule-systems/">Alternative Rule Systems</a></li></ul></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-left-upper" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-left-upper","vert");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p><a href="http://www.5esrd.com" title="Click here to visit the 5e/5th Edition SRD!"><br />
+<img border="0" src="http://www.d20pfsrd.com/wp-content/themes/srdtheme/images/5esrd-logo-160wide.png" style="border-style:none;text-decoration:none"><br />
+</a></p>
+</div></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-left-lower" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-left-lower","vert");
+</script></div></div>                <div id="left-sidebar-filler" class="filler"></div>
+                <div class="widget">
+		<h2>OGN Sites</h2>
+		<ul class="children">
+                            <li><a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a></li>
+                                <li><a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a></li>
+                                <li><a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a></li>
+                                <li><a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a></li>
+                                <li><a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a></li>
+                                <li><a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a></li>
+                                <li><a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a></li>
+                                <li><a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a></li>
+                                <li><a href="http://www.35srd.com" target="_blank">3.5e SRD</a></li>
+                                <li><a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a></li>
+                                <li><a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a></li>
+                                <li><a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a></li>
+                                <li><a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a></li>
+                                <li><a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a></li>
+                                <li><a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a></li>
+                                <li><a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a></li>
+                                <li><a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a></li>
+                                <li><a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a></li>
+                		</ul>
+	   </div>
+              
+	  </div> 
+	    </div>
+
+</aside>
+
+<!-- /end sidebar -->            <!-- Content -->
+            <main role="main" class="pre-nextgen">
+		<section>
+
+
+		                                        <article id="post-110875" class="skills disabledevicedex;armorcheckpenalty;trainedonly post-110875 page type-page status-publish hentry">
+                        <a class="bread-parent" parentid="52278" href="http://www.d20pfsrd.com/" title="Home">Home</a>&nbsp;&gt;<a class="bread-parent" parentid="110850" href="http://www.d20pfsrd.com/skills/" title="Skills">Skills</a>&nbsp;&gt;                        <h1>Disable Device (Dex; Armor Check Penalty; Trained Only)</h1>	
+                                                                     
+                       
+                                            <div class="page-widget top-post">
+                       <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-top" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-top","horiz");
+</script></div></div>                        </div>
+                        
+                        <div class="col-sm-9 col-md-9 col-lg-10 col-xs-12 article-text">
+                           <div class="page-center">
+                                  <div class="article-content">                                                      
+                                      <div class="product-right">
+          <div id="shopify-buybutton-45489356809" class="shopify-buybutton" shopify-id="45489356809">
+        </div> 
+</div> 
+<p>You are skilled at disarming traps and opening locks. In addition, this skill lets you sabotage simple mechanical devices, such as catapults, wagon wheels, and doors.</p> 
+<p><b>Editor&#8217;s Note</b>: In the table below we have attempted to organize the various tasks, DCs, and required actions/time to attempt in one table. If information is missing (such as the Take 10/20 columns) it simply means that the answer was unclear to d20pfsrd.com editors at this time. Consult the Core Rulebook or other official sources for more information.)</p> 
+<div style="font-size:14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Common Disable Device Task DCs, Time Required and Modifiers 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">Device</th> 
+    <th class="text">Time</th> 
+    <th class="text">DC<sup style="font-size:10px">1</sup></th> 
+    <th class="text">Take 10?</th> 
+    <th class="text">Take 20?</th> 
+    <th class="text">Example or Special Notes</th> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable or rig simple device</td> 
+    <td class="text">1 round</td> 
+    <td class="number">10</td> 
+    <td class="text"> </td> 
+    <td class="text"> </td> 
+    <td class="text">Jam a lock</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable or rig<sup style="font-size:10px">1</sup> tricky device</td> 
+    <td class="text">1d4 rounds</td> 
+    <td class="number">15<sup style="font-size:10px">1</sup></td> 
+    <td class="text"> </td> 
+    <td class="text"> </td> 
+    <td class="text">Sabotage a wagon wheel<sup style="font-size:10px">1</sup></td> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable or rig<sup style="font-size:10px">1</sup> difficult device</td> 
+    <td class="text">2d4 rounds</td> 
+    <td class="number">20<sup style="font-size:10px">1</sup></td> 
+    <td class="text"> </td> 
+    <td class="text"> </td> 
+    <td class="text">Disable or reset a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a></td> 
+   </tr> 
+   <tr> 
+    <td class="text">Open a simple lock</td> 
+    <td class="text"> </td> 
+    <td class="number">20/30</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Number after the slash is without using proper tools</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable or rig<sup style="font-size:10px">1</sup> extremely complex device</td> 
+    <td class="text">2d4 rounds</td> 
+    <td class="number">25<sup style="font-size:10px">1</sup></td> 
+    <td class="text"> </td> 
+    <td class="text"> </td> 
+    <td class="text">Disable or reset a complex <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>, cleverly sabotage a clockwork device</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Open an average lock</td> 
+    <td class="text"> </td> 
+    <td class="number">25/35</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Number after the slash is without using proper tools</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable a magic trap (such as a symbol spell)</td> 
+    <td class="text">varies</td> 
+    <td class="text">25 + spell level2</td> 
+    <td class="text"> </td> 
+    <td class="text"> </td> 
+    <td class="text">Only characters with the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Trapfinding">trapfinding</a> class feature can disarm magic traps.</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Open a good lock</td> 
+    <td class="text"> </td> 
+    <td class="number">30/40</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Number after the slash is without using proper tools</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Open an amazing lock</td> 
+    <td class="text"> </td> 
+    <td class="number">40/50</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Yes</td> 
+    <td class="text">Number after the slash is without using proper tools</td> 
+   </tr> 
+   <tr> 
+    <th colspan="6" class="text">With the Technologist Feat</th> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable or arm an explosive</td> 
+    <td class="text">1 minute+</td> 
+    <td class="number">10</td> 
+    <td class="text">Yes</td> 
+    <td class="text">No</td> 
+    <td class="text"> </td> 
+   </tr> 
+   <tr> 
+    <td class="text">Disable electronic device or trigger</td> 
+    <td class="text">2d4 rounds</td> 
+    <td class="text"><br> </td> 
+    <td class="text"><br> </td> 
+    <td class="text"><br> </td> 
+    <td class="text">Without an e-pick the attempt suffers a -5 penalty; failure to disable by 5+ triggers an explosive if such is being attempted</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <p style="font-size:12px"> <sup style="font-size:10px">1</sup> If you attempt to leave behind no trace of your tampering, add 5 to the DC.<br> <sup style="font-size:10px">2</sup> See spell descriptions for specific details</p> 
+</div> 
+<h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+<h4><a name="TOC-Disarm-Trap-or-Device"></a>Disarm Trap or Device</h4> 
+<p>When disarming a trap or other device, the Disable Device check is made secretly, so that you don’t necessarily know whether you’ve succeeded.</p> 
+<p>The DC depends on how tricky the device is. Disabling (or rigging or jamming) a fairly simple device has a DC of 10; more intricate and complex devices have higher DCs.</p> 
+<p>If the check succeeds, you disable the device. If it fails by 4 or less, you have failed but can try again. If you fail by 5 or more, something goes wrong. If the device is a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>, you spring it. If you’re attempting some sort of sabotage, you think the device is disabled, but it still works normally.</p> 
+<p><b>Special</b> A <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who beats a trap&#8217;s DC by 10 or more can study the trap, figure out how it works, and bypass it (along with her companions) without disarming it.</p> 
+<p><b>Retry?</b> You can retry checks made to disable traps if you miss the check by 4 or less, though you must be aware that you fail in order to try again.</p> 
+<h4><a name="TOC-Sabotage-Mechanical-Item"></a>Sabotage Mechanical Item</h4> 
+<p>You also can rig simple devices such as saddles or wagon wheels to work normally for a while and then fail or fall off some time later (usually after 1d4 rounds or minutes of use</p> 
+<h4><a name="TOC-Open-a-Lock"></a>Open a Lock</h4> 
+<p>The DC to open a lock depends on the lock&#8217;s quality: <b>simple</b> (DC 20), <b>average</b> (DC 25), <b>good</b> (DC 30), or <b>superior</b> (DC 40).</p> 
+<p><b>Modifiers</b>: If you do not have a set of thieves’ tools, these DCs increase by 10.</p> 
+<p><b>Retry?</b> Yes. You can retry checks made to open locks.</p> 
+<div style="font-size:14px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Disable Device DCs to Open Locks 
+  </caption> 
+  <tbody> 
+   <tr> 
+    <th class="text">Lock Quality</th> 
+    <th class="text">DC</th> 
+   </tr> 
+   <tr> 
+    <td class="text">Simple</td> 
+    <td class="number">20</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Average</td> 
+    <td class="number">25</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Good</td> 
+    <td class="number">30</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Amazing</td> 
+    <td class="number">40</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+</div> 
+<h3><a name="TOC-Action"></a>Action</h3> 
+<p>The amount of time needed to make a Disable Device check depends on the task:</p> 
+<ul> 
+ <li><b>Simple Device</b>: Disabling a simple device takes 1 round and is a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions">full-round action</a>.</li> 
+ <li><b>Complex/Intricate Device</b>: An intricate or complex device requires 1d4 or 2d4 rounds. Attempting to open a lock is a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions">full-round action</a>.</li> 
+</ul> 
+<h3><a name="TOC-Modifiers"></a>Modifiers</h3> 
+<ul> 
+ <li>Feats If you have the <a href="http://www.d20pfsrd.com/feats/general-feats/deft-hands">Deft Hands</a> feat, you get a +2 bonus on Disable Device skill checks. If you have 10 or more ranks in Disable Device, the bonus increases to +4.</li> 
+</ul> 
+<h3><a name="TOC-Magic-Traps"></a>Magic Traps</h3> 
+<p>Characters with the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Trapfinding">trapfinding</a> class feature can disarm magic traps. A magic <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a> generally has a DC of 25 + the spell level of the magic used to create it.</p> 
+<p>The spells <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/f/fire-trap" class="spell">fire trap</a>, <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/g/glyph-of-warding" class="spell">glyph of warding</a>, symbol, and <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/t/teleportation-circle" class="spell">teleportation circle</a> also create traps that a <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> can disarm with a successful Disable Device check. <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/s/spike-growth" class="spell">Spike growth</a> and <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/s/spike-stones" class="spell">spike stones</a>, however, create magic traps against which Disable Device checks do not succeed. See the individual spell descriptions for details.</p> 
+<h4><a name="TOC-Disable-Device-Unchained"></a>Disable Device Unchained</h4> 
+<p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" title="Pathfinder Unchained">PFU</a></p> 
+<p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+<p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+<p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="http://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+<p>With sufficient ranks in Disable Device, you earn the following.</p> 
+<a name="Unchained-Skill-Unlock"></a> 
+<div style="margin-left:20px"> 
+ <p><b>5 Ranks</b>: Reduce the time required to disarm a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a> or open a <a href="http://www.d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Lock">lock</a> by taking a –5 penalty on your Disable Device check for each step by which you reduce the time required: 2d4 rounds, 1d4 rounds, 1 round, a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>, a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Swift-Actions">swift action</a>.</p> 
+ <p><b>10 Ranks</b>: You can disarm magical traps at a –10 penalty even if you lack the trapfinding ability. If you possess the trapfinding ability, when attempting to disable magic traps, you never trigger them, even if you perform the trigger action (such as looking at a symbol). If you fail the check, you can still trigger the <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>, and you can&#8217;t use this ability to bypass it.</p> 
+ <p><b>15 Ranks</b>: When attacked by a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>, you can attempt a Disable Device check as an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> (adding your trap sense bonus, if any) opposed by the <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap&#8217;s</a> <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll">attack roll</a> or its save DC. If you succeed, you take half damage (or no damage if you exceed the DC by at least 10).</p> 
+ <p><b>20 Ranks</b>: You halve the penalties for performing a quick disarm as described in the 5 Ranks entry. If you possess the trapfinding ability and accept a –20 penalty while using the ability unlocked at 15 ranks, all nearby allies gain the benefit, and you disable the <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a> as an <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Immediate-Actions">immediate action</a> before it can trigger if you exceed the DC by at least 10.</p> 
+</div> 
+<h3><a name="TOC-Explosives"></a>Explosives</h3> 
+<p>With the <a href="http://www.d20pfsrd.com/feats/general-feats/technologist">Technologist feat</a>, a <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> can use Disable Device to interact safely with explosive devices and disable technological devices and traps.</p> 
+<ul> 
+ <li><b>Arm Explosive</b>: If you possess a detonator, you can arm an explosive weapon as a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>. Connecting a detonator to an explosive requires a successful DC 10 Disable Device check. Failure means that the attempt fails, but you can attempt to arm the explosive again. Failure by 5 or more means the explosive is triggered as the detonator is installed. You can attempt to make an explosive difficult to disarm. To do so, choose a target disarm DC of 15 or higher, with a DC increment of 5. This becomes your target DC to set the explosive as well as the DC to disarm the explosive.</li> 
+ <li><b>Disable Electronic Device or Trigger</b>: Disabling an electronic lock on a door or an electronic trigger for a trap (not the trap itself ) is easier if you use an e-pick—without an e-pick, you take a –5 penalty on such checks. <span style="font-size:12px"><b>Note</b>: The text of this use has been updated per official errata. [<a href="http://paizo.com/download/pathfinder/PZO9272-Errata.zip" target="_blank">Source</a>]</span></li> 
+ <li><b>Disarm Explosive</b>: Disarming an explosive requires the character to succeed at a Disable Device check as if disarming a <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>. The DC is usually 10, unless the person who set the explosive successfully did so with a higher disarm DC. A failure to disarm an explosive by 5 or more immediately triggers the explosive.</li> 
+</ul> 
+<p><b>Special</b>: A character can take 10 when using Disable Device to arm or disarm explosives, but cannot <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Take-20">take 20</a>.</p> 
+<p><b>Time</b>: Arming an explosive device takes 1 minute or more, depending on the scope of the job. Disarming an explosive is treated as if the explosive were a complex <a href="http://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps/">trap</a>, and takes 2d4 rounds to attempt.</p> 
+<div class="section15"> 
+<div>Section 15: Copyright Notice</div>
+ <div> 
+  <p><a href="http://www.amazon.com/gp/product/1601251505/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601251505&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20" target="_blank">Pathfinder RPG Core Rulebook</a>. Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p> 
+ </div> 
+</div>                                      <div id="comments" class="comments">
+    
+
+
+</div>
+
+<hr />
+
+                                  <!--div style="clear:both"></div-->
+                                                                        </div>
+                           </div>
+                           <div class="article-edit-link">
+                                                         </div>
+                        </div>
+                         <div class="col-sm-3 col-md-3 col-lg-2 col-xs-12 right-sidebar">
+        <div class="page-widget right-sidebar-widgets">
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-right-upper" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-right-upper","vert");
+</script></div></div>             
+
+            <div class="product-listing" style="background-color:#FFF">
+                        <div id="shopify-buybutton-134380075" class="shopify-buybutton" shopify-id="134380075">
+        </div>                           
+            </div>
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-right-lower-0" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-right-lower-0","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p>
+<a href="http://www.d20pfsrd.com/new-pages">New Pages</a><br />
+<a href="http://www.d20pfsrd.com/recent-changes">Recent Changes</a><br />
+<a href="http://www.d20pfsrd.com/extras/community-creations">Fan Labs</a><br />
+<a href="http://www.d20pfsrd.com/extras/character-sheets">Character Sheets</a><br />
+<a href="http://www.d20pfsrd.com/extras/downloads">Downloads</a><br />
+<a href="http://www.d20pfsrd.com/extras/community-creations/hero-lab">Hero Lab Community Repository</a><br />
+<a href="http://www.d20pfsrd.com/extras/pathfinder-faq">FAQ<br />
+</a><a href="http://www.d20pfsrd.com/extras/pirates-arrr-us">Pirates ARRR Us!</a></p>
+</div></div><div class="widget widget_black_studio_tinymce"><h4 class="widget-title">Extras</h4><div class="textwidget"><p><a href="http://shop.d20pfsrd.com/" target="_blank">Shop our Store!</a><br />
+ <a href="http://www.d20pfsrd.com/join-store">Sell in the Store!</a><br />
+ <a href="https://www.patreon.com/d20pfsrd?ref=d20pfsrd.com" target="_blank">Back my Patreon!</a><br />
+ <a href="http://www.d20pfsrd.com/get-published">Get Published</a><br />
+ <a href="http://opengamingnetwork.com/report-problem/">Report a Problem</a><br />
+ <a href="http://www.d20pfsrd.com/extras/legal/">Legal Information/Open Game License</a></p>
+</div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="http://articles.opengamingnetwork.com/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="http://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="http://articles.opengamingnetwork.com/">OGN Blog</a></h4><ul><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/the-magic-shoppe-snake-inspired-items/'>The Magic Shoppe: Snake Inspired Items</a> <span class="rss-date">April 26, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/rpg-kickstarter-you-should-back-press-release-the-dungeon/'>RPG Kickstarter You Should Back: (Press Release) The Dungeon</a> <span class="rss-date">April 13, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/were-on-holiday/'>WE’RE ON HOLIDAY!</a> <span class="rss-date">March 17, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-library-items/'>The Magic Shoppe: Library Items</a> <span class="rss-date">March 15, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-wun-android-captain/'>Creative Characters (Starfinder): Wun, Android Captain</a> <span class="rss-date">March 14, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creature-feature-starfinder-urban-prowler/'>Creature Feature (Starfinder): Urban Prowler</a> <span class="rss-date">March 10, 2019</span> <cite>nwright</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/saturday-potpourri-cleric-of-the-forgotten-gods-archetype-domain/'>Saturday Potpourri – Cleric of the Forgotten Gods (Archetype/Domain)</a> <span class="rss-date">March 9, 2019</span> <cite>mmiller</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-undead-items/'>The Magic Shoppe: Undead Items</a> <span class="rss-date">March 8, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-jelilah-hartennen-special-liaison/'>Creative Characters (Starfinder): Jelilah Hartennen, Special Liaison</a> <span class="rss-date">March 7, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-yhua-lneth-the-kraken-caller/'>Creative Characters – Y’hua-lneth the Kraken Caller</a> <span class="rss-date">March 6, 2019</span> <cite>markt</cite></li></ul></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><div style="text-align: center;">
+<div style="display: inline-block; overflow: hidden;">
+<div style="width: 150px;" title="Check out the Pathfinder NPC generator!"><a style="text-decoration: none;" href="http://www.dinglesgames.com/tools/NPCGenerator/pathfinder/" target="_blank" rel="noopener noreferrer"><img src="http://www.d20pfsrd.com/_/images/Dingles-Games-Patreon.png" width="120" height="90" border="0" /></a></div>
+<br />
+<div style="width: 150px;" title="Scroll and Codex: Dice Tower and Rolling Tray"><a style="text-decoration: none;" href="https://www.elderwoodacademy.com/" target="_blank" rel="noopener noreferrer"><img src="http://www.d20pfsrd.com/_/images/scroll-codex-small.jpg" width="120" height="90" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="https://www.kickstarter.com/projects/celticrefuge/unique-character-books-for-your-character-in-pathf?ref=project_build#" target="_blank" rel="noopener noreferrer"><img src="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/12/CRPpatreonlogo.png" width="120" height="120" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="http://bit.ly/FWPLAUNCH" target="_blank" rel="noopener noreferrer"><img src="http://www.d20pfsrd.com/wp-content/uploads/sites/12/2019/02/FWP-Ad.gif" width="120" height="90" border="0" /></a></div>
+</div>
+</div></div></div>                              
+            <div id="right-sidebar-filler" class="filler"></div>
+        </div>              
+
+    </div>
+                    </article>
+				
+                    <a class="scroll-to-top" href="#"><img src="http://www.d20pfsrd.com/wp-content/themes/srdtheme/images/Up1Blue.png" /></a>
+            
+                                        <div class="sidebar-bottom">
+                            <div class="page-widget">
+                            <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-bottom" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-bottom","horiz");
+</script></div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="https://www.opengamingstore.com/collections/pathfinder/all.atom"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="http://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="https://www.opengamingstore.com/collections/all">Latest Pathfinder products in the Open Gaming Store</a></h4><ul><li><a class='rsswidget' href='https://www.opengamingstore.com/products/d20pfsrd-com-publishing-grab-bags'>d20pfsrd.com Publishing GRAB BAGS!</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-playtest-second-edition'>Pathfinder RPG: PLAYTEST (Second Edition)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-roleplaying-game-planar-adventures-pfrpg'>Pathfinder Roleplaying Game: Planar Adventures (PFRPG)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/the-master-of-forms-expanded-the-wood-element'>The Master of Forms Expanded - The Wood Element</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/monster-menagerie-gruesome-foes-review'>Monster Menagerie: Gruesome Foes Review</a></li></ul></div>                            </div> 
+                    </div>
+                    
+		</section>
+            </main>
+        </div>
+    </div> <!-- end row-fluid --->
+</div> <!-- /end content -->
+        <div class="span2">
+        </div>
+        <div class="clearfix"></div>
+    </div> <!-- /end row -->
+
+</div> <!-- /end container -->
+<!-- Footer Nav -->
+<aside class="footer-nav" role="complementary">
+
+<div class="container-fluid">
+<div class="row">
+    
+    <div class="col-md-12">   
+       
+          <div class="footer-widget">
+           <div class="widget widget_black_studio_tinymce"><div class="textwidget"><table style="clear: both; width: 100%; font-size: 18px; background-color:rgb(255,255,255);" cellpadding="5">
+<tbody>
+<tr style="vertical-align: middle; background-color: #cfe2f3;">
+<td style="width: 20%; text-align: center;" title="Become an Editor!">
+<a class="sites-navigation-link topLevel" href="http://account.opengamingnetwork.com/manage/editrequest" target="_blank" rel="noopener">Become an Editor!</a></td>
+<td style="width: 20%; text-align: center;" title="Support open gaming and this site, shop the Open Gaming Store!"><a href="http://www.opengamingstore.com/" target="_blank">Support<br />
+Open Gaming</a></td>
+<td style="width: 20%; text-align: center;" title="Subscribe to our newsletter and get updates on all the new stuff on d20pfsrd.com!"><a href="http://eepurl.com/bNgnPH" target="_blank">Subscribe to Our<br />
+Newsletter</a></td>
+<td style="width: 20%; text-align: center;" title="If you are a publisher of Pathfinder or other gaming products, you really should get added to our store!"><a href="http://www.opengamingstore.com/pages/publisher-information" target="_blank">Sell in the<br />Open Gaming Store</a></td>
+<td style="width: 20%; text-align: center;" title="If you've seen an issue or problem with this site please let us know!"><a href="http://opengamingnetwork.com/report-problem/" target="_blank">Report a<br />
+Bug or Issue</a></td>
+</tr>
+</tbody>
+</table>
+</div></p></div>          </div>
+ 	</div>            
+    </div>
+
+        
+</div>
+<div class="row">
+ 
+ 	<div class="col-md-4">
+	 	</div>
+  
+	<div class="col-md-4">
+	 	</div>
+
+	<div class="col-md-4">
+	 	</div>
+
+</div> <!-- /row Footer Nav -->
+</div> <!-- /container Footer Nav -->
+</aside>
+
+<footer class="container-fluid main-footer">
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-12">
+        <div class="footer" role="contentinfo">
+            <div class="credits-widget">
+                <p>Check out our other SRD sites!
+                            <a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a> 
+                 |                 <a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a> 
+                 |                 <a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a> 
+                 |                 <a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a> 
+                 |                 <a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a> 
+                 |                 <a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a> 
+                 |                 <a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a> 
+                 |                 <a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a> 
+                 |                 <a href="http://www.35srd.com" target="_blank">3.5e SRD</a> 
+                 |                 <a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a> 
+                 |                 <a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a> 
+                 |                 <a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a> 
+                 |                 <a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a> 
+                 |                 <a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a> 
+                 |                 <a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a> 
+                 |                 <a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a> 
+                 |                 <a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a> 
+                 |                 <a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a> 
+                                    
+                </p>                
+                                <p class="text-center footer-disclaimer">
+                    This site may earn <a href="//www.d20pfsrd.com/legal#affiliate-links">affiliate commissions</a> from the links on this page.
+                </p>
+                <p class="text-center">
+                    OGN SRD v1.5.2 using <a href="http://getbootstrap.com/">Bootstrap</a>
+                </p>
+                <p class="text-center">
+                    <a href="/new-pages">New Pages</a> | <a href="/recent-changes">Recent Changes</a> | <a href="//opengamingnetwork.com/privacy-policy">Privacy Policy</a>
+                </p>                
+            </div>       
+        </div>
+    </div>
+    <div class="col-md-1"></div>    
+</div> <!-- /end row -->
+</footer> <!-- /end container-fluid -->
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-54881920-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->        
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ogn_params = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn.js?ver=1551434665'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-shopify.js?ver=1551434665'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-nav.js?ver=1551434665'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","visibility_hide_by_default":"1","width":"200px"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://www.d20pfsrd.com/wp-includes/js/wp-embed.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.622 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-05-12 22:26:11 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

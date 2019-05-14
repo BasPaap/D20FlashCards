@@ -1,0 +1,882 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <base href="https://www.d20.com/skills/Craft/">
+          <!-- link rel="search" type="application/opensearchdescription+xml" title="d20PFSRD" href="https://www.d20pfsrd.com/wp-content/themes/srdtheme/opensearch.php" /-->
+    <title>Craft (Int) &#8211; d20PFSRD</title>
+<link rel='dns-prefetch' href='//www.d20pfsrd.com' />
+<link rel='dns-prefetch' href='//account.opengamingnetwork.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Feed" href="https://www.d20pfsrd.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Comments Feed" href="https://www.d20pfsrd.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.d20pfsrd.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=741751694b0c23cb369738b3058aae5a"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ogncustom-css-css'  href='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/css/ogncustom.css?ver=1551434665' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/style.css?ver=741751694b0c23cb369738b3058aae5a' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/style.css?ver=1.5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-bootstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='child-dynamic-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/sites/12.css?ver=1546817288' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-fontawesome-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/font-awesome/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/srdtheme/js/srdtheme.js?ver=1547330625'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/quickstrap/js/bootstrap.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='//account.opengamingnetwork.com/js/ognbar.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+<link rel='https://api.w.org/' href='https://www.d20pfsrd.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.d20pfsrd.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.d20pfsrd.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="https://www.d20pfsrd.com/skills/craft/" />
+<link rel='shortlink' href='https://www.d20pfsrd.com/?p=110869' />
+<link rel="alternate" type="application/json+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fcraft%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fcraft%2F&#038;format=xml" />
+                <script src="https://s.nitropay.com/ads-99.js"></script>
+                <script language="JavaScript">
+                   ognNitroPay = true;
+                </script>
+            <style type="text/css">div#toc_container {width: 200px;}</style><link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+<meta name="msapplication-TileImage" content="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+		<style type="text/css" id="wp-custom-css">
+			/*
+Custom CSS has moved to 
+OGN SRD Theme > Additional CSS
+*/
+
+		</style>
+	  </head>
+
+<body class="page-template-default page page-id-110869 page-parent page-child parent-pageid-110850">
+      
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/" aria-expanded="false">OGN<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="ogn-sites-dropdown">
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">d20PFSRD</a>
+                </li>
+            </ul>  
+                      <ul class="nav navbar-nav navbar-right">
+            <li id="ogn-login"></li>
+            <li> 
+                <form class="search navbar-form navbar-right" action="https://cse.google.com/cse" method="get"role="search">
+                    <input type="hidden" value="006680642033474972217:6zo0hx_wle8" name="cx" id="cx">
+                <div class="input-group">
+                <input class="form-control" name="q" type="search" required class="searchField" placeholder="Google Site Search" maxlength="50"/> 
+                <span class="input-group-btn"> <button type="submit" class="search-button btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button> </span> 
+                </div> 
+                </form>
+            </li>            
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div class="container-fluid">
+<div class="ognannouncement-container passive">
+<div class="ognannouncement passive"></div>
+</div>
+<div class="header row-fluid">
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+	<div class="col-sm-10 col-md-10 col-xs-12">
+		<div class="logo">
+		<a href="/">
+                    <img class="header-logo img-responsive" src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2017/01/customLogo_gif.png" height="139" width="756" alt="" />
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+    <div class="clearfix"></div>
+    <header class="header" role="banner">
+         <nav class="navbar" role="navigation">
+
+<!-- Header Menu -->
+ 
+
+	<!--  Direct links / Right nav  
+	<ul class="nav navbar-nav">
+            <li class=""><a href=""></a></li>
+        </ul>
+
+	<ul class="nav navbar-nav navbar-right">
+  	 <li class=""><a href=""></a></li>
+        </ul>
+ 	-->
+    <div class="menuclear"></div>
+    </nav>    </header>      
+</div>
+<div class="clearfix"></div>
+<div class="content row-fluid">
+  
+<div class="col-12">
+    <div class="row-fluid">
+       
+            <!-- Left Sidebar -->
+<aside class="sidebar-left" role="complementary">
+    
+    <div id="menu-expander" class="menu-expander hidden-sm hidden-md hidden-lg">
+    <button type="button" class="btn btn-default" aria-label="Expand Menu">
+        <span id="expand-button" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+    <script type="text/javascript">
+        jQuery('div#menu-expander').click(function() {
+            jQuery('.sidebar-contents').toggleClass('expand-menu');
+            jQuery('main').toggleClass('expand-menu');
+            jQuery('span#expand-button').toggleClass('glyphicon-chevron-right').toggleClass('glyphicon-chevron-left');
+        });
+    </script>
+    </div>
+     
+    <div class="sidebar-contents">
+              <div class="sidebar-widget">
+               <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div style="text-align:center">
+<a href="http://www.opengamingstore.com/" target="_blank" title="Support Open Gaming, Shop the Open Gaming Store!">
+<img src="/wp-content/themes/srdtheme/images/open-gaming-160wide.png">
+</a>
+</div></div></div><div class="widget widget_ognajaxnav widget_srdpagelist"><ul id="ognajaxnav1" class="ognajaxnav" parent="" depth="0" currentpage="110869"><li class="page_item new parent" post_id="52278"><a href="http://www.d20pfsrd.com/">Home</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109106"><a href="http://www.d20pfsrd.com/basics-ability-scores/">Basics &amp; Ability Scores</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="70407"><a href="http://www.d20pfsrd.com/alignment-description/">Alignment &amp; Description</a></li><li class="page_item new parent page_item_has_children" post_id="90602"><a href="http://www.d20pfsrd.com/races/">Races</a><ul class="children"><li class="page_item new parent" post_id="126650"><a href="http://www.d20pfsrd.com/races/aquatic-adventurers/">Aquatic Adventurers</a></li><li class="page_item new parent page_item_has_children" post_id="90769"><a href="http://www.d20pfsrd.com/races/core-races/">Core Races</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="90798"><a href="http://www.d20pfsrd.com/races/core-races/half-elf/">Half-elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90770"><a href="http://www.d20pfsrd.com/races/core-races/dwarf/">Dwarves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90780"><a href="http://www.d20pfsrd.com/races/core-races/elf/">Elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90790"><a href="http://www.d20pfsrd.com/races/core-races/gnome/">Gnomes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90810"><a href="http://www.d20pfsrd.com/races/core-races/half-orc/">Half-orcs</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90820"><a href="http://www.d20pfsrd.com/races/core-races/halfling/">Halflings</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90828"><a href="http://www.d20pfsrd.com/races/core-races/human/">Humans</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90838"><a href="http://www.d20pfsrd.com/races/other-races/">Other Races</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90603"><a href="http://www.d20pfsrd.com/races/3rd-party-races/">3rd Party Races</a></li></ul></li><li class="page_item new parent page_item_has_children" post_id="81812"><a href="http://www.d20pfsrd.com/classes/">Classes</a><ul class="children"><li class="page_item new parent" post_id="84814"><a href="http://www.d20pfsrd.com/classes/character-advancement/">Character Advancement</a></li><li class="page_item new parent" post_id="84816"><a href="http://www.d20pfsrd.com/classes/class-archetypes/">Class Archetypes</a></li><li class="page_item new parent page_item_has_children" post_id="84838"><a href="http://www.d20pfsrd.com/classes/core-classes/">Core Classes</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="85555"><a href="http://www.d20pfsrd.com/classes/core-classes/cleric/">Cleric</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="85337"><a href="http://www.d20pfsrd.com/classes/core-classes/bard/">Bard</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84839"><a href="http://www.d20pfsrd.com/classes/core-classes/barbarian/">Barbarian</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86505"><a href="http://www.d20pfsrd.com/classes/core-classes/fighter/">Fighter</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86263"><a href="http://www.d20pfsrd.com/classes/core-classes/druid/">Druid</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87124"><a href="http://www.d20pfsrd.com/classes/core-classes/rogue/">Rogue</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86676"><a href="http://www.d20pfsrd.com/classes/core-classes/monk/">Monk</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86818"><a href="http://www.d20pfsrd.com/classes/core-classes/paladin/">Paladin</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86966"><a href="http://www.d20pfsrd.com/classes/core-classes/ranger/">Ranger</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87852"><a href="http://www.d20pfsrd.com/classes/core-classes/sorcerer/">Sorcerer</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88188"><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/">Wizard</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="83159"><a href="http://www.d20pfsrd.com/classes/base-classes/">Base Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82837"><a href="http://www.d20pfsrd.com/classes/alternate-classes/">Alternate Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88465"><a href="http://www.d20pfsrd.com/classes/hybrid-classes/">Hybrid Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89543"><a href="http://www.d20pfsrd.com/classes/unchained-classes/">Unchained Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89328"><a href="http://www.d20pfsrd.com/classes/prestige-classes/">Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89224"><a href="http://www.d20pfsrd.com/classes/npc-classes/">NPC Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89218"><a href="http://www.d20pfsrd.com/classes/monster-classes/">Monster Classes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="81813"><a href="http://www.d20pfsrd.com/classes/3rd-party-classes/">3rd Party Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84817"><a href="http://www.d20pfsrd.com/classes/arcane-archetypes-rogue-genius-games/">Arcane Archetypes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82714"><a href="http://www.d20pfsrd.com/classes/3rd-party-prestige-classes/">3rd Party Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82708"><a href="http://www.d20pfsrd.com/classes/3rd-party-npc-classes/">3rd Party NPC Classes</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="91199"><a href="http://www.d20pfsrd.com/feats/">Feats</a></li><li class="page_item new parent" post_id="110850"><a href="http://www.d20pfsrd.com/skills/">Skills</a></li><li class="page_item new parent" post_id="110918"><a href="http://www.d20pfsrd.com/traits/">Traits</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109161"><a href="http://www.d20pfsrd.com/equipment/">Equipment</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="102432"><a href="http://www.d20pfsrd.com/magic-items/">Magic Items</a></li><li class="page_item new parent page_item_has_children" post_id="71179"><a href="http://www.d20pfsrd.com/magic/">Magic</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="74736"><a href="http://www.d20pfsrd.com/magic/all-spells/">Spells (Paizo, Inc.)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79570"><a href="http://www.d20pfsrd.com/magic/spells-by-class-3rd-party/">Spells by Class‎ (3rd Party)</a></li><li class="page_item new parent" post_id="79511"><a href="http://www.d20pfsrd.com/magic/building-and-modifying-constructs/">Building and Modifying Constructs</a></li><li class="page_item new parent" post_id="79568"><a href="http://www.d20pfsrd.com/magic/spellbooks/">Preconstructed Spellbooks</a></li><li class="page_item new parent" post_id="79514"><a href="http://www.d20pfsrd.com/magic/rare-cantrips/">Rare Cantrips</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="71180"><a href="http://www.d20pfsrd.com/magic/3rd-party-spells/">Spells (3rd Party)</a></li><li class="page_item new parent page_item_has_children" post_id="79516"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/">Spells by Class</a><ul class="children"><li class="page_item new parent" post_id="79527"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/formulae-lists-alchemist/">Alchemist/Investigator Formulae</a></li><li class="page_item new parent" post_id="79517"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/antipaladin-spell-list/">Antipaladin</a></li><li class="page_item new parent" post_id="79544"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-bard/">Bard</a></li><li class="page_item new parent" post_id="79519"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/bloodrager/">Bloodrager</a></li><li class="page_item new parent" post_id="79546"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric/">Cleric/Oracle</a></li><li class="page_item new parent" post_id="79548"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-druid/">Druid</a></li><li class="page_item new parent" post_id="79550"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-inquisitor/">Inquisitor</a></li><li class="page_item new parent" post_id="79530"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/magus-spell-list/">Magus</a></li><li class="page_item new parent" post_id="79532"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/medium/">Medium</a></li><li class="page_item new parent" post_id="79534"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/mesmerist/">Mesmerist</a></li><li class="page_item new parent" post_id="79536"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/occultist/">Occultist</a></li><li class="page_item new parent" post_id="79552"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-paladin/">Paladin</a></li><li class="page_item new parent" post_id="79538"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/psychic/">Psychic</a></li><li class="page_item new parent" post_id="79554"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-ranger/">Ranger</a></li><li class="page_item new parent" post_id="79540"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/shaman/">Shaman</a></li><li class="page_item new parent" post_id="79556"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-sorcerer-and-wizard/">Sorcerer/Wizard</a></li><li class="page_item new parent" post_id="79560"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spiritualist/">Spiritualist</a></li><li class="page_item new parent" post_id="79558"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-summoner/">Summoner</a></li><li class="page_item new parent" post_id="79542"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-list-witch/">Witch</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79620"><a href="http://www.d20pfsrd.com/magic/tools/">Tools</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79660"><a href="http://www.d20pfsrd.com/magic/variant-magic-rules/">Variant Magic Rules</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="52986"><a href="http://www.d20pfsrd.com/gamemastering/">Gamemastering</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="57186"><a href="http://www.d20pfsrd.com/bestiary/">Bestiary</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="157240"><a href="http://www.d20pfsrd.com/alternative-rule-systems/">Alternative Rule Systems</a></li></ul></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-left-upper-0" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-left-upper-0","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p><a href="http://www.5esrd.com" title="Click here to visit the 5e/5th Edition SRD!"><br />
+<img border="0" src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/5esrd-logo-160wide.png" style="border-style:none;text-decoration:none"><br />
+</a></p>
+</div></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-left-lower" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-left-lower","vert");
+</script></div></div>                <div id="left-sidebar-filler" class="filler"></div>
+                <div class="widget">
+		<h2>OGN Sites</h2>
+		<ul class="children">
+                            <li><a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a></li>
+                                <li><a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a></li>
+                                <li><a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a></li>
+                                <li><a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a></li>
+                                <li><a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a></li>
+                                <li><a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a></li>
+                                <li><a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a></li>
+                                <li><a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a></li>
+                                <li><a href="http://www.35srd.com" target="_blank">3.5e SRD</a></li>
+                                <li><a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a></li>
+                                <li><a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a></li>
+                                <li><a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a></li>
+                                <li><a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a></li>
+                                <li><a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a></li>
+                                <li><a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a></li>
+                                <li><a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a></li>
+                                <li><a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a></li>
+                                <li><a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a></li>
+                		</ul>
+	   </div>
+              
+	  </div> 
+	    </div>
+
+</aside>
+
+<!-- /end sidebar -->            <!-- Content -->
+            <main role="main" class="pre-nextgen">
+		<section>
+
+
+		                                        <article id="post-110869" class="skills craftint post-110869 page type-page status-publish hentry">
+                        <a class="bread-parent" parentid="52278" href="https://www.d20pfsrd.com/" title="Home">Home</a>&nbsp;&gt;<a class="bread-parent" parentid="110850" href="https://www.d20pfsrd.com/skills/" title="Skills">Skills</a>&nbsp;&gt;                        <h1>Craft (Int)</h1>	
+                                                                     
+                       
+                                            <div class="page-widget top-post">
+                       <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-top-1" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-top-1","horiz", "ca-pub-6942081593517974", "4873621841");
+</script></div></div>                        </div>
+                        
+                        <div class="col-sm-9 col-md-9 col-lg-10 col-xs-12 article-text">
+                           <div class="page-center">
+                                  <div class="article-content">                                                      
+                                      <div class="product-left">
+          <div id="shopify-buybutton-759725064287" class="shopify-buybutton" shopify-id="759725064287">
+        </div> 
+</div> 
+<div class="product-right">
+          <div id="shopify-buybutton-9552819401" class="shopify-buybutton" shopify-id="9552819401">
+        </div> 
+</div> 
+<p>You are skilled in the creation of a specific group of items, such as armor or weapons. Like <a href="https://www.d20pfsrd.com/skills/knowledge">Knowledge</a>, <a href="https://www.d20pfsrd.com/skills/perform">Perform</a>, and <a href="https://www.d20pfsrd.com/skills/profession">Profession</a>, Craft is actually a number of separate skills. You could have several Craft skills, each with its own ranks. The most common Craft skills are alchemy, <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus">armor</a>, baskets, books, bows, calligraphy, carpentry, cloth, clothing, glass, jewelry, leather, locks, paintings, pottery, sculptures, ships, shoes, stonemasonry, traps, and weapons.</p> 
+<p>A Craft skill is specifically focused on creating something. If nothing is created by the endeavor, it probably falls under the heading of a Profession skill.</p> 
+<h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+<h4><a name="TOC-Practice-a-Trade"></a>Practice a Trade</h4> 
+<p>You can practice your trade and make a decent living, earning half your check result in gold pieces per week of dedicated work. You know how to use the tools of your trade, how to perform the craft&#8217;s daily tasks, how to supervise untrained helpers, and how to handle common problems. (Untrained laborers and assistants earn an average of 1 silver piece per day.)</p> 
+<h4><a name="TOC-Make-Something"></a>Make Something</h4> 
+<p>The basic function of the Craft skill, however, is to allow you to make an item of the appropriate type. The DC depends on the complexity of the item to be created. The DC, your check result, and the price of the item determine how long it takes to make a particular item. The item&#8217;s finished price also determines the cost of raw materials.</p> 
+<p>To determine how much time and money it takes to make an item, follow these steps.</p> 
+<ol> 
+ <li>Find the item&#8217;s price in silver pieces (1 gp = 10 sp).</li> 
+ <li>Find the item&#8217;s DC from <b>Table: Craft Skills</b>.</li> 
+ <li>Pay 1/3 of the item&#8217;s price for the raw material cost.</li> 
+ <li>Make an appropriate Craft check representing one week&#8217;s worth of work. If the check succeeds, multiply your check result by the DC. If the result × the DC equals the price of the item in sp, then you have completed the item. (If the result × the DC equals double or triple the price of the item in silver pieces, then you&#8217;ve completed the task in one-half or one-third of the time. Other multiples of the DC reduce the time in the same manner.) If the result × the DC doesn&#8217;t equal the price, then it represents the progress you&#8217;ve made this week. Record the result and make a new Craft check for the next week. Each week, you make more progress until your total reaches the price of the item in silver pieces.</li> 
+</ol> 
+<p><b>Action</b>: Craft checks are made by the day or week (see above).</p> 
+<p><b>Retry?</b> Yes, but if you fail a check by 4 or less, you make no progress this week (or day, see below). If you miss by 5 or more, you ruin half the raw materials and have to pay half the original raw material cost again.</p> 
+<h3><a name="TOC-Modifiers"></a>Modifiers</h3> 
+<ul> 
+ <li><b>Tools</b>: All crafts require artisan&#8217;s tools to give the best chance of success. If improvised tools are used, the check is made with a –2 penalty. On the other hand, masterwork artisan&#8217;s tools provide a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on the check.</li> 
+ <li><b>Fabricate Spell</b>: In some cases, the <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/f/fabricate" class="spell">fabricate</a> spell can be used to achieve the results of a Craft check with no actual check involved. You must still make an appropriate Craft check when using the spell to make articles requiring a high degree of craftsmanship.</li> 
+ <li><b>Ironwood Spell</b>: A successful Craft check related to woodworking in conjunction with the casting of the <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/i/ironwood" class="spell">ironwood</a> spell enables you to make wooden items that have the strength of steel.</li> 
+ <li><b>Minor Creation</b>: When casting the spell <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/m/minor-creation" class="spell">minor creation</a>, you must succeed on an appropriate Craft check to make a complex item.</li> 
+ <li><b>Progress by the Day</b>: You can make checks by the day instead of by the week if desired. In this case your progress (check result × DC) should be divided by the number of days in a week.</li> 
+</ul> 
+<div style="font-size:15px"> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Craft Skills and DCs 
+  </caption> 
+  <thead> 
+   <tr> 
+    <th class="text">Item</th> 
+    <th class="text">Craft Skill</th> 
+    <th class="text">Craft DC</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Acid">Acid</a></td> 
+    <td class="text">Alchemy</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Alchemist-s-Fire">Alchemist&#8217;s fire</a>, <a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Smokestick">smokestick</a>, or <a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Tindertwig">tindertwig</a></td> 
+    <td class="text">Alchemy</td> 
+    <td class="number">20</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Antitoxin">Antitoxin</a>, <a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Sunrod">sunrod</a>, <a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Tanglefoot-Bag">tanglefoot bag</a>, or <a href="https://www.d20pfsrd.com/equipment/goods-and-services#TOC-Thunderstone">thunderstone</a></td> 
+    <td class="text">Alchemy</td> 
+    <td class="number">25</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/armor">Armor or shield</a></td> 
+    <td class="text">Armor</td> 
+    <td class="text">10 + AC bonus</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longbow">Longbow</a>, <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortbow">shortbow</a>, or arrows</td> 
+    <td class="text">Bows</td> 
+    <td class="number">12</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longbow-composite">Composite longbow</a> or <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortbow-composite">composite shortbow</a></td> 
+    <td class="text">Bows</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longbow-composite">Composite longbow</a> or <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortbow-composite">composite shortbow</a> with high strength rating</td> 
+    <td class="text">Bows</td> 
+    <td class="text">15 + (2 x rating)</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Crossbow, or bolts</td> 
+    <td class="text">Weapons</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Simple melee or thrown weapon</td> 
+    <td class="text">Weapons</td> 
+    <td class="number">12</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Martial melee or thrown weapon</td> 
+    <td class="text">Weapons</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Exotic melee or thrown weapon</td> 
+    <td class="text">Weapons</td> 
+    <td class="number">18</td> 
+   </tr> 
+   <tr> 
+    <td class="text"><a href="https://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps">Mechanical trap</a></td> 
+    <td class="text">Traps</td> 
+    <td class="text"><a href="https://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains#TOC-Craft-DCs-for-Mechanical-Traps">Varies</a><sup style="font-size:10px">1</sup></td> 
+   </tr> 
+   <tr> 
+    <td class="text">Very simple item (wooden spoon)</td> 
+    <td class="text">Varies</td> 
+    <td class="number">5</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Typical item (iron pot)</td> 
+    <td class="text">Varies</td> 
+    <td class="number">10</td> 
+   </tr> 
+   <tr> 
+    <td class="text">High-quality item (bell)</td> 
+    <td class="text">Varies</td> 
+    <td class="number">15</td> 
+   </tr> 
+   <tr> 
+    <td class="text">Complex or superior item (lock)</td> 
+    <td class="text">Varies</td> 
+    <td class="number">20</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <p class="source"> <sup style="font-size:10px">1</sup> Traps have their own <a href="https://www.d20pfsrd.com/gamemastering/traps-hazards-and-special-terrains/traps">rules for construction</a>.</p> 
+</div> 
+<h4><a name="TOC-Create-Masterwork-Item"></a>Create Masterwork Item</h4> 
+<p>You can make a masterwork item: a weapon, suit of <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus">armor</a>, shield, or tool that conveys a bonus on its use through its exceptional craftsmanship. To create a masterwork item, you create the masterwork component as if it were a separate item in addition to the standard item. The masterwork component has its own price (300 gp for a weapon or 150 gp for a suit of armor or a shield, see Equipment for the price of other masterwork tools) and a Craft DC of 20. Once both the standard component and the masterwork component are completed, the masterwork item is finished. The cost you pay for the masterwork component is one-third of the given amount, just as it is for the cost in raw materials.</p> 
+<p><b>Action</b>: Craft checks are made by the day or week (see above).</p> 
+<p><b>Retry?</b> Yes, but each time you miss by 5 or more, you ruin half the raw materials and have to pay half the original raw material cost again.</p> 
+<h4><a name="TOC-Repair-Item"></a>Repair Item</h4> 
+<p>You can repair an item by making checks against the same DC that it took to make the item in the first place. The cost of repairing an item is one-fifth of the item&#8217;s price.</p> 
+<p><b>Action</b>: Craft checks are made by the day or week (see above).</p> 
+<p><b>Retry?</b> Yes, but each time you miss by 5 or more, you ruin half the raw materials and have to pay half the original raw material cost again.</p> 
+<h3><a name="TOC-Other-Special-Situations-Modifiers"></a>Other Special Situations &amp; Modifiers<br> </h3> 
+<ul> 
+ <li><b>Accelerated Crafting</b> You may voluntarily add +10 to the indicated DC to craft an item. This allows you to create the item more quickly (since you&#8217;ll be multiplying this higher DC by your Craft check result to determine progress). You must decide whether to increase the DC before you make each weekly or daily check.</li> 
+ <li><b>Tools &amp; Equipment</b> To make an item using Craft (alchemy), you <b>must</b> have alchemical equipment. If you are working in a city, you can buy what you need as part of the raw materials cost to make the item, but alchemical equipment is difficult or impossible to come by in some places. Purchasing and maintaining an alchemist&#8217;s lab grants a +2 circumstance bonus on Craft (alchemy) checks because you have the perfect tools for the job, but it does not affect the cost of any items made using the skill.</li> 
+ <li><b>Gnome</b> A gnome receives a +2 bonus on a Craft or <a href="https://www.d20pfsrd.com/skills/profession">Profession</a> skill of her choice.</li> 
+ <li><b>Craft (mechanical)</b> Those who wish to construct or repair technological items use <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (mechanical) in conjunction with technological item crafting feats. Without the Technologist feat, <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (mechanical) can still be used to craft less advanced forms of technology such as gears, hinges, and pulleys. NPCs with the means of crafting technological items are extremely rare, and it is not assumed that PCs have access to such resources. GMs are encouraged to discuss such considerations with their players before allowing technological crafting into the game.</li> 
+</ul> 
+<h4><a name="TOC-Unchained-Crafting"></a>Unchained Crafting<br> </h4> 
+<p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" title="Pathfinder Unchained">PFU</a></p> 
+<p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+<p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="https://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+<p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="https://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+<p>With sufficient ranks in Craft, you earn the following.<a name="Unchained-Skill-Unlock"></a></p> 
+<div style="margin-left:20px"> 
+ <p><b>5 Ranks</b>: When determining your weekly progress, double the result of your Craft check before multiplying the result by the item&#8217;s DC.</p> 
+ <p><b>10 Ranks</b>: You do not ruin any of your raw materials unless you fail a check by 10 or more.</p> 
+ <p><b>15 Ranks</b>: When you determine your progress, the result of your check is how much work you complete each day in silver pieces.</p> 
+ <p><b>20 Ranks</b>: You can craft magic <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus">armor</a>, magic weapons, magic rings, and wondrous items that fall under your category of Craft using the normal Craft rules.</p> 
+</div> 
+<h3>Expanded Alchemy Options</h3> 
+<div style="padding:10px"> 
+ <h3><a name="TOC-Spontaneous-Alchemy"></a>Spontaneous Alchemy</h3> 
+ <p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601256051/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601256051&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=HB45P3YBLX7E7SXB" target="_blank">PPC:AM</a></p> 
+ <p>The spontaneous alchemy rules allow any characters to dedicate themselves to the art of spontaneous alchemy. Feats that increase one&#8217;s prowess in spontaneous alchemy make this path even more potent, allowing both professional and amateur alchemists to craft dozens of different alchemical items in a fraction of the time that would normally be required. For Your Character</p> 
+ <p>These optional rules provide an all-new way for characters to rapidly craft alchemical items. This subsystem requires the player to track the individual alchemical reagents her character has on hand, which she can combine in a variety of ways using different processes to create a wide selection of alchemical items. With the GM&#8217;s permission, characters with the <a href="https://www.d20pfsrd.com/feats/general-feats/eschew-materials">Eschew Materials</a> feat can assume they have the correct reagents on hand to perform spontaneous alchemy; instead of tracking the quantities of each reagent owned, players can then simply track the number of gold pieces worth of reagents their PCs spend each time they perform an act of spontaneous alchemy. The cost to craft an item with spontaneous alchemy is usually 10% to 20% higher than the item&#8217;s market price.</p> 
+ <p>Characters versed in spontaneous alchemy can concoct alchemical items more quickly than through normal use of the <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) skill. However, instead of simply making skill checks and spending the necessary currency for unspecified raw materials, the character must provide specific reagents and combine them according to the recipe for the item she wishes to create. This allows the <a href="https://www.d20pfsrd.com/classes/base-classes/alchemist">alchemist</a> to obtain results with less time and effort, but often at greater cost, because of the necessary purity and greater volume of reagents required by alchemical recipes.</p> 
+ <p>To perform spontaneous alchemy, a character must begin with the reagents and crafting tools required by the recipe of the item she wants to make. The reagents, crafting tools, and length of time required are noted in the recipe. Once the necessary time has passed, the creator attempts a <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) check against the DC to craft the item. If she succeeds, she completes the item. If the creator&#8217;s check fails, however, she risks a mishap (see Alchemical Mishaps).</p> 
+ <p style="font-weight:bold;border-bottom:solid thin">Reading Recipes</p> 
+ <p>Each alchemical item features a recipe at the bottom of the item stat block that details how to create the item using spontaneous alchemy. Every alchemical recipe adheres to the following format.</p> 
+ <div style="margin-left:20px"> 
+  <p><b>Recipe</b>: This lists the names and amounts of the reagents needed for spontaneous alchemy, as well as the alchemical process used to create the item.</p> 
+  <p><b>Craft</b>: This specifies the DC of the <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) check required to complete the item. The base DC is the same whether the item is being made with conventional crafting techniques or spontaneous alchemy.</p> 
+  <p><b>Time</b>: This is the amount of time required to create the item using spontaneous alchemy.</p> 
+  <p><b>Tools</b>: This is the tool required to perform the process (see Crafting Tools). If the creator uses an improvised crafting tool, she takes a –2 penalty on her <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> check.</p> 
+  <p><b>Type</b>: This entry notes the type of alchemical item to be created—most alchemical items are either alchemical remedies, alchemical tools, alchemical weapons, alcohols, drugs, or poisons.</p> 
+ </div> 
+ <p style="font-weight:bold;border-bottom:solid thin">Processes</p> 
+ <p>Each alchemical process listed below requires a certain length of time, and might require one or more alchemical crafting tools. The length of time and the crafting tools required to craft certain alchemical items might sometimes differ from these baselines.</p> 
+ <div style="margin-left:20px"> 
+  <p><b>Calcination</b>: This is the process of burning a reagent down to its essential minerals. <b>Time</b>: 1 hour. <b>Tools</b>: Crucible.</p> 
+  <p><b>Ceration</b>: This process calls for adding a liquid (such as water) to a hard, dry, heated reagent to soften it. <b>Time</b>: 10 minutes. <b>Tools</b>: Crucible.</p> 
+  <p><b>Congelation</b>: Congelation increases the viscosity of a reagent by cooling it, possibly with the addition of another reagent such as urea. <b>Time</b>: 10 minutes. <b>Tools</b>: <a href="https://www.d20pfsrd.com/equipment/goods-and-services/tools-kits#TOC-Lab-Alchemist-s">Alchemist&#8217;s lab</a>.</p> 
+  <p><b>Digestion</b>: In this process, a solution is allowed to rest, usually while being heated, as particles precipitate out of the solution. <b>Time</b>: 1 day. <b>Tools</b>: Heat source.</p> 
+  <p><b>Distillation</b>: A mixture is placed in a retort and heated, causing the component with the greatest volatility to vaporize, condense in the neck of the retort, and flow down into a second vessel. <b>Time</b>: 1 day. <b>Tools</b>: Retort.</p> 
+  <p><b>Earth</b>: This process involves letting one or more reagents mingle with fresh earth to absorb its minerals or other essential properties. This process cannot be performed unless a source of fresh soil is available. <b>Time</b>: 10 minutes. <b>Tools</b>: None.</p> 
+  <p><b>Exposure</b>: This process involves ready airflow. A recipe that requires this process cannot be performed indoors unless a steady air current from outdoors passes through the area (such as a current provided by large open windows on opposite walls). <b>Time</b>: 1 hour. <b>Tools</b>: None.</p> 
+  <p><b>Fermentation</b>: This process allows a reagent to be digested by yeast or another organism, yielding a new product. <b>Time</b>: 1 day. <b>Tools</b>: None.</p> 
+  <p><b>Filtration</b>: This process separates one component of a mixture from another by passing the mixture through a filter that catches larger particles. This is sometimes made easier by adding a solvent that dissolves one component but not the other. <b>Time</b>: 10 minutes. <b>Tools</b>: Sieve or filter.</p> 
+  <p><b>Sublimation</b>: Also known as exaltation, this process calls for a reagent to be heated to a vapor in a vessel so that a pure component crystallizes in the neck of the vessel. <b>Time</b>: 1 day. <b>Tools</b>: Retort.</p> 
+ </div> 
+ <table border="1" cellpadding="5"> 
+  <caption>
+    Table: Alchemical Mishaps 
+  </caption> 
+  <thead> 
+   <tr> 
+    <th class="number">d6</th> 
+    <th class="text">Mishap</th> 
+   </tr> 
+  </thead> 
+  <tbody> 
+   <tr> 
+    <td class="number">1</td> 
+    <td class="text">One random reagent is ruined; other reagents can be reused.</td> 
+   </tr> 
+   <tr> 
+    <td class="number">2</td> 
+    <td class="text">All reagents are ruined.</td> 
+   </tr> 
+   <tr> 
+    <td class="number">3</td> 
+    <td class="text">All reagents are ruined and the mixture explodes, dealing 2d6 points of damage (half fire, half <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Acid">acid</a>) to you. A successful DC 15 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save halves the damage.</td> 
+   </tr> 
+   <tr> 
+    <td class="number">4</td> 
+    <td class="text">Half of the doses of each reagent are ruined (round up), and you must use a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Full-Round-Actions">full-round action</a> to salvage the remaining doses.</td> 
+   </tr> 
+   <tr> 
+    <td class="number">5</td> 
+    <td class="text">Two random reagents are ruined, and you are exposed to an inhaled or contact <a href="https://www.d20pfsrd.com/gamemastering/afflictions/poison">poison</a> appropriate to your level and worth no more than the alchemical item you were trying to create (GM&#8217;s discretion).</td> 
+   </tr> 
+   <tr> 
+    <td class="number">6</td> 
+    <td class="text">All reagents are ruined, and the crafting tool used (or one random crafting tool, if an alchemist&#8217;s lab was used) breaks.</td> 
+   </tr> 
+  </tbody> 
+ </table> 
+ <h3><a name="TOC-Alchemical-Mishaps"></a>Alchemical Mishaps</h3> 
+ <p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601256051/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601256051&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=HB45P3YBLX7E7SXB" target="_blank">PPC:AM</a></p> 
+ <p>If you fail a <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) check to perform spontaneous alchemy by 4 or less, you simply fail to produce a result and can try again using the same reagents. However, if you fail by 5 or more, a mishap occurs. Roll on the table at right to determine the effects of a mishap.</p> 
+ <h3><a name="TOC-Fungal-Grafts"></a>Fungal Grafts</h3> 
+ <p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601256051/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601256051&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=HB45P3YBLX7E7SXB" target="_blank">PPC:AM</a></p> 
+ <p>Growing a fungal graft is similar to crafting a magic item, but requires only a specific number of ranks in <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) instead of an <a href="https://www.d20pfsrd.com/feats/item-creation-feats">item creation</a> feat.</p> 
+ <p>Growing a fungal graft takes the same amount of time that creating a magic item of the same price does. During this time, the nascent fungus must be fertilized with expensive material components (the cost varies according to the graft), watered as needed, and kept safe from harm. After the required time has passed, the cultivator must succeed at a <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) check in order for the fungus graft to be properly formed. The DC of this check varies according to the graft. On a failure, the graft withers and the cultivator must begin anew. On a success, the fungus is ready to be grafted onto a target.</p> 
+ <p>Grafting a fungus onto a target requires a 1-hour-long surgical procedure, during which time the subject must be either willing or helpless. At the end of the hour, the surgeon must attempt a <a href="https://www.d20pfsrd.com/skills/heal">Heal</a> check against the listed DC. Failure indicates that the patient&#8217;s body rejects the fungus and the fungus dies. Regardless of the surgery&#8217;s success, the subject takes 1d4 points of <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">Constitution damage</a>. Although fungal grafts are not magical, some occupy a magic item slot on the body, preventing that slot from being used for any magic item or other graft.</p> 
+ <p>A fungal graft can be removed with a <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/h/heal" class="spell">heal</a> or <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/r/restoration" class="spell">greater restoration</a> spell, or with a successful <a href="https://www.d20pfsrd.com/skills/heal">Heal</a> check against the original DC in another hour-long surgery.</p> 
+ <div style="margin-left:20px"> 
+  <h4><a name="TOC-Fungal-Eyes"></a>Fungal Eyes</h4> 
+  <p><b>Price</b> 18,000 gp; <b>Slot</b> eyes</p> 
+  <p class="divider">DESCRIPTION</p> 
+  <p>These small, glowing blue fungi form a protective film over the subject&#8217;s eyes, preventing her from seeing with normal vision but granting her <a href="https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Blindsight-and-Blindsense">blindsight</a> to a range of 30 feet.</p> 
+  <p class="divider">CULTIVATION REQUIREMENTS</p> 
+  <p><b>Cost</b> 9,000 gp; <b>Skill Requirements</b> <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) 12 ranks; <b>Skill Check(s)</b> <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) DC 25, <a href="https://www.d20pfsrd.com/skills/heal">Heal</a> DC 25</p> 
+  <h4><a name="TOC-Reaching-Vines"></a>Reaching Vines</h4> 
+  <p><b>Price</b> 4,000 gp; <b>Slot</b> wrists</p> 
+  <p class="divider">DESCRIPTION</p> 
+  <p>Brain mold spores seeded beneath the subject&#8217;s skin enable the subject to extend and contract fungal vines from its wrists and forearms at will. The subject gains two vine attacks per round, which count as secondary <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Natural-Attacks">natural attacks</a> with a reach of 10 feet. These vines deal no damage, but the fungal-grafted creature can attempt to <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Pull-Ex-">pull</a> a struck target up to 5 feet toward itself, as the <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Pull-Ex-">pull</a> universal monster ability.</p> 
+  <p class="divider">CULTIVATION REQUIREMENTS</p> 
+  <p><b>Cost</b> 2,000 gp; <b>Skill Requirements</b> <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) 9 ranks; <b>Skill Check(s)</b> <a href="https://www.d20pfsrd.com/skills/craft">Craft</a> (alchemy) DC 21, <a href="https://www.d20pfsrd.com/skills/heal">Heal</a> DC 21</p> 
+ </div> 
+ <h3><a name="TOC-Alchemical-Archery"></a>Alchemical Archery</h3> 
+ <p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601256051/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601256051&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=HB45P3YBLX7E7SXB" target="_blank">PPC:AM</a></p> 
+ <p>Elves are skilled at crafting reagents from the flora growing in the forests of that nation, and some even know the secrets of infusing arrows and other ranged weapons with the alchemical properties of these plants. The most talented <a href="https://www.d20pfsrd.com/classes/base-classes/alchemist">alchemists</a> can make such alchemical arrows on the fly, allowing them to choose and craft their ammunition as the situation warrants.</p> 
+ <p>Although the techniques of alchemical archery have been used for thousands of years, elven archers do not openly flaunt the virtues of this ancient craft, but neither do they purposefully obscure their alchemical methodologies. Those fellow archers and ranged tacticians who share adventures with archers may hope to find teachers in their elven companions, and indeed, some <a href="https://www.d20pfsrd.com/classes/core-classes/fighter">fighters</a> are happy to share their methods.</p> 
+ <p>What follows is a sampling of alchemical arrows. Unless otherwise stated, these alchemical arrows are only effective for one shot, regardless of whether the shot hits its target. Though elven <a href="https://www.d20pfsrd.com/classes/base-classes/alchemist">alchemists</a> created these formulae, any <a href="https://www.d20pfsrd.com/classes/base-classes/alchemist">alchemist</a> can use them.</p> 
+ <p>The listed costs are for one non-masterwork alchemical arrow; a masterwork version costs 6 gp more than the listed price. Unless otherwise noted, 20 arrows weigh 3 pounds.</p> 
+ <p><b>Other Types of Ammunition</b>: While some archers prefer alchemical arrows to other missile weapons, characters can infuse other ammunition and thrown weapons that deal piercing damage (such as crossbow bolts, darts, and <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/ammunition/ammunition-thrown-shuriken">shuriken</a>) with alchemical effects. Aside from differing base statistics, these alternative types of alchemical ammunition have effects identical to the alchemical arrows listed here. However, <a href="https://www.d20pfsrd.com/equipment/firearms">firearm</a> ammunition can&#8217;t be imbued with alchemical ingredients, nor can ammunition types that don&#8217;t deal piercing damage.</p> 
+ <div style="margin-left:20px"> 
+  <h4><a name="TOC-Arrow-Bleeding"></a>Arrow, Bleeding</h4> 
+  <p><b>Price</b> 160 gp; <b>Weight</b> —</p> 
+  <p>This sharpened hollow tube looks like the narrow proboscis of some giant insect, but it actually comes from a carnivorous plant. A bleeding arrow deals normal damage when it hits a creature and deals 1 point of <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Bleed">bleed</a> damage. A <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Critical-Hits">critical hit</a> does not multiply the <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Bleed">bleed</a> damage.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (30 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood">darkwood</a> + 90 myrrh + 25 realgar)/exposure; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 1 hour; <b>Tools</b> —</p> 
+  <h4><a name="TOC-Arrow-Durable"></a>Arrow, Durable</h4> 
+  <p><b>Price</b> 1 gp; <b>Weight</b> —</p> 
+  <p>These arrows are tightly wrapped in strands of <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Alchemical-Glue">alchemical glue</a>. Durable arrows don&#8217;t break with normal use, whether or not they hit their target; unless a durable arrow goes missing, an archer can retrieve and reuse it again and again. Durable arrows can be <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Broken">broken</a> in other ways (such as deliberate snapping, hitting a <a href="https://www.d20pfsrd.com/bestiary/monster-listings/outsiders/elemental/elemental-fire">fire elemental</a>, and so on). A magical durable arrow with an <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Enhancement-Bonus">enhancement bonus</a> or magic weapon special ability applies these magical effects only the first time it is used—afterward, the durable arrow becomes non-magical, and it can be reused or imbued with magic again.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (1 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold">cold iron</a> + 1 myrrh)/exposure; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 1 hour; <b>Tools</b> —; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Dye"></a>Arrow, Dye</h4> 
+  <p><b>Price</b> 1 gp; <b>Weight</b> —</p> 
+  <p>This arrow ends in a crystalline bubble filled with a viscous alchemical dyeing agent. Firing a dye arrow is a ranged <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks">touch attack</a>; a creature struck by a dye arrow takes no damage but is splashed with enough black, blue, green, or red <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Dye-Marker">marker dye</a> to coat about 1 square foot. The stain caused by <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Dye-Marker">marker dye</a> cannot be washed off except with magic for the first 72 hours, but fades completely after 2 weeks.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (1 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold">cold iron</a> + 1 phosphorous)/earth; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> —; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Lodestone"></a>Arrow, Lodestone</h4> 
+  <p><b>Price</b> 10 gp; <b>Weight</b> —</p> 
+  <p>This heavy iron arrowhead is sealed with an alchemical resin. Pulling a small <a href="https://www.d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-String-or-Twine">string</a> (a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>) breaks the seal and triggers a reaction in the arrowhead, greatly increasing its magnetic properties. You gain a +4 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll">attack rolls</a> when firing a lodestone arrow at a target wearing metal armor or a target made of metal, but the magnetized arrow deals only half damage on a successful hit. The increased magnetism fades 1 round after you activate a lodestone arrow, after which it becomes a normal arrow.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (8 myrrh + 6 salt + 4 silver)/exposure; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 1 hour; <b>Tools</b> —; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Pheromone"></a>Arrow, Pheromone</h4> 
+  <p><b>Price</b> 15 gp; <b>Weight</b> —</p> 
+  <p>The arrowhead of this arrow is coated with potent substances that react to blood and sweat, releasing a strong aroma that most predators recognize as the scent of tasty injured prey and other creatures perceive as merely unpleasant. Any creature with the <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Scent-Ex-">scent</a> ability gains a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on attack and damage rolls against a target marked with a pheromone arrow. This effect lasts for 1 hour or until the target spends 1 minute washing it off.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (10 myrrh + 10 salt + 14 urea)/congelation; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> alchemist&#8217;s lab; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Raining"></a>Arrow, Raining</h4> 
+  <p><b>Price</b> 30 gp; <b>Weight</b> —</p> 
+  <p>This thick-shafted arrow contains a reservoir of <a href="https://www.d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Holy-Water">holy water</a> and is designed to burst upon impact. A raining arrow damages the target as normal, and also treats the target as though it had been struck by a direct hit from a thrown <a href="https://www.d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Vial">vial</a> of <a href="https://www.d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Holy-Water">holy water</a>; adjacent creatures take <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Throw-Splash-Weapon">splash</a> damage from this effect. A raining arrow imparts a –2 penalty on <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll">attack rolls</a> because of its weight.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (3 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold">cold iron</a> + 3 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood">darkwood</a> + 1 <a href="https://www.d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Flask">flask</a> <a href="https://www.d20pfsrd.com/equipment/goods-and-services/toys-games-puzzles#TOC-Holy-Water">holy water</a>)/calcination; <b>Skill</b> Craft (alchemy) DC 25 Time 10 minutes; <b>Tools</b> crucible; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Slow-Burn"></a>Arrow, Slow Burn</h4> 
+  <p><b>Price</b> 100 gp; <b>Weight</b> —</p> 
+  <p>Behind the head of this arrow is a small receptacle of alchemical material that heats up when exposed to air and eventually combusts; barbs on the arrowhead pierce the pouch when it hits a target. If you hit a target with a slow burn arrow, it deals damage as normal, but at the beginning of your next turn, the arrow bursts into flames and deals 1d6 points of fire damage to the target.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (70 magnesium + 80 myrrh + 25 phosphorus)/congelation; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> alchemist&#8217;s lab; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Splintercloud"></a>Arrow, Splintercloud</h4> 
+  <p><b>Price</b> 25 gp; <b>Weight</b> —</p> 
+  <p>The shaft of this arrow is formed from numerous small bone fragments that have been painstakingly glued together. On a successful hit, a splintercloud arrow deals normal damage as it tears itself apart, creating a burst of razor-sharp bone shards centered on the target. These shards deal 1d3 points of piercing damage to the target and any creatures adjacent to the target (<a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> DC 18 negates).</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (28 myrrh + 30 salt)/earth; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> —; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Tangleshot"></a>Arrow, Tangleshot</h4> 
+  <p><b>Price</b> 20 gp; <b>Weight</b> —</p> 
+  <p>This arrow is tipped with a tiny <a href="https://www.d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Vial">vial</a> of tanglefoot goo. Firing a tangleshot arrow is a ranged <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks">touch attack</a>; the arrow deals no damage when it hits, but the target is splashed with the alchemical adhesive. This effect is similar to that of a <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Tanglefoot-Bag">tanglefoot bag</a>, but with the following adjustments: <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> DC 10, <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-">Strength</a> DC 12 to break, 10 points of slashing damage to cut through, <a href="https://www.d20pfsrd.com/magic#TOC-Concentration">concentration</a> DC 10 to cast spells. A tangleshot arrow imposes a –1 penalty on <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll">attack rolls</a> because of its weight.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (18 myrrh + 26 urea)/congelation; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> alchemist&#8217;s lab; <b>Type</b> alchemical weapon</p> 
+  <h4><a name="TOC-Arrow-Trip"></a>Arrow, Trip</h4> 
+  <p><b>Price</b> 40 gp; <b>Weight</b> —</p> 
+  <p>This squat arrow has a large, bulbous metal tip that expands and flattens in flight. If you hit a creature with a trip arrow, the arrow deals no damage but performs a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Trip">trip</a> <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers">combat maneuver</a> against the target with a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Bonus">Combat Maneuver Bonus</a> of +5. For the purpose of determining <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers">Combat Maneuver</a> Bonuses or penalties based on size, the arrow is treated as if it were the size of the creature it was designed for.</p> 
+  <p class="divider">CREATION</p> 
+  <p><b>Recipe</b> (20 <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Iron-Cold">cold iron</a> + 15 magnesium + 20 myrrh)/earth; <b>Skill</b> Craft (alchemy) DC 25; <b>Time</b> 10 minutes; <b>Tools</b> —; <b>Type</b> alchemical weapon</p> 
+ </div> 
+</div> 
+<h3>Making Craft Work [Alternative Crafting Rules]</h3> 
+<p>Many believe that the standard rules for the Craft skill don&#8217;t work very well nor make much sense. The following alternative crafting rules first appeared in Making Craft Work, by Spes Magna Games.</p> 
+<h3><a name="TOC-Overview"></a>Overview</h3> 
+<ol> 
+ <li>Find the item’s price in silver pieces (1 gp = 10 sp).</li> 
+ <li>Find the DC on <b>Table: Craft Skills</b>.</li> 
+ <li>Pay one-third of the item’s price for the cost of raw materials.</li> 
+ <li>Make an appropriate Craft check representing one week’s worth of work.</li> 
+ <li>If the check succeeds, multiply your check result by the DC. If the result × the DC equals the price of the item in silver pieces, then you have completed the item<sup style="font-size:10px"><a href="#1" title="If the result × the DC equals double or triple the price of the item in silver pieces, then you’ve completed the task in one-half or one-third of the time. Other multiples of the DC reduce the time in the same manner. Rules presented under Exceptional Craft Checks replace this.">1</a></sup>.</li> 
+ <li>If the result × the DC doesn’t equal the price, then it represents the progress you’ve made this week.</li> 
+</ol> 
+<p>Record the result and make a new Craft check for the next week. Each week, you make more progress until your total reaches the price of the item in silver pieces.</p> 
+<p>What seems like a pretty straightforward series of steps actually produces some bizarre results. Let&#8217;s look at a few examples.</p> 
+<div> 
+ <h4 style="border-bottom:solid thin"><a name="TOC-Examples..."></a>Examples&#8230;</h4> 
+ <p><b>#1</b> Erlic wants to craft a one-pound silver ball. His brother Rynook wants to craft a one-pound gold ball. A one-pound ball of silver is worth onetenth as much as a pound of gold. Even though Erlic and Rynook work on pretty much the same project &#8212; melting metal and pouring it into a mold &#8212; Rynook must spend much longer on his one-pound ball simply because it&#8217;s made of gold.</p> 
+ <p><b>#2</b> Erlic next wants to craft some full plate. Full plate costs 15,000 silver pieces and faces an armorsmithing DC of 19. Erlic has Craft (armorsmithing) +8. Let&#8217;s be unrealistic and say that he rolls a 20 for each and every Craft check. 28 times 19 equals 532, which means it&#8217;ll take Erlic 28 weeks to finish his full plate. So much for having time to adventure.</p> 
+ <p><b>#3</b> Erlic and Rynook want to see who can craft an item first. Erlic decides to make a high-quality box (value 20 silver pieces, Craft DC 15).</p> 
+ <p>Rynook wants to make a crowbar (value 20 silver pieces, Craft DC 10).</p> 
+ <p>The brothers have only a +1 bonus for their checks as they are both untrained when making these particular items. Again, let&#8217;s assume they both roll nothing but 20s. Here are the contest&#8217;s results:</p> 
+ <p><i>* Erlic</i>: 21 times 15 equals 315, which is 15.75 times higher than the box&#8217;s cost.</p> 
+ <p><i>* Rynook</i>: 21 times 10 equals 210, which is 10.5 times higher than the crowbar&#8217;s cost.</p> 
+ <p><b>The Winner</b>: Erlic, despite the fact he is making the more complicated item.</p> 
+</div> 
+<p>Every Craft attempt is defined by two elements: the time required and the DC. The time required to craft an item is influenced not by an item&#8217;s price in silver pieces, but rather by its complexity. The DC is likewise influenced by item complexity.</p> 
+<table border="1" cellpadding="5"> 
+ <caption>
+   Table: Item Complexity, Time Units &amp; DC Modifiers 
+ </caption> 
+ <thead> 
+  <tr> 
+   <th class="text">Item Complexity</th> 
+   <th class="text">Time Unit</th> 
+   <th class="text">Modifier</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td class="text">Very simple</td> 
+   <td class="text">4 hours</td> 
+   <td class="number">+0</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Simple</td> 
+   <td class="text">1 day</td> 
+   <td class="number">+2</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Moderate</td> 
+   <td class="text">2 days</td> 
+   <td class="number">+4</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Complex</td> 
+   <td class="text">4 days</td> 
+   <td class="number">+8</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Very complex</td> 
+   <td class="text">1 week</td> 
+   <td class="number">+10</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<h4><a name="TOC-Item-Complexity"></a>Item Complexity</h4> 
+<p>The complexity categories listed on the table above require some defining. Keep in mind that there is a certain amount of subjectivity at work here. The key to item complexity isn&#8217;t to rely an exhaustive list of what items belong to which categories. Instead, these rules provide basic category descriptions and a few examples of sorts of items one might expect to fit each respective category.</p> 
+<div style="margin-left:40px"> 
+ <p><b>Very Simple</b>: These items are more or less all one piece or one material of simple shape with no moving parts. <b>Examples</b>: crowbar, <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/quarterstaff">quarterstaff</a>.</p> 
+ <p><b>Simple</b>: A simple item is largely made of one material, but it requires a more specialized shape. <b>Examples</b>: many simple weapons, <a href="https://www.d20pfsrd.com/equipment/goods-and-services/containers-bags-boxes-more#TOC-Backpack">backpack</a>, most common articles of clothing, simple traps such as pits.</p> 
+ <p><b>Moderate</b>: Moderate complexity items are characterized by diverse materials or different parts that must be integrated into a whole. <b>Examples</b>: Most martial and exotic weapons, bows, all shields, locks, simple traps using simple mechanical triggers, acid.</p> 
+ <p><b>Complex</b>: Complex items have diverse materials, moving parts, different parts, and/or decorative bits. <b>Examples</b>: Most types of <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus">armor</a>, strength bows, crossbows, most vehicles (excluding large ocean-going vessels), <a href="https://www.d20pfsrd.com/equipment/goods-and-services/herbs-oils-other-substances#TOC-Oil-Alchemist-s-Fire">alchemist&#8217;s fire</a>, smokesticks, tingertwigs.</p> 
+ <p><b>Very Complex</b>: These are the most complicated items. They require diverse materials, moving parts, different parts, decorated bits, and/or multiple functions or uses. <b>Examples</b>: ocean-going vessels, unusual armors (such as <a href="https://www.d20pfsrd.com/equipment/goods-and-services/animals-animal-gear#TOC-Barding">barding</a>), antitoxins, tanglefoot bags, sunrods, thunderstones.</p> 
+</div> 
+<h4><a name="TOC-Time-Unit"></a>Time Unit</h4> 
+<p>The amount of time in this columns indicates how much time must be spent working before a Craft check is permitted.</p> 
+<h4><a name="TOC-DC-Modifier"></a>DC Modifier</h4> 
+<p>The number in this column is added to a base DC 10 of all Craft checks.</p> 
+<h3><a name="TOC-Crafting-Masterwork-Items"></a>Crafting Masterwork Items</h3> 
+<p>A masterwork item has a 50% increase in time unit (in addition to the normal increase in cost). For example, a <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword">longsword</a> is a moderately complex item with a time unit of 2 days. Thus, a masterwork <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword">longsword</a> has a time unit of 3 days.</p> 
+<p>Furthermore, any masterwork item has its Craft DC increased by +4. Thus, the masterwork <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword">longsword</a> faces a DC 18 Craft check<sup style="font-size:10px"><a href="#2" title="These rules replace those for crafting masterwork items described under the Craft skill.">2</a></sup>.</p> 
+<h3><a name="TOC-Working-with-Special-Materials"></a>Working with Special Materials</h3> 
+<p>A craftsman working with an unusual material (such as <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Adamantine">adamantine</a>) faces a 50% increase in time unit, which stacks with the 50% increase in time unit associated with masterwork items when applicable. For example, an <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Adamantine">adamantine</a> masterwork <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword">longsword</a> has a time unit of 4 days. Also, unusual materials are harder to work with and increase the item&#8217;s DC as shown below:</p> 
+<table border="1" cellpadding="5"> 
+ <caption>
+   Table: Special Materials Modifiers 
+ </caption> 
+ <thead> 
+  <tr> 
+   <th class="text">Material</th> 
+   <th class="text">DC Modifier</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td class="text"><a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Adamantine">Adamantine</a></td> 
+   <td class="number">+6</td> 
+  </tr> 
+  <tr> 
+   <td class="text"><a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Darkwood">Darkwood</a></td> 
+   <td class="number">+2</td> 
+  </tr> 
+  <tr> 
+   <td class="text"><a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Dragonhide">Dragonhide</a></td> 
+   <td class="number">+4</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Cold iron</td> 
+   <td class="number">+2</td> 
+  </tr> 
+  <tr> 
+   <td class="text"><a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Mithral">Mithral</a></td> 
+   <td class="number">+4</td> 
+  </tr> 
+  <tr> 
+   <td class="text">Alchemical silver</td> 
+   <td class="number">+2</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>Thus, the masterwork <a href="https://www.d20pfsrd.com/equipment/special-materials#TOC-Adamantine">adamantine</a> masterwork <a href="https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword">longsword</a> faces a DC 24 Craft check.</p> 
+<h3><a name="TOC-Using-Tools-or-Not...-"></a>Using Tools (or Not&#8230;)</h3> 
+<p>All crafts require artisan’s tools to give the best chance of success. If improvised tools are used, the check is made with a -2 penalty. On the other hand, masterwork artisan’s tools provide a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on the check.</p> 
+<h3><a name="TOC-Failing-a-Check"></a>Failing a Check</h3> 
+<p>What happens if the Craft check fails? Well, that depends on how badly it failed. When confronted with a failed Craft check, there are up to three possible bad effects:</p> 
+<ol> 
+ <li>If the Craft check fails, the item is not completed. Work for another time unit and try again.</li> 
+ <li>If the Craft check fails by 5 or more, half of the raw materials are ruined. Pay half the raw materials cost to replace the ruined materials.</li> 
+ <li>If the Craft check fails by 10 or more and you are using Craft (alchemy), your laboratory explodes. Pay to replace it as well as the ruined raw materials (as number 2 above). Also make a DC 10 <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save to avoid 1d6 points of fire damage.</li> 
+</ol> 
+<h3><a name="TOC-Exceptional-Craft-Check-Results"></a>Exceptional Craft Check Results</h3> 
+<p>What happens if you really ace the Craft check? Can a character get finished more quickly than the time unit? Certainly, but there are limits. For every 5 points greater than the item&#8217;s DC is the Craft check, halve the item&#8217;s time unit, but no time unit can be halved this way more than twice.</p> 
+<h3><a name="TOC-Taking-the-Bizarre-Out-of-Those-Examples"></a>Taking the Bizarre Out of Those Examples</h3> 
+<p>Here&#8217;s how the revised Craft system works:</p> 
+<ol> 
+ <li>Determine the complexity of the item to be made. As always, the DM&#8217;s input here may be decisive.</li> 
+ <li>Pay one-third of the item&#8217;s cost, including masterwork and unusual materials increases, in order to acquire necessary raw materials.</li> 
+ <li>Make a Craft check. If successful, the item is completed in the item&#8217;s time unit.</li> 
+</ol> 
+<p>Let&#8217;s go back and look at our oddities again, but this time we&#8217;ll use the amended Craft system: Erlic wants to craft a one-pound silver ball. Rynook wants to craft a one-pound gold ball. Both items are very simple. They thus have a time unit of 4 hours and face a DC 10 Craft check. Assuming their respective Craft checks succeed, both finish their one-pound balls in the same amount of time (but not for the same price, since gold costs more than silver).</p> 
+<p>Erlic wants to Craft some full plate. Full plate is complex. It has a time unit of 4 days and faces a Craft DC of 18. With a good enough Craft check, Erlic finishes his armor in 4 days and has plenty of time to go adventuring<sup style="font-size:10px"><a href="#3" title="Yes, this is unrealistic. No one finishes a suit of full plate in four days. The goal of this system, however, isn't realism, but usability.">3</a></sup>.</p> 
+<p>Erlic and Rynook are twin craftsmen engaged in a contest to see who can craft an item the quickest. Erlic crafts a high-quality box (moderate complexity, 2 day time unit, DC 14), and Rynook crafts a crowbar (very simple, 4 hours time unit, DC 10). Unless Rynook is incredibly unlucky with his skill checks, he&#8217;ll win the contest.</p> 
+<p>There you have it. A change to Craft that makes the skill more player-friendly as well as a bit more in line with common sense. If it seems as if DCs are too low, just adjust the modifiers. If it seems time units are too short, lengthen them. The basic system itself remains intact even with such tweaks.</p> 
+<p class="source"><sup style="font-size:10px">1</sup><a name="1"></a> If the result × the DC equals double or triple the price of the item in silver pieces, then you’ve completed the task in one-half or one-third of the time. Other multiples of the DC reduce the time in the same manner. Rules presented under Exceptional Craft Checks replace this.</p> 
+<p class="source"><sup style="font-size:10px">2</sup><a name="2"></a> These rules replace those for crafting masterwork items described under the Craft skill.</p> 
+<p class="source"><sup style="font-size:10px">3</sup><a name="3"></a> Yes, this is unrealistic. No one finishes a suit of full plate in four days. The goal of this system, however, isn&#8217;t realism, but usability.</p> 
+<div class="section15"> 
+<div>Section 15: Copyright Notice</div>
+ <div> 
+  <p><a href="http://www.amazon.com/gp/product/1601251505/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601251505&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20" target="_blank">Pathfinder RPG Core Rulebook</a>. Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p> 
+  <p><a href="http://www.amazon.com/gp/product/1601256051/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601256051&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=HB45P3YBLX7E7SXB" target="_blank">PPC:AM</a> © 2014, Paizo Inc.; Authors: Jason Nelson, Patrick Renie, and David N. Ross.</p> 
+ </div> 
+</div>                                      <div id="comments" class="comments">
+    
+
+
+</div>
+
+<hr />
+
+                                  <!--div style="clear:both"></div-->
+                                                                        </div>
+                           </div>
+                           <div class="article-edit-link">
+                                                         </div>
+                        </div>
+                         <div class="col-sm-3 col-md-3 col-lg-2 col-xs-12 right-sidebar">
+        <div class="page-widget right-sidebar-widgets">
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-right-upper" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-right-upper","vert");
+</script></div></div>             
+
+            <div class="product-listing" style="background-color:#FFF">
+                        <div id="shopify-buybutton-134380075" class="shopify-buybutton" shopify-id="134380075">
+        </div>                           
+            </div>
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-right-lower-2" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-right-lower-2","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p>
+<a href="https://www.d20pfsrd.com/new-pages">New Pages</a><br />
+<a href="https://www.d20pfsrd.com/recent-changes">Recent Changes</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations">Fan Labs</a><br />
+<a href="https://www.d20pfsrd.com/extras/character-sheets">Character Sheets</a><br />
+<a href="https://www.d20pfsrd.com/extras/downloads">Downloads</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations/hero-lab">Hero Lab Community Repository</a><br />
+<a href="https://www.d20pfsrd.com/extras/pathfinder-faq">FAQ<br />
+</a><a href="https://www.d20pfsrd.com/extras/pirates-arrr-us">Pirates ARRR Us!</a></p>
+</div></div><div class="widget widget_black_studio_tinymce"><h4 class="widget-title">Extras</h4><div class="textwidget"><p><a href="http://shop.d20pfsrd.com/" target="_blank">Shop our Store!</a><br />
+ <a href="https://www.d20pfsrd.com/join-store">Sell in the Store!</a><br />
+ <a href="https://www.patreon.com/d20pfsrd?ref=d20pfsrd.com" target="_blank">Back my Patreon!</a><br />
+ <a href="https://www.d20pfsrd.com/get-published">Get Published</a><br />
+ <a href="http://opengamingnetwork.com/report-problem/">Report a Problem</a><br />
+ <a href="https://www.d20pfsrd.com/extras/legal/">Legal Information/Open Game License</a></p>
+</div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="http://articles.opengamingnetwork.com/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="http://articles.opengamingnetwork.com/">OGN Blog</a></h4><ul><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/the-magic-shoppe-snake-inspired-items/'>The Magic Shoppe: Snake Inspired Items</a> <span class="rss-date">April 26, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/rpg-kickstarter-you-should-back-press-release-the-dungeon/'>RPG Kickstarter You Should Back: (Press Release) The Dungeon</a> <span class="rss-date">April 13, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/were-on-holiday/'>WE’RE ON HOLIDAY!</a> <span class="rss-date">March 17, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-library-items/'>The Magic Shoppe: Library Items</a> <span class="rss-date">March 15, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-wun-android-captain/'>Creative Characters (Starfinder): Wun, Android Captain</a> <span class="rss-date">March 14, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creature-feature-starfinder-urban-prowler/'>Creature Feature (Starfinder): Urban Prowler</a> <span class="rss-date">March 10, 2019</span> <cite>nwright</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/saturday-potpourri-cleric-of-the-forgotten-gods-archetype-domain/'>Saturday Potpourri – Cleric of the Forgotten Gods (Archetype/Domain)</a> <span class="rss-date">March 9, 2019</span> <cite>mmiller</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-undead-items/'>The Magic Shoppe: Undead Items</a> <span class="rss-date">March 8, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-jelilah-hartennen-special-liaison/'>Creative Characters (Starfinder): Jelilah Hartennen, Special Liaison</a> <span class="rss-date">March 7, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-yhua-lneth-the-kraken-caller/'>Creative Characters – Y’hua-lneth the Kraken Caller</a> <span class="rss-date">March 6, 2019</span> <cite>markt</cite></li></ul></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><div style="text-align: center;">
+<div style="display: inline-block; overflow: hidden;">
+<div style="width: 150px;" title="Check out the Pathfinder NPC generator!"><a style="text-decoration: none;" href="http://www.dinglesgames.com/tools/NPCGenerator/pathfinder/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/Dingles-Games-Patreon.png" width="120" height="90" border="0" /></a></div>
+<br />
+<div style="width: 150px;" title="Scroll and Codex: Dice Tower and Rolling Tray"><a style="text-decoration: none;" href="https://www.elderwoodacademy.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/scroll-codex-small.jpg" width="120" height="90" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="https://www.kickstarter.com/projects/celticrefuge/unique-character-books-for-your-character-in-pathf?ref=project_build#" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/12/CRPpatreonlogo.png" width="120" height="120" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="http://bit.ly/FWPLAUNCH" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2019/02/FWP-Ad.gif" width="120" height="90" border="0" /></a></div>
+</div>
+</div></div></div>                              
+            <div id="right-sidebar-filler" class="filler"></div>
+        </div>              
+
+    </div>
+                    </article>
+				
+                    <a class="scroll-to-top" href="#"><img src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/Up1Blue.png" /></a>
+            
+                                        <div class="sidebar-bottom">
+                            <div class="page-widget">
+                            <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-bottom" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-bottom","horiz");
+</script></div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="https://www.opengamingstore.com/collections/pathfinder/all.atom"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="https://www.opengamingstore.com/collections/all">Latest Pathfinder products in the Open Gaming Store</a></h4><ul><li><a class='rsswidget' href='https://www.opengamingstore.com/products/d20pfsrd-com-publishing-grab-bags'>d20pfsrd.com Publishing GRAB BAGS!</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-playtest-second-edition'>Pathfinder RPG: PLAYTEST (Second Edition)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-roleplaying-game-planar-adventures-pfrpg'>Pathfinder Roleplaying Game: Planar Adventures (PFRPG)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/the-master-of-forms-expanded-the-wood-element'>The Master of Forms Expanded - The Wood Element</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/monster-menagerie-gruesome-foes-review'>Monster Menagerie: Gruesome Foes Review</a></li></ul></div>                            </div> 
+                    </div>
+                    
+		</section>
+            </main>
+        </div>
+    </div> <!-- end row-fluid --->
+</div> <!-- /end content -->
+        <div class="span2">
+        </div>
+        <div class="clearfix"></div>
+    </div> <!-- /end row -->
+
+</div> <!-- /end container -->
+<!-- Footer Nav -->
+<aside class="footer-nav" role="complementary">
+
+<div class="container-fluid">
+<div class="row">
+    
+    <div class="col-md-12">   
+       
+          <div class="footer-widget">
+           <div class="widget widget_black_studio_tinymce"><div class="textwidget"><table style="clear: both; width: 100%; font-size: 18px; background-color:rgb(255,255,255);" cellpadding="5">
+<tbody>
+<tr style="vertical-align: middle; background-color: #cfe2f3;">
+<td style="width: 20%; text-align: center;" title="Become an Editor!">
+<a class="sites-navigation-link topLevel" href="http://account.opengamingnetwork.com/manage/editrequest" target="_blank" rel="noopener">Become an Editor!</a></td>
+<td style="width: 20%; text-align: center;" title="Support open gaming and this site, shop the Open Gaming Store!"><a href="http://www.opengamingstore.com/" target="_blank">Support<br />
+Open Gaming</a></td>
+<td style="width: 20%; text-align: center;" title="Subscribe to our newsletter and get updates on all the new stuff on d20pfsrd.com!"><a href="http://eepurl.com/bNgnPH" target="_blank">Subscribe to Our<br />
+Newsletter</a></td>
+<td style="width: 20%; text-align: center;" title="If you are a publisher of Pathfinder or other gaming products, you really should get added to our store!"><a href="http://www.opengamingstore.com/pages/publisher-information" target="_blank">Sell in the<br />Open Gaming Store</a></td>
+<td style="width: 20%; text-align: center;" title="If you've seen an issue or problem with this site please let us know!"><a href="http://opengamingnetwork.com/report-problem/" target="_blank">Report a<br />
+Bug or Issue</a></td>
+</tr>
+</tbody>
+</table>
+</div></p></div>          </div>
+ 	</div>            
+    </div>
+
+        
+</div>
+<div class="row">
+ 
+ 	<div class="col-md-4">
+	 	</div>
+  
+	<div class="col-md-4">
+	 	</div>
+
+	<div class="col-md-4">
+	 	</div>
+
+</div> <!-- /row Footer Nav -->
+</div> <!-- /container Footer Nav -->
+</aside>
+
+<footer class="container-fluid main-footer">
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-12">
+        <div class="footer" role="contentinfo">
+            <div class="credits-widget">
+                <p>Check out our other SRD sites!
+                            <a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a> 
+                 |                 <a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a> 
+                 |                 <a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a> 
+                 |                 <a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a> 
+                 |                 <a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a> 
+                 |                 <a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a> 
+                 |                 <a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a> 
+                 |                 <a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a> 
+                 |                 <a href="http://www.35srd.com" target="_blank">3.5e SRD</a> 
+                 |                 <a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a> 
+                 |                 <a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a> 
+                 |                 <a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a> 
+                 |                 <a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a> 
+                 |                 <a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a> 
+                 |                 <a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a> 
+                 |                 <a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a> 
+                 |                 <a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a> 
+                 |                 <a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a> 
+                                    
+                </p>                
+                                <p class="text-center footer-disclaimer">
+                    This site may earn <a href="//www.d20pfsrd.com/legal#affiliate-links">affiliate commissions</a> from the links on this page.
+                </p>
+                <p class="text-center">
+                    OGN SRD v1.5.2 using <a href="http://getbootstrap.com/">Bootstrap</a>
+                </p>
+                <p class="text-center">
+                    <a href="/new-pages">New Pages</a> | <a href="/recent-changes">Recent Changes</a> | <a href="//opengamingnetwork.com/privacy-policy">Privacy Policy</a>
+                </p>                
+            </div>       
+        </div>
+    </div>
+    <div class="col-md-1"></div>    
+</div> <!-- /end row -->
+</footer> <!-- /end container-fluid -->
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-54881920-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->        
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ogn_params = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-shopify.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-nav.js?ver=1551434665'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","visibility_hide_by_default":"1","width":"200px"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/wp-embed.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 1.316 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-05-13 08:06:00 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

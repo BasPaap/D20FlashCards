@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <base href="https://www.d20.com/skills/appraise/">
+          <!-- link rel="search" type="application/opensearchdescription+xml" title="d20PFSRD" href="https://www.d20pfsrd.com/wp-content/themes/srdtheme/opensearch.php" /-->
+    <title>Appraise (Int) &#8211; d20PFSRD</title>
+<link rel='dns-prefetch' href='//www.d20pfsrd.com' />
+<link rel='dns-prefetch' href='//account.opengamingnetwork.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Feed" href="https://www.d20pfsrd.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="d20PFSRD &raquo; Comments Feed" href="https://www.d20pfsrd.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.d20pfsrd.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=741751694b0c23cb369738b3058aae5a"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ogncustom-css-css'  href='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/css/ogncustom.css?ver=1551434665' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=1509' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/style.css?ver=741751694b0c23cb369738b3058aae5a' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/style.css?ver=1.5.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-bootstrap-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/css/bootstrap.min.css?ver=3.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='child-dynamic-css'  href='https://www.d20pfsrd.com/wp-content/themes/srdtheme/css/sites/12.css?ver=1546817288' type='text/css' media='all' />
+<link rel='stylesheet' id='quickstrap-fontawesome-css'  href='https://www.d20pfsrd.com/wp-content/themes/quickstrap/font-awesome/css/font-awesome.min.css?ver=4.5.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/srdtheme/js/srdtheme.js?ver=1547330625'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/themes/quickstrap/js/bootstrap.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='//account.opengamingnetwork.com/js/ognbar.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+<link rel='https://api.w.org/' href='https://www.d20pfsrd.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.d20pfsrd.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.d20pfsrd.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="https://www.d20pfsrd.com/skills/appraise/" />
+<link rel='shortlink' href='https://www.d20pfsrd.com/?p=110859' />
+<link rel="alternate" type="application/json+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fappraise%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.d20pfsrd.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.d20pfsrd.com%2Fskills%2Fappraise%2F&#038;format=xml" />
+                <script src="https://s.nitropay.com/ads-99.js"></script>
+                <script language="JavaScript">
+                   ognNitroPay = true;
+                </script>
+            <style type="text/css">div#toc_container {width: 200px;}</style><link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+<meta name="msapplication-TileImage" content="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/04/d20pfsrd-logo-256.png" />
+		<style type="text/css" id="wp-custom-css">
+			/*
+Custom CSS has moved to 
+OGN SRD Theme > Additional CSS
+*/
+
+		</style>
+	  </head>
+
+<body class="page-template-default page page-id-110859 page-child parent-pageid-110850">
+      
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/" aria-expanded="false">OGN<span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="ogn-sites-dropdown">
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">d20PFSRD</a>
+                </li>
+            </ul>  
+                      <ul class="nav navbar-nav navbar-right">
+            <li id="ogn-login"></li>
+            <li> 
+                <form class="search navbar-form navbar-right" action="https://cse.google.com/cse" method="get"role="search">
+                    <input type="hidden" value="006680642033474972217:6zo0hx_wle8" name="cx" id="cx">
+                <div class="input-group">
+                <input class="form-control" name="q" type="search" required class="searchField" placeholder="Google Site Search" maxlength="50"/> 
+                <span class="input-group-btn"> <button type="submit" class="search-button btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button> </span> 
+                </div> 
+                </form>
+            </li>            
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<div class="container-fluid">
+<div class="ognannouncement-container passive">
+<div class="ognannouncement passive"></div>
+</div>
+<div class="header row-fluid">
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+	<div class="col-sm-10 col-md-10 col-xs-12">
+		<div class="logo">
+		<a href="/">
+                    <img class="header-logo img-responsive" src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2017/01/customLogo_gif.png" height="139" width="756" alt="" />
+		</a>
+		</div>
+	</div>
+	<div class="col-sm-1 col-md-1 col-xs-0"></div>
+    <div class="clearfix"></div>
+    <header class="header" role="banner">
+         <nav class="navbar" role="navigation">
+
+<!-- Header Menu -->
+ 
+
+	<!--  Direct links / Right nav  
+	<ul class="nav navbar-nav">
+            <li class=""><a href=""></a></li>
+        </ul>
+
+	<ul class="nav navbar-nav navbar-right">
+  	 <li class=""><a href=""></a></li>
+        </ul>
+ 	-->
+    <div class="menuclear"></div>
+    </nav>    </header>      
+</div>
+<div class="clearfix"></div>
+<div class="content row-fluid">
+  
+<div class="col-12">
+    <div class="row-fluid">
+       
+            <!-- Left Sidebar -->
+<aside class="sidebar-left" role="complementary">
+    
+    <div id="menu-expander" class="menu-expander hidden-sm hidden-md hidden-lg">
+    <button type="button" class="btn btn-default" aria-label="Expand Menu">
+        <span id="expand-button" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+    <script type="text/javascript">
+        jQuery('div#menu-expander').click(function() {
+            jQuery('.sidebar-contents').toggleClass('expand-menu');
+            jQuery('main').toggleClass('expand-menu');
+            jQuery('span#expand-button').toggleClass('glyphicon-chevron-right').toggleClass('glyphicon-chevron-left');
+        });
+    </script>
+    </div>
+     
+    <div class="sidebar-contents">
+              <div class="sidebar-widget">
+               <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div style="text-align:center">
+<a href="http://www.opengamingstore.com/" target="_blank" title="Support Open Gaming, Shop the Open Gaming Store!">
+<img src="/wp-content/themes/srdtheme/images/open-gaming-160wide.png">
+</a>
+</div></div></div><div class="widget widget_ognajaxnav widget_srdpagelist"><ul id="ognajaxnav1" class="ognajaxnav" parent="" depth="0" currentpage="110859"><li class="page_item new parent" post_id="52278"><a href="http://www.d20pfsrd.com/">Home</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109106"><a href="http://www.d20pfsrd.com/basics-ability-scores/">Basics &amp; Ability Scores</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="70407"><a href="http://www.d20pfsrd.com/alignment-description/">Alignment &amp; Description</a></li><li class="page_item new parent page_item_has_children" post_id="90602"><a href="http://www.d20pfsrd.com/races/">Races</a><ul class="children"><li class="page_item new parent" post_id="126650"><a href="http://www.d20pfsrd.com/races/aquatic-adventurers/">Aquatic Adventurers</a></li><li class="page_item new parent page_item_has_children" post_id="90769"><a href="http://www.d20pfsrd.com/races/core-races/">Core Races</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="90798"><a href="http://www.d20pfsrd.com/races/core-races/half-elf/">Half-elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90770"><a href="http://www.d20pfsrd.com/races/core-races/dwarf/">Dwarves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90780"><a href="http://www.d20pfsrd.com/races/core-races/elf/">Elves</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90790"><a href="http://www.d20pfsrd.com/races/core-races/gnome/">Gnomes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90810"><a href="http://www.d20pfsrd.com/races/core-races/half-orc/">Half-orcs</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90820"><a href="http://www.d20pfsrd.com/races/core-races/halfling/">Halflings</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90828"><a href="http://www.d20pfsrd.com/races/core-races/human/">Humans</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90838"><a href="http://www.d20pfsrd.com/races/other-races/">Other Races</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="90603"><a href="http://www.d20pfsrd.com/races/3rd-party-races/">3rd Party Races</a></li></ul></li><li class="page_item new parent page_item_has_children" post_id="81812"><a href="http://www.d20pfsrd.com/classes/">Classes</a><ul class="children"><li class="page_item new parent" post_id="84814"><a href="http://www.d20pfsrd.com/classes/character-advancement/">Character Advancement</a></li><li class="page_item new parent" post_id="84816"><a href="http://www.d20pfsrd.com/classes/class-archetypes/">Class Archetypes</a></li><li class="page_item new parent page_item_has_children" post_id="84838"><a href="http://www.d20pfsrd.com/classes/core-classes/">Core Classes</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="85555"><a href="http://www.d20pfsrd.com/classes/core-classes/cleric/">Cleric</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="85337"><a href="http://www.d20pfsrd.com/classes/core-classes/bard/">Bard</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84839"><a href="http://www.d20pfsrd.com/classes/core-classes/barbarian/">Barbarian</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86505"><a href="http://www.d20pfsrd.com/classes/core-classes/fighter/">Fighter</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86263"><a href="http://www.d20pfsrd.com/classes/core-classes/druid/">Druid</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87124"><a href="http://www.d20pfsrd.com/classes/core-classes/rogue/">Rogue</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86676"><a href="http://www.d20pfsrd.com/classes/core-classes/monk/">Monk</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86818"><a href="http://www.d20pfsrd.com/classes/core-classes/paladin/">Paladin</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="86966"><a href="http://www.d20pfsrd.com/classes/core-classes/ranger/">Ranger</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="87852"><a href="http://www.d20pfsrd.com/classes/core-classes/sorcerer/">Sorcerer</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88188"><a href="http://www.d20pfsrd.com/classes/core-classes/wizard/">Wizard</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="83159"><a href="http://www.d20pfsrd.com/classes/base-classes/">Base Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82837"><a href="http://www.d20pfsrd.com/classes/alternate-classes/">Alternate Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="88465"><a href="http://www.d20pfsrd.com/classes/hybrid-classes/">Hybrid Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89543"><a href="http://www.d20pfsrd.com/classes/unchained-classes/">Unchained Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89328"><a href="http://www.d20pfsrd.com/classes/prestige-classes/">Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89224"><a href="http://www.d20pfsrd.com/classes/npc-classes/">NPC Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="89218"><a href="http://www.d20pfsrd.com/classes/monster-classes/">Monster Classes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="81813"><a href="http://www.d20pfsrd.com/classes/3rd-party-classes/">3rd Party Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="84817"><a href="http://www.d20pfsrd.com/classes/arcane-archetypes-rogue-genius-games/">Arcane Archetypes (3pp)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82714"><a href="http://www.d20pfsrd.com/classes/3rd-party-prestige-classes/">3rd Party Prestige Classes</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="82708"><a href="http://www.d20pfsrd.com/classes/3rd-party-npc-classes/">3rd Party NPC Classes</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="91199"><a href="http://www.d20pfsrd.com/feats/">Feats</a></li><li class="page_item new parent" post_id="110850"><a href="http://www.d20pfsrd.com/skills/">Skills</a></li><li class="page_item new parent" post_id="110918"><a href="http://www.d20pfsrd.com/traits/">Traits</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="109161"><a href="http://www.d20pfsrd.com/equipment/">Equipment</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="102432"><a href="http://www.d20pfsrd.com/magic-items/">Magic Items</a></li><li class="page_item new parent page_item_has_children" post_id="71179"><a href="http://www.d20pfsrd.com/magic/">Magic</a><ul class="children"><li class="page_item new parent page_item_has_children not_loaded" post_id="74736"><a href="http://www.d20pfsrd.com/magic/all-spells/">Spells (Paizo, Inc.)</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79570"><a href="http://www.d20pfsrd.com/magic/spells-by-class-3rd-party/">Spells by Class‎ (3rd Party)</a></li><li class="page_item new parent" post_id="79511"><a href="http://www.d20pfsrd.com/magic/building-and-modifying-constructs/">Building and Modifying Constructs</a></li><li class="page_item new parent" post_id="79568"><a href="http://www.d20pfsrd.com/magic/spellbooks/">Preconstructed Spellbooks</a></li><li class="page_item new parent" post_id="79514"><a href="http://www.d20pfsrd.com/magic/rare-cantrips/">Rare Cantrips</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="71180"><a href="http://www.d20pfsrd.com/magic/3rd-party-spells/">Spells (3rd Party)</a></li><li class="page_item new parent page_item_has_children" post_id="79516"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/">Spells by Class</a><ul class="children"><li class="page_item new parent" post_id="79527"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/formulae-lists-alchemist/">Alchemist/Investigator Formulae</a></li><li class="page_item new parent" post_id="79517"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/antipaladin-spell-list/">Antipaladin</a></li><li class="page_item new parent" post_id="79544"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-bard/">Bard</a></li><li class="page_item new parent" post_id="79519"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/bloodrager/">Bloodrager</a></li><li class="page_item new parent" post_id="79546"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-cleric/">Cleric/Oracle</a></li><li class="page_item new parent" post_id="79548"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-druid/">Druid</a></li><li class="page_item new parent" post_id="79550"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-inquisitor/">Inquisitor</a></li><li class="page_item new parent" post_id="79530"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/magus-spell-list/">Magus</a></li><li class="page_item new parent" post_id="79532"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/medium/">Medium</a></li><li class="page_item new parent" post_id="79534"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/mesmerist/">Mesmerist</a></li><li class="page_item new parent" post_id="79536"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/occultist/">Occultist</a></li><li class="page_item new parent" post_id="79552"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-paladin/">Paladin</a></li><li class="page_item new parent" post_id="79538"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/psychic/">Psychic</a></li><li class="page_item new parent" post_id="79554"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-ranger/">Ranger</a></li><li class="page_item new parent" post_id="79540"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/shaman/">Shaman</a></li><li class="page_item new parent" post_id="79556"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-sorcerer-and-wizard/">Sorcerer/Wizard</a></li><li class="page_item new parent" post_id="79560"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spiritualist/">Spiritualist</a></li><li class="page_item new parent" post_id="79558"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-lists-summoner/">Summoner</a></li><li class="page_item new parent" post_id="79542"><a href="http://www.d20pfsrd.com/magic/spell-lists-and-domains/spell-list-witch/">Witch</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79620"><a href="http://www.d20pfsrd.com/magic/tools/">Tools</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="79660"><a href="http://www.d20pfsrd.com/magic/variant-magic-rules/">Variant Magic Rules</a></li></ul></li><li class="page_item new parent page_item_has_children not_loaded" post_id="52986"><a href="http://www.d20pfsrd.com/gamemastering/">Gamemastering</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="57186"><a href="http://www.d20pfsrd.com/bestiary/">Bestiary</a></li><li class="page_item new parent page_item_has_children not_loaded" post_id="157240"><a href="http://www.d20pfsrd.com/alternative-rule-systems/">Alternative Rule Systems</a></li></ul></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-left-upper-0" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-left-upper-0","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p><a href="http://www.5esrd.com" title="Click here to visit the 5e/5th Edition SRD!"><br />
+<img border="0" src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/5esrd-logo-160wide.png" style="border-style:none;text-decoration:none"><br />
+</a></p>
+</div></div><div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-left-lower" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-left-lower","vert");
+</script></div></div>                <div id="left-sidebar-filler" class="filler"></div>
+                <div class="widget">
+		<h2>OGN Sites</h2>
+		<ul class="children">
+                            <li><a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a></li>
+                                <li><a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a></li>
+                                <li><a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a></li>
+                                <li><a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a></li>
+                                <li><a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a></li>
+                                <li><a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a></li>
+                                <li><a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a></li>
+                                <li><a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a></li>
+                                <li><a href="http://www.35srd.com" target="_blank">3.5e SRD</a></li>
+                                <li><a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a></li>
+                                <li><a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a></li>
+                                <li><a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a></li>
+                                <li><a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a></li>
+                                <li><a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a></li>
+                                <li><a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a></li>
+                                <li><a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a></li>
+                                <li><a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a></li>
+                                <li><a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a></li>
+                		</ul>
+	   </div>
+              
+	  </div> 
+	    </div>
+
+</aside>
+
+<!-- /end sidebar -->            <!-- Content -->
+            <main role="main" class="pre-nextgen">
+		<section>
+
+
+		                                        <article id="post-110859" class="skills appraiseint post-110859 page type-page status-publish hentry srd-content-source-paizo">
+                        <a class="bread-parent" parentid="52278" href="https://www.d20pfsrd.com/" title="Home">Home</a>&nbsp;&gt;<a class="bread-parent" parentid="110850" href="https://www.d20pfsrd.com/skills/" title="Skills">Skills</a>&nbsp;&gt;                        <h1>Appraise (Int)</h1>	
+                                                                     
+                       
+                                            <div class="page-widget top-post">
+                       <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-top-1" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-top-1","horiz", "ca-pub-6942081593517974", "4873621841");
+</script></div></div>                        </div>
+                        
+                        <div class="col-sm-9 col-md-9 col-lg-10 col-xs-12 article-text">
+                           <div class="page-center">
+                                  <div class="article-content">                                                      
+                                      <div class="product-right">
+          <div id="shopify-buybutton-9552819401" class="shopify-buybutton" shopify-id="9552819401">
+        </div> 
+</div> 
+<p>You can evaluate the monetary value of an object.</p> 
+<h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+<h4><a name="TOC-Appraise-Value-of-Item"></a>Appraise Value of Item</h4> 
+<p>A DC 20 Appraise check determines the value of a common item. If you succeed by 5 or more, you also determine if the item has magic properties, although this success does not grant knowledge of the magic item’s abilities. If you fail the check by less than 5, you determine the price of that item to within 20% of its actual value. If you fail this check by 5 or more, the price is wildly inaccurate, subject to GM discretion. Particularly rare or exotic items might increase the DC of this check by 5 or more.</p> 
+<p>You can also use this check to determine the most valuable item visible in a treasure hoard. The DC of this check is generally 20 but can increase to as high as 30 for a particularly large hoard.</p> 
+<p><b>Action</b>: Appraising an item takes 1 standard action. Determining the most valuable object in a treasure hoard takes 1 full-round action.</p> 
+<p><b>Retry?</b> Additional attempts to Appraise an item reveal the same result.</p> 
+<h3><a name="TOC-Modifers"></a>Modifers</h3> 
+<ul> 
+ <li><b>Race</b> <a href="https://www.d20pfsrd.com/races/core-races/dwarf">Dwarves</a> get a +2 bonus to determine on Appraise checks made to determine the price of non-magical goods that contain precious metals or gemstones.</li> 
+ <li><b>Familiar</b> A spellcaster with a <a href="https://www.d20pfsrd.com/bestiary/monster-listings/animals/raven">raven</a> familiar gains a +3 bonus on Appraise checks.</li> 
+</ul> 
+<h4><a name="TOC-Appraise-Unchained"></a>Appraise Unchained</h4> 
+<p class="source"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" title="Pathfinder Unchained">PFU</a></p> 
+<p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+<p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="https://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+<p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="https://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+<p>With sufficient ranks in Appraise, you earn the following.<a name="Unchained-Skill-Unlock"></a></p> 
+<div style="margin-left:20px"> 
+ <p><b>5 Ranks</b>: A successful DC 20 Appraise check reveals whether an item is magical, and a second check (DC = 25 + the item&#8217;s <a href="https://www.d20pfsrd.com/magic#TOC-Caster-Level">caster level</a>) unveils its properties. You can use Appraise to detect non-written forgeries and counterfeits.</p> 
+ <p><b>10 Ranks</b>: You can determine the most expensive object a creature is wearing or wielding (or in a 5-foot cube) as a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a> by succeeding at a DC 20 check. You never make a wildly inaccurate appraisal of an item&#8217;s value.</p> 
+ <p><b>15 Ranks</b>: Determining the most expensive object as above is a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>. You can substitute an Appraise check at a –10 penalty for a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Will">Will</a> save to disbelieve a <a href="https://www.d20pfsrd.com/magic#TOC-lllusion-Figment">figment</a> or <a href="https://www.d20pfsrd.com/magic#TOC-lllusion-Glamer">glamer</a>.</p> 
+ <p><b>20 Ranks</b>: Determining the most expensive object as above is a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>, and if the check succeeds, you gain a +2 <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuvers">combat maneuver</a> checks to <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Steal">steal</a> that object or <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Disarm">disarm</a> a creature of that object for 1 minute.</p> 
+</div> 
+<h2><a name="TOC-Bargaining"></a>Bargaining</h2> 
+<p class="source"><b>Source</b> PZO1118</p> 
+<p>An item is worth only what someone will pay for it. To an art collector, a canvas covered in daubs of random paint may be a masterpiece; a priestess might believe a weathered jawbone is a holy relic of a saint. The rules presented here offer you a way of playing through the process of selling off goods brought up from a crypt, liberated from a baron&#8217;s bedchamber, or plundered from a dragon&#8217;s vault. They also enable players to establish contacts with local fences, launderers, antiquarians, and obsessive collectors.</p> 
+<h3><a name="TOC-Valuation"></a>Valuation</h3> 
+<p>The <a href="https://www.d20pfsrd.com/skills/appraise">Appraise</a> skill allows a character to accurately value an object. However, the fine arts of the jeweler, antiquarian, and bibliophile are complex. Valuable paintings may be concealed by grime, and books of incredible rarity may be bound in tattered leather covers. Because failure means an inaccurate estimate, the GM should attempt this skill check in secret.</p> 
+<p>In general, a character can sell an item for half its listed price. This keeps players from getting bogged down in bargaining with NPCs over 10 gp on a 10,000 gp item, and maintains game balance by not allowing players to use bargaining to exceed the Wealth by Level guidelines by buying low and selling high. The &#8220;sell for half &#8221; rule allows a fair price for standard items in normal circumstances.</p> 
+<p>For rare or unique items, or in certain cases, the GM might allow or encourage bargaining. Keep in mind that bargaining usually involves one PC talking with an NPC while the other players wait, and watching someone else bargain is rarely interesting. Bargaining should be infrequent, and should happen only when it&#8217;s important to the story.</p> 
+<p>By using the rules for bargaining, you give up some control over your PC&#8217;s decisions and accept the risk of the deal falling through to gain the chance of getting a better price.</p> 
+<h4><a name="TOC-Step-1:-Seller-Sets-the-Asking-Price"></a>Step 1: Seller Sets the Asking Price</h4> 
+<p>The seller suggests a price to the buyer. If the Asking Price is more than 150% of the item&#8217;s actual value, the buyer simply refuses to bargain. The lowest amount the seller will accept is 75% of this Asking Price.</p> 
+<h4><a name="TOC-Step-2:-Evaluate-Item"></a>Step 2: Evaluate Item</h4> 
+<p>The buyer chooses to attempt either an Appraise check to estimate the item&#8217;s value or a <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check opposed by the seller&#8217;s <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check (with failure meaning the buyer believes the seller is being fair). If the seller&#8217;s price is the same as the buyer&#8217;s estimation of the item&#8217;s value, no <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check is needed and the buyer believes the seller.</p> 
+<p>A group of items can be sold as a unit. If the buyer is dealing with a mix of items she can appraise and others she can only guess about, she uses either Appraise or <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a>, depending on which she has more skill ranks in.</p> 
+<p>The GM can allow a PC to substitute an appropriate <a href="https://www.d20pfsrd.com/skills/knowledge">Knowledge</a> skill for Appraise or <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a>, such as <a href="https://www.d20pfsrd.com/skills/knowledge">Knowledge</a> (arcana) for selling a rare book about magic. He may also assign modifiers to skill checks to reflect expertise or ignorance about a specific type of item, good roleplaying, or insulting behavior toward an NPC buyer or seller.</p> 
+<h4><a name="TOC-Step-3:-Determine-Undercut"></a>Step 3: Determine Undercut</h4> 
+<p>The Undercut Percentage is a portion of the item&#8217;s price or value used to determine the buyer&#8217;s Initial and Final Offers.</p> 
+<p>To determine the Undercut Percentage, have the buyer attempt a <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check opposed by the seller&#8217;s <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check. The Undercut Percentage is 2%, plus 1% for every point by which the <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check exceeds the <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check (minimum 0%).</p> 
+<h4><a name="TOC-Step-4:-Set-Offers"></a>Step 4: Set Offers</h4> 
+<p>The Initial Offer is the buyer&#8217;s first counteroffer to the seller&#8217;s Asking Price. The Final Offer is the largest amount the buyer is willing to pay. Though the seller and buyer negotiate back and forth, the buyer won&#8217;t exceed this offer. For example, if the seller&#8217;s Asking Price is 1,000 gp, the buyer&#8217;s Initial Offer may be 800 gp and the Final Offer 900 gp. These offers are determined by how much the buyer thinks the item is worth compared to the seller&#8217;s Asking Price.</p> 
+<ul> 
+ <li><b>Fair (Appraise or <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a>)</b>: If the seller&#8217;s Asking Price is less than or equal to the amount that the buyer thinks the item is worth, subtract the Undercut Percentage from the seller&#8217;s price to get the Final Offer, and subtract 2 × the Undercut Percentage to get the Initial Offer.</li> 
+ <li><b>Unfair (Appraise)</b>: If the result of the buyer&#8217;s Appraise check leads her to believe the item is worth less than the seller&#8217;s Asking Price, subtract the Undercut Percentage from the buyer&#8217;s estimate of the item&#8217;s value to get the Final Offer, and subtract 2 × the Undercut Percentage to get the Initial Offer.</li> 
+ <li><b>Unfair (<a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a>)</b>: If the result of the buyer&#8217;s Appraise check leads her to believe the seller&#8217;s Asking Price is too high, subtract 2 × the Undercut Percentage from the seller&#8217;s Asking Price to get the Final Offer, and subtract 4 × the Undercut Percentage to get the Initial Offer.</li> 
+</ul> 
+<h4><a name="TOC-Step-5:-Bargain"></a>Step 5: Bargain</h4> 
+<p>The buyer begins bargaining by countering the seller&#8217;s price with her Initial Offer. This step repeats until the buyer and seller agree on a price or one side ends negotiations.</p> 
+<ul> 
+ <li><b>Counteroffer Is Less Than Final Offer</b>: If the seller counters with a price that is less than the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (DC 15 + the buyer&#8217;s <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer accepts the seller&#8217;s counteroffer and buys the item. Failure means the buyer holds at her Initial Offer. The seller can try again, but the Diplomacy check DC increases by 5 unless the seller lowers his price.</li> 
+ <li><b>Counteroffer Equals Final Offer</b>: If the seller counters with a price that is the same as the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (20 + the buyer&#8217;s <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer accepts the seller&#8217;s counteroffer and buys the item. Failure means the buyer counteroffers at a price between the Initial Offer and the Final Offer. The seller can try again, but the Diplomacy DC increases by 5 unless the seller lowers his price.</li> 
+ <li><b>Counteroffer Exceeds Final Offer</b>: If the seller counters with a price higher than the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (25 + the buyer&#8217;s <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer counteroffers at a price between the Initial Offer and the Final Offer. Failure means the buyer holds at her Initial Offer. Failure by 5 or more means the buyer is insulted and lowers her offer or refuses to deal with the seller. The seller can try again, but the Diplomacy DC increases by 5 unless the seller lowers his price.</li> 
+</ul> 
+<h3><a name="TOC-Example"></a>Example</h3> 
+<p>Orshok has a jeweled idol worth 1,800 gp he mistakenly appraised at 2,000 gp. He tries to sell it to an art collector at an Asking Price of 2,200 gp, knowing the collector will counter with a lower price. The collector succeeds at her Appraise check and realizes the idol&#8217;s actual value. The collector attempts a <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check against Orshok&#8217;s <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check and succeeds by 1, so her Undercut Percentage is 3% (base 2% plus 1% for exceeding the check by 1). Because the collector thinks the idol is worth less than Orshok&#8217;s price, her Initial Offer is 6% less than her estimate of the value (1,692 gp) and her Final Offer is 3% less than her estimate (1,746 gp). When she makes her Initial Offer, Orshok counters with a price of 2,000 gp. This is higher than the collector&#8217;s Final Offer, so Orshok attempts a Diplomacy check whose DC equals 25 + the buyer&#8217;s <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier to keep the buyer&#8217;s interest. He succeeds at the check, so the buyer counteroffers 1,740 gp (between her Initial and Final Offers). Orshok doesn&#8217;t think the collector will go much higher, and decides to find another buyer.</p> 
+<p>Later, Orshok tries to sell the idol to a spice merchant who finds it interesting but knows nothing about art. Orshok again starts with a price of 2,200 gp. The merchant&#8217;s <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check beats Orshok&#8217;s <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check, so she realizes he isn&#8217;t offering a fair price. The merchant attempts a <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> check opposed by Orshok&#8217;s <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> check and succeeds by 4, which makes her Undercut Percentage 6% (base 2% plus 4% for exceeding the check by 4). The merchant&#8217;s Initial Offer is 12% less than Orshok&#8217;s price (1,936 gp), and her Final Offer is 6% less than Orshok&#8217;s price (2,068 gp). Orshok counters with a price of 2,000 gp. This is less than the merchant&#8217;s Final Offer, so Orshok attempts a Diplomacy check (DC 15 + the buyer&#8217;s <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). He succeeds, so the merchant accepts Orshok&#8217;s counteroffer and buys the item for 2,000 gp.</p> 
+<h3><a name="TOC-Collector-NPCs"></a>Collector NPCs</h3> 
+<p>The GM can define a few NPCs as collectors, traders, or antiquarians interested in unusual items PCs collect after their adventures. If the PCs establish an amiable relationship with these collectors over time, the GM can reduce the base Undercut Percentage to 1% or even 0%, especially if the PCs&#8217; offerings cater to the NPCs&#8217; interests. Likewise, PCs may develop bad blood with one or more buyers; such buyers&#8217; Undercut Percentage may rise to 5% or higher, or the buyers may refuse to bargain with the PCs at all.</p> 
+<h3><a name="TOC-Flooding-The-Market"></a>Flooding The Market</h3> 
+<p>When PCs attempt to sell multiples of a durable good, the GM may lower the offered prices by 10% or more to reflect market saturation in that location. For example, a border town patrolled by guards with crossbows can always use more +1 bolts, but has limited use for a wagonload of masterwork spiked chains, so the Initial and Final Offers for the spiked chains would be 10% lower.</p> 
+<h3><a name="TOC-Trade-Goods"></a>Trade Goods</h3> 
+<p>Trade goods are exempt from bargaining, even in extraordinary circumstances.</p> 
+<h3><a name="TOC-Using-Magic-to-Bargain"></a>Using Magic to Bargain</h3> 
+<p>An unscrupulous character may use magic to charm or dupe buyers into accepting inflated prices. Something as simple as <a class="spell" href="https://www.d20pfsrd.com/magic/all-spells/c/charm-person" class="spell">charm person</a> can alter the Diplomacy and <a href="https://www.d20pfsrd.com/skills/sense-motive">Sense Motive</a> DCs by 5 in the spellcaster&#8217;s favor for an entire negotiation, and a specific suggestion can alter the result on a single roll by 10 in the caster&#8217;s favor. If the buyer later realizes that magic influenced the negotiation, she may refuse to deal with the spellcaster and attempt to get her money back, or at least report the spellcaster to the local authorities.</p> 
+<div class="section15"> 
+<div>Section 15: Copyright Notice</div>
+ <div> 
+  <p><a href="http://www.amazon.com/gp/product/1601251505/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601251505&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20" target="_blank">Pathfinder RPG Core Rulebook</a>. Copyright 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.</p> 
+ </div> 
+</div>                                      <div id="comments" class="comments">
+    
+
+
+</div>
+
+<hr />
+
+                                  <!--div style="clear:both"></div-->
+                                                                        </div>
+                           </div>
+                           <div class="article-edit-link">
+                                                         </div>
+                        </div>
+                         <div class="col-sm-3 col-md-3 col-lg-2 col-xs-12 right-sidebar">
+        <div class="page-widget right-sidebar-widgets">
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-right-upper" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-right-upper","vert");
+</script></div></div>             
+
+            <div class="product-listing" style="background-color:#FFF">
+                        <div id="shopify-buybutton-134380075" class="shopify-buybutton" shopify-id="134380075">
+        </div>                           
+            </div>
+                           <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="adsense-d20pfsrd-right-lower-2" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdsenseSpot("adsense-d20pfsrd-right-lower-2","vert", "ca-pub-6942081593517974", "8158897835");
+</script></div></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><p>
+<a href="https://www.d20pfsrd.com/new-pages">New Pages</a><br />
+<a href="https://www.d20pfsrd.com/recent-changes">Recent Changes</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations">Fan Labs</a><br />
+<a href="https://www.d20pfsrd.com/extras/character-sheets">Character Sheets</a><br />
+<a href="https://www.d20pfsrd.com/extras/downloads">Downloads</a><br />
+<a href="https://www.d20pfsrd.com/extras/community-creations/hero-lab">Hero Lab Community Repository</a><br />
+<a href="https://www.d20pfsrd.com/extras/pathfinder-faq">FAQ<br />
+</a><a href="https://www.d20pfsrd.com/extras/pirates-arrr-us">Pirates ARRR Us!</a></p>
+</div></div><div class="widget widget_black_studio_tinymce"><h4 class="widget-title">Extras</h4><div class="textwidget"><p><a href="http://shop.d20pfsrd.com/" target="_blank">Shop our Store!</a><br />
+ <a href="https://www.d20pfsrd.com/join-store">Sell in the Store!</a><br />
+ <a href="https://www.patreon.com/d20pfsrd?ref=d20pfsrd.com" target="_blank">Back my Patreon!</a><br />
+ <a href="https://www.d20pfsrd.com/get-published">Get Published</a><br />
+ <a href="http://opengamingnetwork.com/report-problem/">Report a Problem</a><br />
+ <a href="https://www.d20pfsrd.com/extras/legal/">Legal Information/Open Game License</a></p>
+</div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="http://articles.opengamingnetwork.com/feed/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="http://articles.opengamingnetwork.com/">OGN Blog</a></h4><ul><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/the-magic-shoppe-snake-inspired-items/'>The Magic Shoppe: Snake Inspired Items</a> <span class="rss-date">April 26, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/04/rpg-kickstarter-you-should-back-press-release-the-dungeon/'>RPG Kickstarter You Should Back: (Press Release) The Dungeon</a> <span class="rss-date">April 13, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/were-on-holiday/'>WE’RE ON HOLIDAY!</a> <span class="rss-date">March 17, 2019</span> <cite>Kim Frandsen</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-library-items/'>The Magic Shoppe: Library Items</a> <span class="rss-date">March 15, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-wun-android-captain/'>Creative Characters (Starfinder): Wun, Android Captain</a> <span class="rss-date">March 14, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creature-feature-starfinder-urban-prowler/'>Creature Feature (Starfinder): Urban Prowler</a> <span class="rss-date">March 10, 2019</span> <cite>nwright</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/saturday-potpourri-cleric-of-the-forgotten-gods-archetype-domain/'>Saturday Potpourri – Cleric of the Forgotten Gods (Archetype/Domain)</a> <span class="rss-date">March 9, 2019</span> <cite>mmiller</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/the-magic-shoppe-undead-items/'>The Magic Shoppe: Undead Items</a> <span class="rss-date">March 8, 2019</span> <cite>Michael Vail-Steele</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-starfinder-jelilah-hartennen-special-liaison/'>Creative Characters (Starfinder): Jelilah Hartennen, Special Liaison</a> <span class="rss-date">March 7, 2019</span> <cite>Nathan Ross</cite></li><li><a class='rsswidget' href='http://articles.opengamingnetwork.com/2019/03/creative-characters-yhua-lneth-the-kraken-caller/'>Creative Characters – Y’hua-lneth the Kraken Caller</a> <span class="rss-date">March 6, 2019</span> <cite>markt</cite></li></ul></div><div class="widget widget_black_studio_tinymce"><div class="textwidget"><div style="text-align: center;">
+<div style="display: inline-block; overflow: hidden;">
+<div style="width: 150px;" title="Check out the Pathfinder NPC generator!"><a style="text-decoration: none;" href="http://www.dinglesgames.com/tools/NPCGenerator/pathfinder/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/Dingles-Games-Patreon.png" width="120" height="90" border="0" /></a></div>
+<br />
+<div style="width: 150px;" title="Scroll and Codex: Dice Tower and Rolling Tray"><a style="text-decoration: none;" href="https://www.elderwoodacademy.com/" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/_/images/scroll-codex-small.jpg" width="120" height="90" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="https://www.kickstarter.com/projects/celticrefuge/unique-character-books-for-your-character-in-pathf?ref=project_build#" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2018/12/CRPpatreonlogo.png" width="120" height="120" border="0" /></a></div>
+<br />
+<div><a style="text-decoration: none;" href="http://bit.ly/FWPLAUNCH" target="_blank" rel="noopener noreferrer"><img src="https://www.d20pfsrd.com/wp-content/uploads/sites/12/2019/02/FWP-Ad.gif" width="120" height="90" border="0" /></a></div>
+</div>
+</div></div></div>                              
+            <div id="right-sidebar-filler" class="filler"></div>
+        </div>              
+
+    </div>
+                    </article>
+				
+                    <a class="scroll-to-top" href="#"><img src="https://www.d20pfsrd.com/wp-content/themes/srdtheme/images/Up1Blue.png" /></a>
+            
+                                        <div class="sidebar-bottom">
+                            <div class="page-widget">
+                            <div class="widget widget_srdgoogleads"><div class="adbox-inwidget"><div id="nitropay-d20pfsrd-bottom" class="ogn-npa"></div><script type="text/javascript">
+    ognCreateAdSpot("nitropay-d20pfsrd-bottom","horiz");
+</script></div></div><div class="widget widget_rss"><h4 class="widget-title"><a class="rsswidget" href="https://www.opengamingstore.com/collections/pathfinder/all.atom"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://www.d20pfsrd.com/wp-includes/images/rss.png" alt="RSS" /></a> <a class="rsswidget" href="https://www.opengamingstore.com/collections/all">Latest Pathfinder products in the Open Gaming Store</a></h4><ul><li><a class='rsswidget' href='https://www.opengamingstore.com/products/the-master-of-forms-expanded-the-wood-element'>The Master of Forms Expanded - The Wood Element</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/monster-menagerie-gruesome-foes-review'>Monster Menagerie: Gruesome Foes Review</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-adventure-path-138-rise-of-new-thassilon-return-of-the-runelords-6-of-6'>Pathfinder Adventure Path #138: Rise of New Thassilon (Return of the Runelords 6 of 6)</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-player-companion-blood-of-the-ancients'>Pathfinder Player Companion: Blood of the Ancients</a></li><li><a class='rsswidget' href='https://www.opengamingstore.com/products/pathfinder-player-companion-wilderness-origins'>Pathfinder Player Companion: Wilderness Origins</a></li></ul></div>                            </div> 
+                    </div>
+                    
+		</section>
+            </main>
+        </div>
+    </div> <!-- end row-fluid --->
+</div> <!-- /end content -->
+        <div class="span2">
+        </div>
+        <div class="clearfix"></div>
+    </div> <!-- /end row -->
+
+</div> <!-- /end container -->
+<!-- Footer Nav -->
+<aside class="footer-nav" role="complementary">
+
+<div class="container-fluid">
+<div class="row">
+    
+    <div class="col-md-12">   
+       
+          <div class="footer-widget">
+           <div class="widget widget_black_studio_tinymce"><div class="textwidget"><table style="clear: both; width: 100%; font-size: 18px; background-color:rgb(255,255,255);" cellpadding="5">
+<tbody>
+<tr style="vertical-align: middle; background-color: #cfe2f3;">
+<td style="width: 20%; text-align: center;" title="Become an Editor!">
+<a class="sites-navigation-link topLevel" href="http://account.opengamingnetwork.com/manage/editrequest" target="_blank" rel="noopener">Become an Editor!</a></td>
+<td style="width: 20%; text-align: center;" title="Support open gaming and this site, shop the Open Gaming Store!"><a href="http://www.opengamingstore.com/" target="_blank">Support<br />
+Open Gaming</a></td>
+<td style="width: 20%; text-align: center;" title="Subscribe to our newsletter and get updates on all the new stuff on d20pfsrd.com!"><a href="http://eepurl.com/bNgnPH" target="_blank">Subscribe to Our<br />
+Newsletter</a></td>
+<td style="width: 20%; text-align: center;" title="If you are a publisher of Pathfinder or other gaming products, you really should get added to our store!"><a href="http://www.opengamingstore.com/pages/publisher-information" target="_blank">Sell in the<br />Open Gaming Store</a></td>
+<td style="width: 20%; text-align: center;" title="If you've seen an issue or problem with this site please let us know!"><a href="http://opengamingnetwork.com/report-problem/" target="_blank">Report a<br />
+Bug or Issue</a></td>
+</tr>
+</tbody>
+</table>
+</div></p></div>          </div>
+ 	</div>            
+    </div>
+
+        
+</div>
+<div class="row">
+ 
+ 	<div class="col-md-4">
+	 	</div>
+  
+	<div class="col-md-4">
+	 	</div>
+
+	<div class="col-md-4">
+	 	</div>
+
+</div> <!-- /row Footer Nav -->
+</div> <!-- /container Footer Nav -->
+</aside>
+
+<footer class="container-fluid main-footer">
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-12">
+        <div class="footer" role="contentinfo">
+            <div class="credits-widget">
+                <p>Check out our other SRD sites!
+                            <a href="http://www.traveller-srd.com" target="_blank">Traveller SRD</a> 
+                 |                 <a href="http://www.d20swsrd.com" target="_blank">Swords and Wizardry SRD</a> 
+                 |                 <a href="http://www.5esrd.com" target="_blank">5th Edition SRD</a> 
+                 |                 <a href="http://www.dungeonworldsrd.com" target="_blank">Dungeon World SRD</a> 
+                 |                 <a href="http://www.13thagesrd.com" target="_blank">13th Age SRD</a> 
+                 |                 <a href="http://www.d20herosrd.com" target="_blank">d20HeroSRD</a> 
+                 |                 <a href="http://www.d20modernpf.com" target="_blank">The Modern Path SRD</a> 
+                 |                 <a href="http://www.d20pfsrd.com" target="_blank">d20PFSRD</a> 
+                 |                 <a href="http://www.35srd.com" target="_blank">3.5e SRD</a> 
+                 |                 <a href="http://gumshoesrd.opengamingnetwork.com" target="_blank">GumshoeSRD</a> 
+                 |                 <a href="http://fatecoresrd.opengamingnetwork.com" target="_blank">FateCoreSRD</a> 
+                 |                 <a href="http://www.starjammersrd.com" target="_blank">Starjammer SRD</a> 
+                 |                 <a href="http://articles.opengamingnetwork.com" target="_blank">OGN Articles</a> 
+                 |                 <a href="http://designfinder.opengamingnetwork.com" target="_blank">Design Finder 2018</a> 
+                 |                 <a href="http://fudgesrd.opengamingnetwork.com" target="_blank">Fudge SRD</a> 
+                 |                 <a href="http://pf2playtest.opengamingnetwork.com" target="_blank">Pathfinder 2 Playtest</a> 
+                 |                 <a href="http://herebemonsters.opengamingnetwork.com" target="_blank">Here Be Monsters</a> 
+                 |                 <a href="http://d20animesrd.opengamingnetwork.com" target="_blank">d20 Anime SRD</a> 
+                                    
+                </p>                
+                                <p class="text-center footer-disclaimer">
+                    This site may earn <a href="//www.d20pfsrd.com/legal#affiliate-links">affiliate commissions</a> from the links on this page.
+                </p>
+                <p class="text-center">
+                    OGN SRD v1.5.2 using <a href="http://getbootstrap.com/">Bootstrap</a>
+                </p>
+                <p class="text-center">
+                    <a href="/new-pages">New Pages</a> | <a href="/recent-changes">Recent Changes</a> | <a href="//opengamingnetwork.com/privacy-policy">Privacy Policy</a>
+                </p>                
+            </div>       
+        </div>
+    </div>
+    <div class="col-md-1"></div>    
+</div> <!-- /end row -->
+</footer> <!-- /end container-fluid -->
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-54881920-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->        
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ogn_params = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-shopify.js?ver=1551434665'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/ogncustom/js/ogn-nav.js?ver=1551434665'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","visibility_hide_by_default":"1","width":"200px"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-content/plugins/table-of-contents-plus/front.min.js?ver=1509'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/jquery/ui/droppable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.d20pfsrd.com/wp-includes/js/wp-embed.min.js?ver=741751694b0c23cb369738b3058aae5a'></script>
+</body>
+</html>
+<!-- Dynamic page generated in 11.238 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-05-11 19:52:09 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->
