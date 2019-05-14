@@ -45,17 +45,10 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private bool ResponseContainsBaseUri(string response, Uri relativeUri)
         {
-            var baseUriPosition = response.IndexOf(new Uri(baseUri, relativeUri).ToString(), StringComparison.OrdinalIgnoreCase);
+            var baseUriInResponse = response.Substring("<base href=\"", "\">");
+            var indexOfRelativeUri = baseUriInResponse?.IndexOf(relativeUri.ToString(), StringComparison.OrdinalIgnoreCase);
 
-            if (baseUriPosition < 0)
-            {
-                return false;
-            }
-
-            const string baseUriElementStart = "<base href=\"";
-            var baseElementPosition = baseUriPosition - baseUriElementStart.Length;
-
-            if (baseElementPosition < 0 || response.Substring(baseElementPosition, baseUriElementStart.Length) != baseUriElementStart)
+            if (indexOfRelativeUri == null || indexOfRelativeUri < 0)
             {
                 return false;
             }

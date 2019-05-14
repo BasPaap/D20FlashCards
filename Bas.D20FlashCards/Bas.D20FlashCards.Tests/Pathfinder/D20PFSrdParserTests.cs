@@ -206,6 +206,25 @@ namespace Bas.D20FlashCards.Tests
             // Assert          
             Assert.IsInstanceOfType(card, cardType);
         }
+
+        [TestMethod]
+        [DeploymentItem(skillResponseFileName)]
+        [DeploymentItem(featResponseFileName)]
+        [DataRow(skillResponseFileName, typeof(Skill))]
+        [DataRow(featResponseFileName, typeof(Feat))]
+        public void GetCardType_SchemeIsDifferentButValid_ReturnsCorrectCardType(string fileName, Type cardType)
+        {
+            // Arrange
+            var httpSchemeUri = new Uri(this.baseUri.ToString().Replace(this.baseUri.Scheme, "http"));
+            var httpParser = new D20PFSrdParser(httpSchemeUri, this.featsUri, this.skillsUri);
+            var response = File.ReadAllText($"Pathfinder\\{fileName}");
+
+            // Act
+            var card = httpParser.Parse(response);
+
+            // Assert          
+            Assert.IsInstanceOfType(card, cardType);
+        }
         #endregion
     }
 }
