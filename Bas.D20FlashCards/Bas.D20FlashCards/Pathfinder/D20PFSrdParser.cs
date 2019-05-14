@@ -45,8 +45,9 @@ namespace Bas.D20FlashCards.Pathfinder
 
         private bool ResponseContainsBaseUri(string response, Uri relativeUri)
         {
+            var baseUriForCardType = new Uri(this.baseUri, relativeUri);
             var baseUriInResponse = response.Substring("<base href=\"", "\">");
-            var indexOfRelativeUri = baseUriInResponse?.IndexOf(relativeUri.ToString(), StringComparison.OrdinalIgnoreCase);
+            var indexOfRelativeUri = baseUriInResponse?.IndexOf($"{baseUriForCardType.Authority}{baseUriForCardType.PathAndQuery}", StringComparison.OrdinalIgnoreCase);
 
             if (indexOfRelativeUri == null || indexOfRelativeUri < 0)
             {
