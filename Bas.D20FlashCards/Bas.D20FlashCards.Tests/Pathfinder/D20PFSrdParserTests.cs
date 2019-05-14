@@ -10,6 +10,7 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class D20PFSrdParserTests
     {
+        private const string weaponFinesseFeatResponseFileName = "d20_pfsrd_feat_response_weaponfinesse.txt";
         private const string featResponseFileName = "d20pfsrd_feat_response.txt";
         private const string skillResponseFileName = "d20pfsrd_skill_response.txt";
         private readonly Uri baseUri = new Uri("https://www.d20.com");
@@ -82,13 +83,22 @@ namespace Bas.D20FlashCards.Tests
 
         [TestMethod]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(featResponseFileName, 
             typeof(Feat),
-            "Armor Proficiency, Medium (Combat)", 
-            "You are skilled at wearing medium armor.", 
-            "Light Armor Proficiency.", 
-            "See Armor Proficiency, Light.", 
-            "See Armor Proficiency, Light.", 
+            "Weapon Finesse (Combat)",
+            "You are trained in using your agility in melee combat, as opposed to brute strength.", 
+            null,
+            "With a light weapon, elven curve blade, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.", 
+            null,
+            "Special: Natural weapons are considered light weapons.")]
+        [DataRow(weaponFinesseFeatResponseFileName,
+            typeof(Feat),
+            "Armor Proficiency, Medium (Combat)",
+            "You are skilled at wearing medium armor.",
+            "Light Armor Proficiency.",
+            "See Armor Proficiency, Light.",
+            "See Armor Proficiency, Light.",
             "Barbarians, clerics, druids, fighters, paladins, and rangers automatically have Medium Armor Proficiency as a bonus feat. They need not select it.")]
         public void Parse_ResponseIsFeat_ReturnsFeat(string fileName,
                                                      Type instanceType,
@@ -175,9 +185,10 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
-
+        [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_UriDiffersInCase_ReturnsCorrectCardType(string fileName, Type cardType)
         {
             // Arrange
@@ -193,8 +204,10 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
+        [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_ResponseIsKnownCardType_ReturnsCorrectCardType(string fileName, Type cardType)
         {
             // Arrange
@@ -210,8 +223,10 @@ namespace Bas.D20FlashCards.Tests
         [TestMethod]
         [DeploymentItem(skillResponseFileName)]
         [DeploymentItem(featResponseFileName)]
+        [DeploymentItem(weaponFinesseFeatResponseFileName)]
         [DataRow(skillResponseFileName, typeof(Skill))]
         [DataRow(featResponseFileName, typeof(Feat))]
+        [DataRow(weaponFinesseFeatResponseFileName, typeof(Feat))]
         public void GetCardType_SchemeIsDifferentButValid_ReturnsCorrectCardType(string fileName, Type cardType)
         {
             // Arrange

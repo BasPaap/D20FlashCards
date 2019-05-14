@@ -11,6 +11,7 @@
     <None Remove="Pathfinder\aon_skill_response.txt" />
     <None Remove="Pathfinder\d20pfsrd_feat_response.txt" />
     <None Remove="Pathfinder\d20pfsrd_skill_response.txt" />
+    <None Remove="Pathfinder\d20_pfsrd_feat_response_weaponfinesse.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +25,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Pathfinder\d20pfsrd_skill_response.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pathfinder\d20_pfsrd_feat_response_weaponfinesse.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
