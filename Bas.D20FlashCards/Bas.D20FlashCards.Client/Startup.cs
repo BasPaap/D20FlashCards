@@ -18,7 +18,7 @@ namespace Bas.D20FlashCards.Client
             return new CardsService(new Parser[]
             {
                 new ArchivesOfNethysParser(new Uri("https://aonprd.com/"), " - Archives of Nethys: Pathfinder RPG Database"),
-                new D20PFSrdParser(new Uri("https://www.d20pfsrd.com"), new Uri("/feats"), new Uri("/skills"))
+                new D20PFSrdParser(new Uri("http://www.d20pfsrd.com"), new Uri("/feats", UriKind.Relative), new Uri("/skills", UriKind.Relative))
             });
         }
 
