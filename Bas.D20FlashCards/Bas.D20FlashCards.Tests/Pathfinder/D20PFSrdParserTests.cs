@@ -10,12 +10,12 @@ namespace Bas.D20FlashCards.Tests
     [TestClass]
     public sealed class D20PFSrdParserTests
     {
-        private const string weaponFinesseFeatResponseFileName = "d20_pfsrd_feat_response_weaponfinesse.txt";
-        private const string acrobaticsSkillResponseFileName = "d20_pfsrd_skill_response_acrobatics.txt";
-        private const string appraiseSkillResponseFileName = "d20_pfsrd_skill_response_appraise.txt";
-        private const string climbSkillResponseFileName = "d20_pfsrd_skill_response_climb.txt";
-        private const string craftSkillResponseFileName = "d20_pfsrd_skill_response_craft.txt";
-        private const string disableDeviceSkillResponseFileName = "d20_pfsrd_skill_response_disabledevice.txt";
+        private const string weaponFinesseFeatResponseFileName = "d20pfsrd_feat_response_weaponfinesse.txt";
+        private const string acrobaticsSkillResponseFileName = "d20pfsrd_skill_response_acrobatics.txt";
+        private const string appraiseSkillResponseFileName = "d20pfsrd_skill_response_appraise.txt";
+        private const string climbSkillResponseFileName = "d20pfsrd_skill_response_climb.txt";
+        private const string craftSkillResponseFileName = "d20pfsrd_skill_response_craft.txt";
+        private const string disableDeviceSkillResponseFileName = "d20pfsrd_skill_response_disabledevice.txt";
         private const string featResponseFileName = "d20pfsrd_feat_response.txt";
         private const string skillResponseFileName = "d20pfsrd_skill_response.txt";
         private readonly Uri baseUri = new Uri("https://www.d20.com");
