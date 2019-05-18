@@ -12,14 +12,10 @@
                     @switch (card)
                     {
                         case Feat feat:
-                            <i>@feat.Description</i>
-                            <p>@feat.Benefit</p>
-                            <footer class="card-footer text-muted">FEAT</footer>
+                            <FeatCard Card="@feat" />
                             break;
                         case Skill skill:
-                            <i>@skill.Description</i>
-                            <p>@skill.Check</p>
-                            <footer class="card-footer text-muted">SKILL</footer>
+                            <SkillCard Card="@skill" />
                             break;
                         default:
                             break;
